@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_recharge.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>我要充值</h2>
+                    </div>
+                    <div class="mycontent">
+	                    <div class="mycontent">
+	                    	<div class="rechargebox">
+	                    		<div class="my_form_group">
+		                    		<div class="input_group">
+		                    			<div class="input_row">
+		                    				<div class="title mt10">支付方式</div>
+		                    				<div class="inputwarp">
+		                    					<div class="bankbox active">
+		                    						<img src="../public/img/bank/yebao.png" alt="">
+		                    						<span></span>
+		                    						
+		                    					</div>
+		                    				</div>
+		                    			</div>
+
+		                    			<div class="input_row">
+		                    				<div class="title">可用余额</div>
+		                    				<div class="inputwarp">
+		                    					<span class="mark ft-sz-24">0.00</span>元
+		                    				</div>
+		                    			</div>
+		                    			<div class="input_row">
+		                    				<div class="title">充值金额</div>
+		                    				<div class="inputwarp">
+		                    					<input type="text" placeholder="请输入充值金额">
+		                    					元
+		                    				</div>
+		                    			</div>
+		                    			<div class="input_row">
+		                    				<div class="title">&nbsp;</div>
+		                    				<div class="inputwarp">
+		                    					    <a href="investment.html" class="btn btn-primary mr10">立即充值</a>
+		                    					    <br />
+		                    					    <span class="ft-sz-14 basecolor">充值后账户余额：0.00元</span>
+		                    				</div>
+		                    			</div>
+		                    		</div>
+		                    	</div>
+
+
+
+
+		                    	<div class="discribe">
+		                    		<h2>充值说明：</h2>
+
+		                    		<p>1.快捷支付限额：单笔5万元，单日50万元，单月500万（特殊提示：工行单笔1万元，单日2万元，单月2万元；招行单笔5万，单日5万，单月无上限）。大额充值请使用网银。</p>
+
+
+
+		                    		<p>2.懒投资仅可使用储蓄卡进行充值，严禁信用卡充值、套现等行为，一经发现将予以处罚，包括但不限于：限制收款、 冻结账户、永久停止服务，并会影响银行征信记录。</p>
+
+
+
+
+		                    		<p>3.开启自动投标后，充值金额会在次日零点加入自动投标。</p>
+
+
+
+
+		                    		<p>4.正常投资回款（或零钱转出等）可随时提现；如充值后未投资，该部分金额每日仅可提现1万元。</p>
+
+		                    		
+		                    		
+		                    	</div>
+
+
+
+
+		                    	<div class="discribe">
+		                    
+		                   
+		                    		<p>
+			                    		<span>为保证您的资金安全，首次使用快捷支付将同时绑定提现银行卡。</span>
+			                    		<a href="#">快捷支付不成功？</a>
+
+		                    		</p>
+
+
+
+
+		                    		
+		                    	</div>
+								
+
+	                    	</div>
+
+	                    </div>
+                    	
+                    </div>
+
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+
+	<div id="popup"></div>
+</div>
+
+
+<div class="popupcontent tpl_yeebao">
+	<p class="center">请在新打开的易宝页面完成充值后选择：</p>
+
+	<div class="pop_box">
+		<div class="l">
+			<div class="content">
+				<h2>充值成功</h2>
+				<a class="btn btn-primary mr10">立即充值</a>
+			</div>
+		</div>
+		<div class="r">
+			<div class="content">
+				<h2>充值失败</h2>
+				<a class="btn btn_mark mr10">重新充值</a>
+				<p>查看 <a href="" class="mark">帮助中心</a></p>
+			</div>
+		</div>
+	</div>
+	<p class="center">遇到问题请拨打我们的客服热线：400-807-8000（工作日9:00-22:00）</p>
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+<script type="text/javascript" src="../public/scripts/popup.js"></script>
+
+
+<script type="text/javascript">
+   $.popup({
+        title: "登录到易宝支付平台充值", //标题
+        content: $(".tpl_yeebao").html(), //内容
+        close: true, //是否关闭
+        closeCallback:null,
+        popupStyle: "",
+        Dwidth:554,
+        popupPosition:"fixed",
+        btnList: [
+            // {
+            //     "class": "",
+            //     "text": "确认",
+            //     "callback": null
+            // },
+            // {
+            //     "class": "comfbox",
+            //     "text": "取消",
+            //     "callback": null
+            // }
+        ]
+   })
+</script>
+
+</body>
+</html>

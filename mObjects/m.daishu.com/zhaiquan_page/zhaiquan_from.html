@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>贷鼠网-自动投标</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/zhaiquan_form.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/lib/zepto.mdater.css"
+   
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+
+
+            <div>
+               
+
+                <div class="borrowbox">
+                    <div class="input input-warp">
+                        <input type="text" placeholder="借款年利率从" />
+                        <span class="baifenhao">%</span>
+                    </div>
+                    <div class="zfx"> ~ </div>
+          
+                    <div class="input input-warp">
+                       <input type="text" placeholder="借款年利率到" />
+                       <span class="baifenhao">%</span>
+                    </div>
+                    
+                </div>
+
+                <div class="borrowbox">
+                    <div class="input input-warp">
+                       <input type="text" placeholder="借款期限从" />
+                        <span class="baifenhao">月</span>
+                    </div>
+                    <div class="zfx"> ~ </div>
+          
+                    <div class="input input-warp">
+                       <input type="text" placeholder="借款期限到" />
+                       <span class="baifenhao">月</span>
+                    </div>
+                    
+                </div>
+
+
+
+              
+               
+
+                 <div class="input input-warp">
+                   <input type="text" placeholder="单标最大投资金额" />
+					<span class="baifenhao">元</span>
+                </div>
+                 <div class="input input-warp">
+                   <input type="text" placeholder="单标最大投资次数" />
+                   <span class="baifenhao">次</span>
+                </div>
+
+                <div class="input input-warp">
+                   <input type="text" placeholder="账户最小余额" />
+                   <span class="baifenhao">元</span>
+                </div>
+
+             
+                <div class="borrowbox">
+                  
+                  
+              <!--   <div class="selectdate" style="margin-left:0px; margin-bottom:1rem;">
+                    <div class="month on">
+                        是
+                    </div>
+                     <div class="year">
+                        否
+                    </div>
+                </div> -->
+                <div  class="zfx">自动投标时间设置</div>
+
+                
+
+          
+                  
+                    
+                </div>
+
+
+                 <div class="borrowbox">
+                    <div class="input input-warp">
+                       <input type="text" placeholder="开启时间"class="in"   id="statDate" readonly="readonly" />
+                       
+                    </div>
+                    <div class="zfx"> ~ </div>
+          
+                    <div class="input input-warp">
+                       <input type="text" placeholder="结束时间" class="in" id="endDate"  readonly="readonly"/>
+                    </div>
+                    
+                </div>
+               
+                <div class="btnbox">
+                    <input type="button" value="开启">
+                </div>
+                <!--  <div class="btnbox">
+                    <input type="button" value="取消">
+                </div> -->
+            </div>
+		</section>
+	</section>
+
+  
+	
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+    <script type="text/javascript" src="../static/js/lib/date/zepto.mdater.js"></script>
+   
+   
+
+    <script src="../static/js/popup.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="../static/js/form.js"></script>
+	<!--页面JS-->
+
+
+    <script>
+        $(".selectdate div").on("click",function(){
+            $(this).addClass("on").siblings().removeClass("on");
+        })
+
+       
+
+    </script>
+	<script type="text/javascript">
+    $("body > .warp").on("click",function(){
+        alert(1)
+    })
+       $('.in').mdater({
+            minDate : new Date(2015,2,10)
+        });
+
+    </script>
+</body>
+</html>

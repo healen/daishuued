@@ -1,0 +1,116 @@
+/******************表单样式********************/
+.input-warp {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  height: 4rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.input-warp > input,
+.input-warp > select {
+  height: 4rem;
+  border: none;
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: none;
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+}
+.input-warp .verification {
+  padding-right: 1.5rem;
+  font-size: 1.4rem;
+  display: block;
+  color: #3dbdff;
+  height: 4rem;
+  background: none;
+}
+.input-warp .verification:disabled {
+  color: #2a2e33;
+}
+.btnbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding-top: 1rem;
+}
+.btnbox input {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: #3dbdff;
+  color: #ffffff;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-shadow: 0px 4px 0px #a3e0ff;
+}
+.btnbox input:active {
+  background: #0aacff;
+}
+.btnbox input:visited {
+  background: #0aacff;
+}
+.btnbox input.disable {
+  background: #ccc;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.mybottom {
+  margin: 0.8rem 0.8rem;
+}
+.alert {
+  padding: 1rem 0rem;
+  color: #ee0000;
+  margin-left: 5px;
+}
+.lis {
+  border: 1px solid #dfe3f0;
+  margin-top: -1px;
+}
+.lis:last-child {
+  border-bottom: 1px solid #dfe3f0 !important;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+.lis:first-child {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.payselect {
+  color: #3dbdff;
+  border: 1px solid #3dbdff;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+.title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  padding: 0.5rem 0rem;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 5px;
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户新声</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/user_voice.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+        	<div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+            <div class="ui-container">
+                <span class="fn-left">
+                    <a href="javascript:void(0)" rel="nofollow" target="_blank"><i class="icon-sp1 sp1-puhui-min"></i>众诚金融信息</a> 旗下在线投资理财金融服务平台
+          
+                </span>
+                <span id="menu-had-login" class="fn-right menu-had-login" style="display: inline;">
+                    
+                    <span class="nav-down">
+                        <a id="userInfo" class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" style="height:40px; margin-right:10px; display:inline-block" rel="nofollow">
+                            <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                            <span class="menu-user">test123 </span>
+                            <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a><a href="/loginOut.aspx" rel="nofollow">[退出]</a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white" style="top: 35px; right: 29px; display: none;">
+                            <div class="ui-poptip-shadow-dis">
+                                <div class="ui-poptip-container">
+                                    <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                        <em></em>
+                                        <span></span>
+                                    </div>
+                                    <div class="ui-poptip-content">
+                             
+                                        <ul>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/Index.aspx">
+                                                    <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                    个人中心
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/replenishonline.aspx?meunid=2">
+                                                    <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                    账户充值
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/account/succeedlist.aspx?meunid=3">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </span>
+                </span>
+                <span id="menu-not-login" class="fn-right menu-not-login" style="">
+                    <a class="ml20" href="/Register.aspx" rel="nofollow">注册</a>
+                    <span class="ml10 mr10 split">|</span>
+                    <a href="/Login.aspx" rel="nofollow">登录</a>
+                </span>
+                <a href="http://www.baidu.com" class="fn-right ml20 icon-nl kefu">关注我们</a>
+                <a class="fn-right ml20" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f6559f873cbe67afe8fe3c4e2bc96ffc6ba3d1dc913bab8923d84a1e28b1e5df">
+                    <img border="0" style="padding-top: 8px;" src="http://pub.idqqimg.com/wpa/images/group.png" alt="5620538" title="5620538"></a>
+                <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>加盟热线：0538-2103-456</a>
+
+            </div>
+            </div>
+            <div class="pg-header-main">
+			    <div class="container_10">
+			         <div class="grid_2_2">
+                            <span class="f36 mt15 fl">
+                                <a href="#">
+                                    <img src="../public/img/logo1.png" width="153" height="63"> 
+                                    <img src="../public/img/slogn.png" width="294" height="63">
+                                </a>
+                            </span>
+                        </div>
+			        <div class="grid_6">
+			            <ul class="main-nav" style="margin-right: -25px;">
+			                <li class="main-nav-item"><a href="/Home.aspx" class="main-nav-item-link af current">首页</a></li>
+			                <li class="main-nav-item nav-list-top">
+                                <a href="/Lend/Index.aspx" class="main-nav-item-link af ">我要投资<i class="down_img"></i></a>
+                                <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+                                    <ul>
+                                        <li class="nav-dropdown-angle"><span></span></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">投资列表</a></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">债权转让</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+			                <li class="main-nav-item"><a href="/Borrow/index.aspx" class="main-nav-item-link af ">我要借款</a></li>
+			                <li class="main-nav-item"><a href="/Account/Index.aspx" class="main-nav-item-link af ">我的账户</a></li>
+			                <li class="main-nav-item nav-list-top">
+			                    <a href="/GuideInvest.aspx" class="main-nav-item-link af ">新手指引<i class="down_img"></i></a>
+			                    <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+			                        <ul>
+			                            <li class="nav-dropdown-angle"><span></span></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">理财帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">借款帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/Security.aspx">安全保障</a></li>
+			                        </ul>
+			                    </div>
+			                </li>
+			                <li class="main-nav-item relative nav-list-top">
+			                    <a href="/AboutUs.aspx" class="main-nav-item-link af ">关于我们</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+
+    	</div>    
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="wen">
+                     <div class="center m_top">
+                     <dl class="w_lef">
+                         <dt>
+                            <a href="#" target="_blank">
+                                <img src="../public/img/uservice/6.jpg" alt="个人贷款需要什么资料和条件？" title="个人贷款需要什么资料和条件？" width="210" height="167">
+                            </a>
+                         </dt>
+                         <dd>
+                            <h1>
+                                 <a href="#" target="_blank" title="个人贷款需要什么资料和条件？">个人贷款需要什么资料和条件？</a>
+                            </h1>
+                            <p class="lef_p">
+                                 我是一名待业人员，想贷3万和朋友投资做点小生意能贷吗？                         
+                            </p> 
+                            <ul class="w_ul">
+                                <li>
+                                   <a href="#" title="民间借贷一个月，10万2分利是多少钱？" alt="民间借贷一个月，10万2分利是多少钱？" target="_blank">
+                                       民间借贷一个月，10万2分利是多少钱？                                </a>
+                               </li>
+                               <li>
+                                   <a href="#" title="个人信用贷款我想知道能给我贷多少" alt="个人信用贷款我想知道能给我贷多少" target="_blank">
+                                       个人信用贷款我想知道能给我贷多少                                </a>
+                               </li><li>
+                                   <a href="#" title="可以申请个人无抵押信用贷款12万吗？" alt="可以申请个人无抵押信用贷款12万吗？" target="_blank">
+                                       可以申请个人无抵押信用贷款12万吗？                                </a>
+                               </li>                     
+                            </ul>
+                         </dd>
+                     </dl>
+                     <div class="w_rig">
+                         <img src="../public/img/uservice/wen.png">
+                         <p>上万执业信贷经理在这里！</p>
+                                                    <button class="btnbtn" onclick="replySubmit('tw');">我要提问</button>
+                                             <p class="w_p">已累计解决用户<span>110223</span>个问题</p>
+                     </div>
+                     </div>
+                </div>
+
+                <div class="tabview">
+                    <div class="tab">
+                        <a href="javascript:void(0)" class="on">热门问题</a>
+                        <a href="javascript:void(0)">全部问题</a>
+                    </div>
+                    <div class="view">
+                        <div class="content" style="display:block">
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="content">
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">射手</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <img src="../public/img/uservice/user-14.png" alt="">
+                                <div class="r">
+                                    <p><a href="/wenda/127222.html" target="_blank">所有贷款公司解除汽车抵押文件一样吗?</a></p>
+                                    <p class="aser">答：不一样</p>
+                                    <p class="per">
+                                        <span class="person"><a href="/wenda/people/346980/">1392****564</a></span>
+                                        <span class="liuyan"><a href="javascript:void(0)" target="_blank">2015-5-30</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <!--页脚-->
+        
+      <div class="ui-footer">
+          <div class="ui-container">
+              <div class="site-link">
+                  <ul class="fn-clear">
+                      <li><a href="javascript:void(0)" rel="nofollow">关于我们</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow">名词解释</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow" >法律法规</a></li>
+                      <li><a href="javascript:void(0)">理财知识</a></li>
+                      <li><a href="javascript:void(0)" rel="nofollow">诚聘英才</a></li>
+                      <li><a href="javascript:void(0)">友情链接</a></li>
+                      <li><a href="javascript:void(0)" >官方论坛</a></li>
+                      <li><a href="javascript:void(0)" >网站地图</a></li>
+                  </ul>
+              </div>
+              <div class="footer-center fn-clear">
+                  <div class="footer-contact">
+                      <i class="icon-sp1 sp1-hotline-footer mr20"></i>
+                      <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+                      <div class="weixin-wrap">
+                          <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+                         
+                      </div>
+                      <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="ui-container fn-clear">
+                  <div class="auth-link fn-clear">
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+                      <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-police-normal"></i></a>
+                  </div>
+                  <div class="copyright">
+                      <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+                      <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+
+		<!--QQ客服-->
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script src="../public/scripts/global.js"></script>
+   <script type="text/javascript" src="../public/scripts/range.js"></script>
+ 
+   <script type="text/javascript">
+        $(".range").range({});
+
+        $(".tab a").bind("click",function(){
+            var num = $(this).index();
+            var p=$(this).parents(".tabview");
+            $(this).addClass("on");
+            $(this).siblings().removeClass("on");
+            p.find(".content").eq(num).show();
+             p.find(".content").eq(num).siblings().hide();
+
+
+        })
+   </script>
+    
+</body>
+</html>

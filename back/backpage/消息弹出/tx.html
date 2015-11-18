@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.msgalert {
+		    background: #fff;
+		    width: 300px;
+		    position: fixed;
+		    right: -252px;
+		    bottom: 2px;
+		    border-radius: 3px;
+		    overflow: hidden;
+		    border:1px solid #eee;
+		   
+		    -webkit-transition: all .5s ease-in-out;
+		    -o-transition: all .5s ease-in-out;
+		    -moz-transition: all .5s ease-in-out;
+		    transition: all .5s ease-in-out;
+		    font-size: 12px;
+		}
+		.msgalert .close {
+		    position: absolute;
+		    width: 30px;
+		    height: 30px;
+		    display: block;
+		    top: 0;
+		    right: 0;
+		    line-height: 30px;
+		    text-align: center;
+		    cursor: pointer;
+		    color: #fff;
+		    background: url("images/x.png") no-repeat 0 0
+		}
+		.msgalert .title {
+		   
+		    background: #2ea7e0;
+		    line-height: 30px;
+		    color: #fff;
+		    font-size: 14px;
+		    font-weight: bold;
+		    padding:0px 20px;
+		}
+		.msgalert .msgContent {
+		    padding: 15px;
+		    line-height: 22px;
+		    max-height: 130px;
+		    min-height: 80px;
+		    font-size: 13px;
+		    overflow: auto;
+		}
+		.msgContent p{
+			color: #666;
+			margin:0px;
+			line-height: 28px;
+			display: none;
+		}
+		.msgalert .msgContent span {
+		    color: #2ea7e0
+		}
+		.msgalert .msgContent a {
+		    color: #2ea7e0;
+		    text-decoration: underline
+		}
+		.bts{
+			border-top: 1px solid #eee;
+			
+			padding:0px 10px;
+			text-align: right;
+		}
+		.bts a{
+			display: inline-block;
+			border-right: 1px solid #eee;
+			padding: 0px 20px;
+			margin-top: 5px;
+			margin-bottom:5px;
+			text-decoration: none;
+			color: #2ea7e0;
+		}
+		.bts a.next{
+			border-right: none;
+
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<!--消息提示弹框-->
+	<div class="msgalert">
+		<div class="title">消息通知</div>
+		<div class="close"></div>
+		<div class="msgContent">
+			<p style="display:block">1客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			<p>2客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			<p>3客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			<p>4客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			<p>5客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			<p>6客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！</p>
+			
+		</div>
+		<div class="bts">
+			<a href="javascript:void(0)" class='prev'>上一页</a>
+			<a href="javascript:void(0)" class='next'>上一页</a>
+		</div>
+	</div>
+	<!--消息提示弹框-->
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	 /*消息弹出*/
+		(function(){
+			var haveMsg=true;
+			if(haveMsg){
+				$(".msgalert").css({"right":"2px"});
+			}
+			$(".msgalert .close").on("click",function(){
+				$(".msgalert").css({"right":"-300px"});
+			})
+
+
+			
+
+
+			
+			
+		})()
+
+		var num=0;
+		var len=$(".msgContent p").length;
+		$(".msgalert .next").click(function(){
+			$(this).siblings('a').removeAttr('style');
+			if(num>=len){
+				$(this).css({"color":"#aaa"}).siblings('a').removeAttr('style');
+				return 
+			}
+			num++;
+			$(".msgContent p").eq(num).show().siblings('p').hide();
+			console.log(num);
+		})
+		$(".msgalert .prev").click(function(){
+			$(this).siblings('a').removeAttr('style');
+			if(num<=0){
+				$(this).css({"color":"#aaa"}).siblings('a').removeAttr('style');
+				return 
+			}
+			num--;
+			$(".msgContent p").eq(num).show().siblings('p').hide();
+			console.log(num);
+		})
+
+	
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************注册样式********************/
+
+body{
+	background: #ffffff;
+}
+.warp{
+	padding: 2rem;
+	.title{
+		font-size: 1.5rem;
+		color: #666666;
+		margin-bottom: 1.5rem;
+	}
+	h2{
+		font-size: 1.8rem;
+		color: #4c4c4c;
+		font-weight: bold;
+	}
+	.formbox{
+		font-size: 1.5rem;
+		.-display ._box();
+
+		.-display ._box-align(center,start);
+
+		&.topalign{
+			.-display ._box-align(start,start);
+			padding-top: 1rem;
+			.lastt{
+				margin-top: 0.5rem;
+			}
+		}
+		min-height: 5.2rem;
+		input[type='text']{
+			background: #f2f2f2;
+			height: 3rem;
+			padding: 0rem 1rem;
+			.-display ._flex(1);
+			display: block;
+			margin-left: 2.5rem;
+			border-radius: 1.8rem;
+			-webkit-box-shadow: 1px 1px 5px #e4e2e2 inset;
+			box-shadow: 1px 1px 5px #e4e2e2 inset;
+		}
+		label{
+			position: relative;
+			float: left;
+			line-height: 3rem;
+			height: 3rem;
+			font-size: 1.4rem;
+			margin-left: 1rem;
+			letter-spacing: -1px;
+			margin-bottom: 1rem;
+			&>div{
+				padding: 0px 10px;
+				border:1px solid #cccccc;
+				border-radius: 1.8rem;
+			}
+
+		}
+		.check{
+			._clearfix();
+			.-display ._flex(1);
+			margin-left: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+
+		input[type='checkbox']{
+			background: #ff0000;
+			opacity: 0;
+			-webkit-appearance: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			&:checked{
+				&+div{
+					border:1px solid #3cbdff;
+					
+					color: #3cbdff;
+				}
+			}
+
+		}
+
+		.input-submit{
+			width: 10.8rem;
+			height: 3.8rem;
+			border-radius: 2rem;
+			font-size: 1.6rem;
+			color: #ffffff;
+			text-align: center;
+			background: #3cbdff;
+			display: block;
+			margin: 0px auto;
+			margin-top: 2rem;
+			box-shadow: 0.2rem 0.2rem 0 lighten(#3cbdff, 15%);
+			&:active{
+				background-color: darken(#3cbdff, 10%)
+			}
+			&:visible{
+				background-color: #ffffff
+			}
+
+		}
+	}
+}
+footer{
+	height: 7.8rem;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	width: 100%;
+	.-bg ._img('@{bgURL}footbg.png');
+	.-bg ._size(cover);
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	p{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6rem;
+		color: #404040;
+		bottom: 1rem;
+		left: 0;
+	}
+}
+
+@media screen and (min-height:620px){
+	footer{
+		position: fixed;
+	}
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-自动投标设置</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_auto_bid.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+                    <a href="about_us.html">关于我们</a><a href="login.html">立即登录</a><a href="regrist.html">免费注册</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="/"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="investment_list.html"><span>我要投资</span><i></i></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="investment_list.html">散标投资</a>
+                                    <a href="investment_list_right.html">债权转让</a>
+                                </div>
+                            </li>
+                            <li id="my_borrow">
+                                <a href="my_borrow.html"><span>我要借款</span> </a>
+                            </li>
+                            <li id="about_us">
+                                <a href="about_us.html"><span>关于我们</span> </a>
+                            </li>
+                             <li id="my">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                            <li class="toggle" id="novice_area">
+                                <a href="novice_area.html"><span>新手专区</span><i></i></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="novice_financial.html">理财帮助</a>
+                                    <a href="novice_borrow.html">借款帮助</a>
+                                    <a href="novice_pointer">新手指南</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+ <!-----header.tpl读取完成--
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				<div class="my_left_init">
+
+<div class="my_top_init">
+	<div class="line"></div>
+	<div class="r">
+		<div class="headphoto">
+			<img src="../public/img/headp.png" alt="">
+		</div>
+		<div class="d1">
+				<h2>张晓东</h2>
+				<div class="icogroup">
+					<div class="ico tel success" title="手机号认证">
+						
+					</div>
+					<div class="ico my" title="实名认证">
+						
+						<div class="titlename">
+							<p>进行实名认证 <a href="">立即认证</a></p>
+							<span class="close">
+								
+							</span>
+						</div>
+					</div>
+					<div class="ico suo" title="安全问题">
+						
+					</div>
+					<div class="ico xin" title="邮箱认证">
+						
+
+					</div>
+					
+				</div>
+			</div>
+	</div>			
+</div>
+	<ul class="nav" id="leftNavSider">
+		<li class="active" data-role="my_index">
+			<a href="my_index.html"><div class="line"></div>管理首页</a>
+			<!-- <div class="acti"></div> -->
+		</li>
+		<li data-role="my_user">
+			<a href="javascript:void(0)"><div class="line"></div>我的账户</a>
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>账户概览</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>资金流水</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我要充值</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我要提现</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>邀请好友</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>自动投标</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+			</ul>
+		</li>
+		<li data-role="my_user">
+			<a href="javascript:void(0)"><div class="line"></div>我的投资</a>
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我的投资列表</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+			
+			</ul>
+		</li>
+		<li data-role="my_borrow">
+			<a href="javascript:void(0)"><div class="line"></div>我的借款</a>
+				<ul>
+					<li>
+						<a href="javascript:void(0)">
+							<div class="line"></div>
+							<span>借款申请</span>
+						</a>
+						<div class="acti"></div>
+					</li>
+				
+				</ul>
+		</li>
+		<li data-role="my_reward">
+			<a href="javascript:void(0)"><div class="line"></div>我的奖励</a>
+			
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我的现金券</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我的理财金</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>我的加息券</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+				
+			</ul>
+		</li>
+		<li data-role="my_reward">
+			<a href="javascript:void(0)"><div class="line"></div>我的信息</a>
+			
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<div class="line"></div>
+						<span>个人信息</span>
+					</a>
+					<div class="acti"></div>
+				</li>
+			
+			</ul>
+		</li>
+
+		
+	</ul>
+</div>
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>我要提现</h2>
+                    </div>
+                    <div class="mycontent">
+	                    <div class="mycontent">
+	                    	<div class="rechargebox">
+	                    		<h2 class="bind_title">自动投标设置</h2>
+	                    		<div class="mybankbox">
+		                    		<div class="content">
+		                    			<div class="bankcart">
+		                    				<div class="title">
+		                    					<span class="l"><i><img src="../public/img/bc.png" alt=""></i>中国银行</span>
+		                    					<span class="r">默认提现卡</span>
+		                    				</div>
+		                    				<div class="incontant">
+		                    					<div class="row">
+		                    						<span class="ellipsis">开户行：中国银行中关村支行中国银行中关村支行</span>
+		                    						<a href="my_bind_bank_edit.html">修改</a>
+		                    					</div>
+		                    					<div class="row hei">姚琳</div>
+		                    					<div class="row hei">**** **** **** *** 6130</div>
+		                    				</div>
+		                    			</div>
+		                    		</div>
+		                    		<div class="remove_bank right">
+		                    			<a href="#">解绑卡遇到问题？</a>
+		                    		</div>
+		                    	</div>
+	                    		<div class="my_form_group title_line">
+			                    		<div class="input_group">
+		                    				<div class="input_row mb0">
+			                    				<div class="title">可用余额</div>
+			                    				<div class="inputwarp">
+			                    					<span class="mark ft-sz-24">0.00</span>元
+			                    				</div>
+			                    			</div>
+
+
+			                    			<div class="input_row">
+			                    				
+			                    				<div class="inputwarp">
+			                    					<p class="ft-sz-14 basecolor dis">注：如当日有过充值行为，则当日不可进行提现。充值未投资的金额，每日仅可提现10000元。</p>
+
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">提现金额</div>
+			                    				<div class="inputwarp">
+			                    					<input type="text" placeholder="请输入充值金额"> 
+			                    					元
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">提现密码</div>
+			                    				<div class="inputwarp">
+			                    					<input type="password" placeholder="请输入提现密码">
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">&nbsp;</div>
+			                    				<div class="inputwarp">
+			                    					    <a href="investment.html" class="btn btn-primary mr10">立即提现</a>
+			                    				</div>
+			                    			</div>
+		                    		</div>
+		                    	</div>
+		                    	<div class="discribe">
+		                    		<h2>充值说明：</h2>
+		                    		<p>1.最小提现金额为50元。</p>
+		                    		<p>2.提现免除手续费，每日仅限提现一笔。</p>
+		                    		<p>3.提现无上限限制（充值未投资的金额，每日最多提现10000元）。</p>
+		                    		<p>4.如当日有过充值行为，则当日不可进行提现。</p>
+		                    		<p>5.提现到账时间，大行T+1工作日完成，小行大于T+1工作日完成（遇周末和法定节假日顺延）。</p>
+		                    	</div>
+	                    	</div>
+
+	                    </div>
+                    	
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+    <div class="footer">
+        <div class="ftbody">
+            <div class="inwarp">
+                <div class="footlist first">
+                    <h2>客服热线</h2>
+                    <div class="tel">400-0546-966</div>
+                    <p>服务时间：09:00-17:30</p>
+                    <p class="picebox">
+                        <img src="../public/img/erweima.jpg" alt="">
+                    </p>
+                </div>
+                <div class="footlist">
+                    <h2>联系我们</h2>
+                    <div class="contant_us address">
+                        <span class="titles">地址：</span>
+                        <p>山东省东营市东营区黄河路金领国际B座803</p>
+                    </div>
+                    <div class="contant_us emial">
+                       <span class="titles">邮箱：</span>
+                        <p><a href="mailto:dongyingdaicn@163.com">dongyingdaicn@163.com</a></p>
+                        
+                    </div>
+                </div>
+                <div class="footlist newport">
+                    <h2>新手指引</h2>
+                    <ul>
+                        <li><a href="">理财通知</a></li>
+                        <li><a href="">理财帮助</a></li>
+                        <li><a href="">安全保障</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlist last">
+                     <h2>关于我们</h2>
+                     <ul>
+                        <li><a href="">相关法律</a></li>
+                        <li><a href="">媒体报道</a></li>
+                        <li><a href="">招贤纳士</a></li>
+                        <li><a href="">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftflink">
+                    友情链接：   <a href="">贷鼠网</a>     <a href="">网贷之家</a>    <a href="">搜狐互联网金融</a>     <a href="">老虎财经</a>    <a href="">慧博咨询</a>    <a href="">网贷之眼</a>
+            </div>
+            <div class="ftflink">
+                   ©2015东营贷All rights reserved | 鲁ICP备15006745号 | 东营吉诺投资咨询有限公司 | 鲁ICP备15006745号-1
+            </div>
+        </div>
+    </div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+
+
+</div>
+
+
+
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+<!-- <script type="text/javascript" src="../public/scripts/popup.js"></script> -->
+
+
+
+</body>
+</html>

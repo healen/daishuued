@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_cash.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>我要提现</h2>
+                    </div>
+                    <div class="mycontent">
+	                    <div class="mycontent">
+	                    	<div class="rechargebox">
+	                    		<h2 class="bind_title">已绑定的银行卡</h2>
+	                    		<div class="mybankbox">
+		                    		<div class="content">
+		                    			<div class="bankcart">
+		                    				<div class="title">
+		                    					<span class="l"><i><img src="../public/img/bc.png" alt=""></i>中国银行</span>
+		                    					<span class="r">默认提现卡</span>
+		                    				</div>
+		                    				<div class="incontant">
+		                    					<div class="row">
+		                    						<span class="ellipsis">开户行：中国银行中关村支行中国银行中关村支行</span>
+		                    						<a href="my_bind_bank_edit.html">修改</a>
+		                    					</div>
+		                    					<div class="row hei">姚琳</div>
+		                    					<div class="row hei">**** **** **** *** 6130</div>
+		                    				</div>
+		                    			</div>
+		                    		</div>
+		                    		<div class="remove_bank right">
+		                    			<a href="#">解绑卡遇到问题？</a>
+		                    		</div>
+		                    	</div>
+	                    		<div class="my_form_group title_line">
+			                    		<div class="input_group">
+		                    				<div class="input_row mb0">
+			                    				<div class="title">可用余额</div>
+			                    				<div class="inputwarp">
+			                    					<span class="mark ft-sz-24">0.00</span>元
+			                    				</div>
+			                    			</div>
+
+
+			                    			<div class="input_row">
+			                    				
+			                    				<div class="inputwarp">
+			                    					<p class="ft-sz-14 basecolor dis">注：如当日有过充值行为，则当日不可进行提现。充值未投资的金额，每日仅可提现10000元。</p>
+
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">提现金额</div>
+			                    				<div class="inputwarp">
+			                    					<input type="text" placeholder="请输入充值金额"> 
+			                    					元
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">提现密码</div>
+			                    				<div class="inputwarp">
+			                    					<input type="password" placeholder="请输入提现密码">
+			                    				</div>
+			                    			</div>
+			                    			<div class="input_row">
+			                    				<div class="title">&nbsp;</div>
+			                    				<div class="inputwarp">
+			                    					    <a href="investment.html" class="btn btn-primary mr10">立即提现</a>
+			                    				</div>
+			                    			</div>
+		                    		</div>
+		                    	</div>
+		                    	<div class="discribe">
+		                    		<h2>充值说明：</h2>
+		                    		<p>1.最小提现金额为50元。</p>
+		                    		<p>2.提现免除手续费，每日仅限提现一笔。</p>
+		                    		<p>3.提现无上限限制（充值未投资的金额，每日最多提现10000元）。</p>
+		                    		<p>4.如当日有过充值行为，则当日不可进行提现。</p>
+		                    		<p>5.提现到账时间，大行T+1工作日完成，小行大于T+1工作日完成（遇周末和法定节假日顺延）。</p>
+		                    	</div>
+	                    	</div>
+
+	                    </div>
+                    	
+                    </div>
+
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+
+
+</div>
+
+
+
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+<!-- <script type="text/javascript" src="../public/scripts/popup.js"></script> -->
+
+
+
+</body>
+</html>

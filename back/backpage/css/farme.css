@@ -1,0 +1,80 @@
+.contains_box {
+  padding: 10px;
+}
+.contains_box .num {
+  color: #2e709c;
+  font-weight: bold;
+}
+.contains_box .titleborder {
+  border-bottom: 1px solid #ddd;
+}
+.contains_box h4 {
+  color: #2679b5;
+}
+.contains_box .h2title {
+  color: #2679b5;
+  font-size: 22px;
+}
+.contains_box .editorbox {
+  margin-top: 10px;
+}
+.contains_box .icoa {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.contains_box .icoa i {
+  margin-right: 3px;
+}
+.contains_box .icoa:hover {
+  text-decoration: none;
+}
+.contains_box .leftbox {
+  float: left;
+}
+.contains_box .toplin {
+  margin-top: 20px;
+}
+.contains_box .toplin input[type=text] {
+  height: 32px;
+}
+.contains_box .toplin select {
+  height: 32px;
+}
+.contains_box .toplin .leftbox {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.contains_box .clear {
+  clear: both;
+}
+.table-list tbody tr {
+  cursor: pointer;
+}
+.table-list tbody tr:nth-child(2n):hover td {
+  background: #eeeeee;
+}
+.table-list tbody tr:hover td {
+  background: #eeeeee;
+}
+.table-list tbody tr.active td {
+  background: #ccc!important;
+}
+.pageh {
+  border-bottom: 1px dotted #cccccc;
+  margin-bottom: 40px;
+}
+.pageh h2 {
+  margin-top: 0px;
+  padding: 10px;
+}
+input[type=radio] + .lbl::before {
+  border-radius: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input[type="text"],input[type=password],select{
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+}

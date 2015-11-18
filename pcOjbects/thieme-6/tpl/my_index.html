@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/my_index.css" type="text/css">
+
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+
+			
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="righttop">
+						<div class="row">
+
+							<div class="d2">
+								<div class="row">
+									<div class="clomn3">
+										<h2>累计收益</h2>
+										<p>
+											<span class="ft-sz-22 mark">88.00</span>元
+										</p>
+									</div>
+									<div class="clomn3">
+										<h2>账户余额</h2>
+										<p>
+											<span class="ft-sz-22 mark">880000.00</span>元
+										</p>
+									</div>
+									<div class="clomn3">
+										<h2>优惠券</h2>
+										<span class="row">
+											<span class="icopice"></span>
+											<span class="mark ft-sz-22">8</span>
+											张
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="d3">
+								<a href="investment.html" class="btn btn-primary mr10">充值</a>
+								<a href="investment.html" class="btn btn_mark">购买</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="my_index_top">
+						<div class="row datashow">
+							<div class="col_s col_st">
+								<div class="title">账户总资产</div>
+								<div class="content"><span class="mark">188.30</span><span class="yuan">元</span></div>
+							</div>
+							<div class="col_s_b"><span>+</span></div>
+							<div class="col_s col_ln">
+								<div class="title">理财总资产<span>（待收本金+待收收益）</span></div>
+								<div class="content"><span class="mark">188.30+156</span><span class="yuan">元</span></div>
+							</div>
+							<div class="col_s_b"><span>=</span></div>
+							<div class="col_s col_st">
+								<div class="title">账户余额</div>
+								<div class="content"><span class="mark">188.30+156</span><span class="yuan">元</span></div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="harcharsbox" id="container"></div>
+					<div class="totb">总资产</div>
+				</div>       
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/highcharts.js"></script>
+<script type="text/javascript">
+
+piearr=[
+    {
+        name: '理财资产',
+        y: 100,
+        color:"#a6e1ff"
+       
+    },
+    {
+        name: '账户余额',
+        y: 200,
+
+        color:"#8ad8ff"
+    }
+    ,
+    {
+        name: '投资利息',
+        y: 300,
+
+        color:"#59c8ff"
+    }
+     ,
+    {
+        name: '冻结金额',
+        y: 400,
+        color:"#3cbdff"
+    }
+]
+highcharpie("#container",piearr);
+
+
+   
+</script>
+
+</body>
+</html>

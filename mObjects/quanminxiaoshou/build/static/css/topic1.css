@@ -1,0 +1,96 @@
+/******************个人中心设置样式********************/
+body {
+  background: #ec3b3b;
+}
+.body-content {
+  padding: 0rem 0rem;
+  background: #ec3b3b;
+}
+.body-content .content {
+  position: relative;
+  padding-bottom: 1px;
+}
+.body-content .content .title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.body-content .content article {
+  margin: 1rem;
+  background: #da2626;
+  border-radius: 1.5rem;
+  min-height: 20rem;
+  box-shadow: -3px -3px 0px #c10a0a;
+  padding: 1.5rem;
+  color: #ffe492;
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  padding-bottom: 2rem;
+}
+.body-content .content article p {
+  margin-bottom: 1.5rem;
+}
+body > .warp {
+  padding-bottom: 0rem;
+}
+.jiaobiao {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.pop {
+  height: 252px;
+  width: 234px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -126px;
+  margin-left: -117px;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+.pop i {
+  color: #978686;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.pop .txos {
+  width: 180px;
+  margin: 20px auto;
+  text-align: center;
+}
+.pop .txos .touxiang {
+  display: block;
+  margin: 15px auto 25px auto;
+  border-radius: 50%;
+}
+.pop1 {
+  height: 252px;
+  width: 234px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -126px;
+  margin-left: -117px;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+.pop1 i {
+  color: #978686;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.pop1 .txos {
+  width: 180px;
+  margin: 20px auto;
+  text-align: center;
+}
+.pop1 .txos .touxiang {
+  display: block;
+  margin: 15px auto 25px auto;
+  border-radius: 50%;
+}

@@ -1,0 +1,89 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+@import "../input"; 
+
+/******************个人中心设置样式********************/
+body{
+	background-color: @querBgColor;
+}
+
+.alertbox{
+	.-display ._box();
+	.-display ._box-align(center,center);
+	.-display ._orient(vertical);
+	margin-top: 2.5rem;
+	.duihao{
+		width: 60px;
+		height: 60px;
+		i{
+			display: block;
+			color: #ffffff;
+			line-height: 60px;
+			font-size: 35px;
+			text-align: center;
+		}
+		.-bg ._color(@markColor);
+
+		
+		border-radius: 50%;
+		margin-bottom: 1rem;
+
+	}
+	p{
+		text-align: center;
+		line-height: 2.3rem;
+		font-size:@titleFontSize;
+		color: @minorColor;
+		span{
+			color: @markColor;
+		}
+		margin-bottom: 1rem;
+	}
+	.btn_border{
+		._btn_border();
+		margin-top: 1rem;
+		i{
+			&.btn_ico{
+				display: block;
+				width: 12px;
+				height: 12px;
+				overflow: hidden;
+				margin-left: 3px;
+				
+			}
+		}
+		&:active {
+		  border: 1px solid darken(@markColor, 10%);
+		  color: darken(@markColor, 10%);
+		  background: @docBgColor;
+		}
+		&:visited {
+		  border: 1px solid @markColor;
+		  color: @markColor;
+		  background: @querBgColor;
+		}
+	}
+}
+
+.btnboxs{
+	text-align: center;
+	padding: 0rem 1.5rem;
+	a{
+		display: block;
+		color: #ffffff;
+		// background: @markColor;
+		margin-bottom: 1rem;
+		padding: 1rem 0rem;
+		border-radius: 2rem;
+		border:1px solid @markColor;
+		color: @markColor;
+		&:active{
+			border-color: darken(@markColor, 10%)
+		}
+		&:visited{
+			border-color: @markColor;
+		}
+	}
+}

@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta name="description" content="User login page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--basic styles-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />	
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />	
+	<!--ace styles-->
+	<link rel="stylesheet" href="css/ace.min.css" />
+
+	<link rel="stylesheet" href="css/font.css">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="css/font-ie7.css">
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ace-ie.min.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/farme.css">
+
+	<link rel="stylesheet" href="css/popup.css" />
+</head>
+
+
+<body class="skin-4">
+<!-- header -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid" style='background:#2283c5'>
+			<a href="#" class="brand">
+				<small> 
+					袋鼠网
+				</small>
+			</a>
+			<ul class="nav ace-nav pull-right">
+				<li class="light-blue" style='background:#2AA4F7'>
+					<a data-toggle="dropdown" href="javascript:void(0)" class="dropdown-toggle slideer_box">
+						<img class="nav-user-photo" src="img/noHeader.png" alt="Jason's Photo">
+						<span class="user-info">
+							<small>欢迎,</small>
+							超级管理员
+						</span>
+
+						<i class="icon-caret-down"></i>
+					</a>
+
+					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+					    
+						<li>
+							<a href="#">
+								<i class="icon-cog"></i>
+								设置
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="http://122.114.52.239:8082/sjzx/page/manager/userprofile.jsp">
+								<i class="icon-user"></i>
+								用户信息
+							</a>
+						</li>
+						
+						<li class="divider"></li>
+
+						<li>
+							<a href="../adminUserPage/logout.jsp">
+								<i class="icon-off"></i>
+								注销
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul class="nav ace-nav pull-right">
+				<li class="grey">
+					<a data-toggle="dropdown" href="#" >
+						<span>进入企业初始化</span>
+					</a>
+					
+				</li>
+
+			</ul>
+			<!--/.ace-nav-->
+		</div>
+		<!--/.container-fluid-->
+	</div>
+	<!--/.navbar-inner-->
+</div>
+<!-- /header -->
+
+<div class="main-container container-fluid">
+	<!-- leftMenu -->
+	<div class="sidebar" id="sidebar">	
+		<!--#sidebar-shortcuts-->
+		<div id="leftMenu"  style="display: block;">
+			<ul class="nav nav-list" >    
+				<li>
+				    <a href="ent_exa_list.html">
+	                 	<i class="icon-dashboard"></i>
+	                    <span class="menu-text">企业审核</span> 
+	                </a>
+				</li>
+			</ul>
+		</div>
+		<!--/.nav-list-->
+		<div class="sidebar-collapse" id="sidebar-collapse">
+			<i id="menu_button_arr" class="icon-double-angle-left icon-double-angle-right"></i>
+		</div>
+	</div>
+	<div class="main-content" >
+		<!--head bar begin-->
+		<div id="breadcrumbs" class="breadcrumbs">
+			
+			<ul class="breadcrumb">
+				<li> <i class="icon-home icon-backward"></i>
+					<a href="javascript:void(0)">返回</a>
+					<span class="divider"> <i class="icon-angle-right arrow-icon"></i>
+					</span>
+				</li>
+				<li class="active">
+					
+				</li>
+			</ul>
+		</div>
+		<!--head bar end-->
+
+
+
+
+		<!--主体框架-->
+							
+		<div class="contains_box">
+
+			
+				<div class="position-relative titleborder">
+					<h2 id="pageH1" class="h2title">
+						<span id="aliasTitle">验证手机号</span>					
+					</h2>
+				</div>
+				<br />
+				<div class="inwarp" >
+					<h3 style="padding-top:0px">电话：15600074926</h3>
+					<hr>
+					<ul class="list-group" style="padding-top:0px; width:100%; margin:0px auto 15px auto">
+						<li class="list-group-item">
+							<div class="col-sm-5">公司名称：普惠添翼网络科技有限公司</div>
+							<div class="col-sm-5">申请时间：2015.6.9</div>
+							<div class="clearfix"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="col-sm-5">企业ID：1000201</div>
+							<div class="col-sm-5">申请状态：已开通</div>
+							<div class="clearfix"></div>
+						</li>
+						<li class="list-group-item text-right">
+							<a href="ant_art.html">查看详情</a>
+
+						</li>
+					</ul>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<div class="col-sm-5">公司名称：普惠添翼网络科技有限公司</div>
+							<div class="col-sm-5">申请时间：2015.6.9</div>
+							<div class="clearfix"></div>
+						</li>
+
+						<li class="list-group-item">
+							<div class="col-sm-5">企业ID：1000201</div>
+							<div class="col-sm-5">申请状态：已开通</div>
+							<div class="clearfix"></div>
+						</li>
+
+
+						<li class="list-group-item text-right">
+							<a href="ant_art.html">查看详情</a>
+						</li>
+					</ul>
+				</div>
+
+		</div>
+	</div>
+											
+	<div style="clear:both"></div>
+</div>
+
+
+
+<!-- <div class="loding show">
+	<i class="icon-spinner icon-spin white bigger-125 loginding"></i>
+	<span class="discribe">我们正在努力加载中...</span>
+
+	
+</div> -->
+			
+
+<div id="qxzt" style="display:none">
+	<div style="text-align:center">
+		 <p>很抱歉！您的电话号码已经提交过申请，您可以<a href="ant_result.html">点击这里</a>查看申请结果。</p>
+	</div>
+</div>
+<div id="popup"></div>						
+
+<script src="js/jquery.js"></script>
+<script src="js/ace.js"></script>
+<script type="text/javascript" src="js/date/WdatePicker.js"></script>
+<script src="js/popup.js"></script>
+
+<!-- 菜单高亮展开 -->
+<script type="text/javascript">
+	$(function(){
+		//判断是否有菜单操作权限，显示该用户拥有权限的菜单
+		$("[actionName]").each(function(){
+		 	//获取页面权限的severname
+		 	var actionName = $(this).attr("actionName");
+		 	//格式是actionName@ServiceName.
+		 	actionInfoArry = actionName.split("@");
+		 	if(actionInfoArry.length !=2) return true;
+		 	var actionList = authorityData[actionInfoArry[1]] || null;
+		 	if(!actionList) return true;
+		 	//遍历权限数组，寻找对应alias和servename
+		 	for (var i = 0; i < actionList.length; i++){
+		 		if(actionList[i].actionName == actionInfoArry[0]){
+		 			$(this).show();
+		 			break;
+		 		}
+		 	}
+		});
+
+		$(".slideer_box").bind("click",function(){
+			var $showbox=$(this).next(".user-menu");
+			$showbox.toggle();
+		})
+		//高亮展开显示当前菜单
+		var paramUrl = document.location.href.split("/")[document.location.href.split("/").length-1];
+		$("#sidebar").find("li a").each(function(){
+			if($(this).attr("href") == paramUrl){
+				$(this).parent().addClass("open");
+				$(this).parents("li").addClass("active");
+			}
+		});
+
+		var verify=function(ele,time){
+			var timer=null;
+			var sce=time;
+			$(ele).on("click",function(){
+				var oW=$(this);
+				oW.attr("disabled","disabled");
+				oW.val(sce+"秒重新获取");
+				clearInterval(timer);
+				timer=setInterval(function(){
+					sce--
+					if(sce<1){
+						oW.removeAttr("disabled").val("获取验证码");
+						clearInterval(timer);
+						sce=time
+						return
+					}
+					oW.val(sce+"秒重新获取");
+				},1000);
+			})
+		}
+		verify("#verify",5)
+
+
+
+
+
+
+
+		
+
+
+
+	})
+
+</script>  
+
+
+
+<script type="text/javascript">
+
+$(".status_1").live('click',function(){
+	var value=$(this).val();
+	var p=$(this).parents(".tgse");
+	if(value==1){
+		p.find(".rodim").show();
+	}else{
+		p.find(".rodim").hide();
+	}
+
+})
+	
+</script>
+
+</body>
+</html>
+

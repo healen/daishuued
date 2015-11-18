@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/auto_bid.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+
+
+
+    <div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+                    <div class="ui-container">
+                        <span class="fn-left">
+                            <a href="javascript:void(0)" rel="nofollow" target="_blank"><i class="icon-sp1 sp1-puhui-min"></i>众诚金融信息</a> 旗下在线投资理财金融服务平台
+                  
+                        </span>
+                        <span id="menu-had-login" class="fn-right menu-had-login" style="display: inline;">
+                            
+                            <span class="nav-down">
+                                <a id="userInfo" class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" style="height:40px; margin-right:10px; display:inline-block" rel="nofollow">
+                                    <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                                    <span class="menu-user">test123 </span>
+                                    <i class="icon-sp1 sp1-arrow-down"></i>
+                                    </a><a href="/loginOut.aspx" rel="nofollow">[退出]</a>
+                                    <div id="menu-ucenter" class="ui-poptip ui-poptip-white" style="top: 35px; right: 29px; display: none;">
+                                    <div class="ui-poptip-shadow-dis">
+                                        <div class="ui-poptip-container">
+                                            <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                                <em></em>
+                                                <span></span>
+                                            </div>
+                                            <div class="ui-poptip-content">
+                                     
+                                                <ul>
+                                                    <li>
+                                                        <a class="icon-nl" href="/Account/Index.aspx">
+                                                            <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                            个人中心
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="icon-nl" href="/Account/replenishonline.aspx?meunid=2">
+                                                            <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                            账户充值
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="icon-nl" href="/account/succeedlist.aspx?meunid=3">
+                                                            <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </span>
+                        </span>
+                        <span id="menu-not-login" class="fn-right menu-not-login" style="">
+                            <a class="ml20" href="/Register.aspx" rel="nofollow">注册</a>
+                            <span class="ml10 mr10 split">|</span>
+                            <a href="/Login.aspx" rel="nofollow">登录</a>
+                        </span>
+                        <a href="http://www.baidu.com" class="fn-right ml20 icon-nl kefu">关注我们</a>
+                        <a class="fn-right ml20" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f6559f873cbe67afe8fe3c4e2bc96ffc6ba3d1dc913bab8923d84a1e28b1e5df">
+                            <img border="0" style="padding-top: 8px;" src="http://pub.idqqimg.com/wpa/images/group.png" alt="5620538" title="5620538"></a>
+                        <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>加盟热线：0538-2103-456</a>
+
+                    </div>
+            </div>
+            <div class="pg-header-main">
+                <div class="container_10">
+                    <div class="grid_2_2">
+                       <div class="grid_2_2"><span class="f36 mt5 fl"><a href="#"><img src="../public/img/logo1.png"></a></span></div>
+                    </div>
+                    <div class="grid_6">
+                        <ul class="main-nav" style="margin-right: -25px;">
+                            <li class="main-nav-item"><a href="/Home.aspx" class="main-nav-item-link af current">首页</a></li>
+                            <li class="main-nav-item"><a href="/Lend/Index.aspx" class="main-nav-item-link af ">我要投资</a></li>
+                            <li class="main-nav-item"><a href="/Borrow/index.aspx" class="main-nav-item-link af ">我要借款</a></li>
+                            <li class="main-nav-item"><a href="/Account/Index.aspx" class="main-nav-item-link af ">我的账户</a></li>
+                            <li class="main-nav-item nav-list-top">
+                                <a href="/GuideInvest.aspx" class="main-nav-item-link af ">新手指引<i class="down_img"></i></a>
+                                <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+                                    <ul>
+                                        <li class="nav-dropdown-angle"><span></span></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">理财帮助</a></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">借款帮助</a></li>
+                                        <li class="nav-dropdown-item"><a href="/Security.aspx">安全保障</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="main-nav-item relative nav-list-top">
+                                <a href="/AboutUs.aspx" class="main-nav-item-link af ">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="myleft">
+
+                    <a href="index.html" class="index">管理首页</a>
+                    <div class="list">
+                        <div class="navbtn on">
+                            <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                            <div class="childlist" style="display:block">
+                                 <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                                 <a href="javascript:void(0)"><span>信用认证</span></a>
+                                 <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                 <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                 <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                 <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                 <a href="javascript:void(0)"><span>登录密码</span></a>
+                                 <a href="javascript:void(0)"><span>交易密码</span></a>
+                                  <a href="javascript:void(0)"><span>安全问题</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="myright">
+                     <div class="mbx">您当前所在的位置><a href="#">首页</a> > <a href="#">自动投标设置</a></div>
+                     <div class="topcontent">
+
+                        <div class="warp">
+                        <div class="tabview">
+                              
+                                <div class="contant">
+                                   
+                                    <div class="transferpopup">
+
+                                      
+                                        <table class="transfertable"> 
+                                          
+
+                                          
+                                          
+
+                                          
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">借标年利率(%)：</span><input type="text" class="txtbox" style="width:100px" /> ~ <input type="text" class="txtbox"  style="width:100px"/> </td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                             <tr>
+                                                <!-- <td class="title"><span class="spantitle">转让折扣：</span><input type="text" class="txtbox" /></td> -->
+                                                <td class="title"><span class="spantitle">借款期限(月)：</span><input type="text" class="txtbox" style="width:100px" /> ~ <input type="text" class="txtbox"  style="width:100px"/></td>
+                                            </tr>
+                                           
+                                            <tr>  
+                                                <td class="title"><span class="spantitle">单笔最大投资金额：</span><input type="text" class="txtbox"  style="width:237px"/> 元</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">单笔最大投资次数：</span><input type="text" class="txtbox"  style="width:237px"/> 次</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">账户最小余额：</span><input type="text" class="txtbox"  style="width:237px"/> 元</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                         
+
+                                            
+                                            <tr>
+                                                <td class="title">
+                                                    <span class="spantitle"></span>
+                                                    <label>
+                                                         <input type="checkbox" class="checkbs"/>是否开启
+                                                    </label>
+                                                   
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">自动投标时间设置：</span>
+                                                    <input  type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time txtbox" style="width:110px" />
+                                                     ~ 
+                                                    <input type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time txtbox" style="width:110px"  /> 
+                                                </td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                             <tr>
+                                                <td class="title"></span>
+                                                   
+                                                </td>
+                                               
+                                            </tr>
+
+                                            
+
+
+
+                                          
+                                           
+                                            
+                                       
+                                          
+
+                                              <tr>
+                                                <td class="title">
+                                                   <span class="spantitle"></span>
+                                                   <input type="button" value="保存" class="sub subBut" style="width:150px;">
+                                                    <input type="button" value="开启" class="sub retBut" style="width:150px;">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </table>
+                                        
+                                    </div>
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--页脚-->
+       
+        <div class="ui-footer">
+            <div class="ui-container">
+                <img src="../public/img/erweima.jpg" alt="" class="erweima" />
+               <div class="site-link">
+                    <ul class="fn-clear">
+                        <li><a href="javascript:void(0)" rel="nofollow">友情链接:</a></li>
+                        
+                        <li><a href="http://http://www.wangdaiclub.com/" target="_blank">网贷俱乐部</a></li>
+                        
+                        <li><a href="http://www.tayctz.com" target="_blank">宇诚投资</a></li>
+                        
+                        <li><a href="http://www.wangdaizhijia.com" target="_blank">网贷之家</a></li>
+                        
+                        <li><a href="http://http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
+                        
+                    </ul>
+                    <ul class="fn-clear">
+                        <li><a href="/Legislation.aspx" target="_blank">安全保障</a></li>
+                        <li><a href="/MReport.aspx" target="_blank">媒体报道</a></li>
+                        <li><a href="/Job.aspx" target="_blank">招贤纳士</a></li>
+                        <li><a href="/Services/HotQList.aspx" target="_blank">帮助中心</a></li>
+                        <li><a href="/ContactUs.aspx" target="_blank">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center fn-clear">
+                    <div class="footer-contact">
+                        <i class="icon-sp1 sp1-hotline-footer mr20"></i>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+                        <div class="weixin-wrap">
+                            <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+                           
+                        </div>
+                        <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="ui-container fn-clear">
+
+                    <div class="auth-link fn-clear">
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+                        
+                    </div>
+                    <div class="copyright">
+                        <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+                        <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+		<!--QQ客服-->
+
+	
+    </div>
+
+
+
+
+
+
+    <div class="transferpopup">
+
+        <div class="alers">此转让折扣只限于本金部分</div>
+
+        <table class="transfertable">
+            <tr>
+                <td class="title"><span class="spantitle">借标名称：</span>资金周转</td>
+                <td class="title"><span class="spantitle">借标编号：</span>BUJSSSSS</td>
+            </tr>
+
+            <tr>
+                <td class="title"><span class="spantitle">借款人：</span>xxx</td>
+                <td class="title"><span class="spantitle">借款时间：</span>2015-5-6</td>
+            </tr>
+
+            <tr>
+                <td class="title"><span class="spantitle">原始投资额：</span>50000</td>
+                <td class="title"><span class="spantitle">剩余期数：</span>10</td>
+            </tr>
+
+            <tr>
+                <td class="title"><span class="spantitle">剩余利息：</span></td>
+                <td class="title"><span class="spantitle">查看原标：</span></td>
+            </tr>
+            <tr>
+                <td class="title"><span class="spantitle">转让折扣：</span><input type="text" class="txtbox" /></td>
+            </tr>
+            <tr>
+                <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td>
+            </tr>
+            <tr>
+                <td class="title" colspan='2'><span class="spantitle">份数：</span><input type="text" class="txtbox" /></td>
+            </tr>
+            <tr>
+                <td class="title" colspan='2'>
+                    <span class="spantitle">描述：</span><textarea name="" id=""  class="txtbox_box"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="title"><span class="spantitle">平台手续费：</span>5000.00元</td>
+                <td class="title"><span class="spantitle">转让金额：</span>50000.00元</td>
+            </tr>
+            <tr>
+                <td class="title"><span class="spantitle">验证手机号：</span>15600074926</td>
+            </tr>
+            <tr>
+                <td class="title"><span class="spantitle">验证码：</span><input type="text" class="txtbox" /> <input type="button" value="获取验证码" class="retBut" style="height:30px; line-height:30px;margin-top:5px"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">
+                    <span class="spantitle"></span>
+                    <label>
+                         <input type="checkbox" class="checkbs"/>我已阅读并同意部署《债券转让协议》
+                    </label>
+                   
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../public/scripts/lib/date/WdatePicker.js"></script>
+    <script src="../public/scripts/global.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        });
+
+       
+
+         $(function(){
+            $(".tab a").click(function(){
+                var num=$(this).index();
+                var parent=$(this).parents(".tabview");
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on");
+                parent.find(".tabcontent").eq(num).show();
+                parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide();
+            
+            });
+        });
+
+
+        
+    })
+   </script>
+    
+</body>
+</html>

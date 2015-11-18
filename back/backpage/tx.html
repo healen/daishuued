@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.msgalert {
+		    background: #fff;
+		    width: 250px;
+		    position: fixed;
+		    right: -252px;
+		    bottom: 0;
+		    border: 1px solid #ddd;
+		    -webkit-transition: all .5s ease-in-out;
+		    -o-transition: all .5s ease-in-out;
+		    -moz-transition: all .5s ease-in-out;
+		    transition: all .5s ease-in-out
+		}
+		.msgalert .close {
+		    position: absolute;
+		    width: 30px;
+		    height: 30px;
+		    display: block;
+		    top: 0;
+		    right: 0;
+		    line-height: 30px;
+		    text-align: center;
+		    cursor: pointer;
+		    color: #fff;
+		    background: url("images/x.png") no-repeat 0 0
+		}
+		.msgalert .title {
+		    text-align: center;
+		    background: #2ea7e0;
+		    line-height: 30px;
+		    color: #fff
+		}
+		.msgalert .msgContent {
+		    padding: 15px;
+		    line-height: 22px
+		}
+		.msgalert .msgContent span {
+		    color: #2ea7e0
+		}
+		.msgalert .msgContent a {
+		    color: #2ea7e0;
+		    text-decoration: underline
+		}
+	</style>
+</head>
+<body>
+
+
+	<!--消息提示弹框-->
+	<div class="msgalert">
+		<div class="title">消息通知</div>
+		<div class="close"></div>
+		<div class="msgContent">
+			客户 <span>healen</span> 申请提现，请您<a href="#">及时处理</a>！
+		</div>
+	</div>
+	<!--消息提示弹框-->
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	 /*消息弹出*/
+		(function(){
+			var haveMsg=true;
+			if(haveMsg){
+				$(".msgalert").css({"right":"0px"});
+			}
+			$(".msgalert .close").on("click",function(){
+				$(".msgalert").css({"right":"-252px"});
+			})
+		})()
+
+	</script>
+</body>
+</html>

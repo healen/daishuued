@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-注册</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/login.css" type="text/css">
+
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	 <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+                    <a href="about_us.html">关于我们</a><a href="login.html">立即登录</a>
+                    <a href="regrist.html">免费注册</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="/"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+
+                    </h1>
+                     <div class="usertitle">
+                         用户注册
+                     </div>
+                     
+                </div>
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                           
+                             <li>
+                                <a href="index.html"><span>返回首页</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="loginbox">
+			<div class="inwarp">
+				<div class="porint">
+					已有账号？<a href="login.html">立即登录</a>
+				</div>
+				<form class="login_form_control" action="">
+					<div class="hang"></div>
+					<div class="forminput">
+						<label>
+							<div class="inputbox">
+								<i class="ico_username"></i>
+								<input type="text" class="text_control" placeholder="输入用户名">
+							</div>
+							<div class="alert">
+								<!-- 用户名不能为空！ -->
+							</div>
+						</label>
+
+						<label>
+							<div class="inputbox">
+								<i class="ico_password"></i>
+								<input type="password" class="text_control" placeholder="输入密码">
+							</div>
+							<div class="alert">
+								
+							</div>
+						</label>
+
+						<label>
+							<div class="inputbox">
+								<i class="ico_password"></i>
+								<input type="password" class="text_control" placeholder="确认密码">
+							</div>
+							<div class="alert">
+								
+							</div>
+						</label>
+
+						<label>
+							<div class="inputbox">
+								<i class="ico_tel"></i>
+								<input type="text" class="text_control" placeholder="输入手机号">
+							</div>
+							<div class="alert">
+								
+							</div>
+						</label>
+
+						<label class="dubinput">
+							<div class="inputbox">
+								<i class="ico_tel_verfiy"></i>
+								<input type="text" class="text_control" placeholder="输入短信验证码">
+							</div>
+							<div class="rightbtn">
+								<input type="button" class="btn btn_info btn-sm" value="获取验证码" id="verify" />
+							</div>
+							<div class="alert">
+								
+							</div>
+						</label>
+
+						<label class="dubinput">
+							<div class="inputbox">
+								<i class="ico_img_verfiy"></i>
+								<input type="text" class="text_control" placeholder="图片验证码">
+							</div>
+							<div class="rightbtn">
+								<a href="javascript:void(0)"> <img src="../public/img/yzm.png" alt=""> </a>
+							</div>
+							
+							<div class="alert">
+								
+							</div>
+						</label>
+
+						
+					</div>
+
+					<input type="button" class="btn btn-primary btn-sm" value="立即注册领红包"/>
+				</form>
+			</div>
+			
+		</div>
+		
+
+
+
+
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+
+<script type="text/javascript">
+var verify=function(ele,time){
+	var timer=null;
+	var sce=time;
+	$(ele).on("click",function(){
+		var oW=$(this);
+		oW.attr("disabled","disabled");
+		oW.val(sce+"秒重新获取");
+		clearInterval(timer);
+		timer=setInterval(function(){
+			sce--
+			if(sce<1){
+				oW.removeAttr("disabled").val("获取验证码");
+				clearInterval(timer);
+				sce=time
+				return
+			}
+			oW.val(sce+"秒重新获取");
+		},1000);
+	})
+}
+verify("#verify",5)
+
+
+
+	
+
+</script>
+
+
+
+</body>
+</html>

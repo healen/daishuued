@@ -1,0 +1,256 @@
+
+@import "../variables";
+
+@import "../lib/basic";
+@import "../button";
+
+/*首页样式*/
+
+html,body{
+	height: 100%;
+}
+body{
+	background: url('@{img}/loginbg.png') no-repeat center 205px #fffcf2;
+	min-width: @documentWidth;
+}
+
+.header{
+
+	.l{
+		h1{
+			._clearfix();
+			float: left;
+		}
+		.usertitle{
+			float: left;
+			line-height: 40px;
+			height: 40px;
+			padding: 0px 20px;
+			border-left: 1px solid @borderColor;
+			margin-left: 20px;
+			margin-top: 20px;
+			font-size: @titleSize;
+		}
+	}
+}
+
+.footer{
+	background-color: rgba(0,0,0,0.8);
+}
+.loginbox{
+	height: 538px;
+	.inwarp{
+		position: relative;
+		.login_form_control{
+			position: absolute;
+			width: 272px;
+			min-height: 245px;
+			padding: 25px;
+			background: #fff6d9;
+			border:1px solid #b1927a;
+			border-radius: 5px;
+			-webkit-box-shadow: 1px 1px 5px #d8d5cd;
+			box-shadow: 1px 1px 5px #d8d5cd;
+			position: absolute;
+			left: 5px;
+			top: 82px;
+		}
+		.hang{
+			width: 84px;
+			height: 42px;
+			overflow: hidden;
+			position: absolute;
+			left: 50%;
+			margin-left: -42px;
+			top: -42px;
+			background: url('@{img}/hand.png') no-repeat 0px 0px;
+		}
+	}
+	.forminput{
+		min-height: 212px;
+		.inputbox{
+			height: 34px;
+			background: #ffffff;
+			border: 1px solid @inputBorderColor;
+			border-radius: 3px;
+			._clearfix();
+			-webkit-transition: all 200ms;
+			-o-transition: all 200ms;
+			transition: all 200ms;
+			&.focus{
+				border-color: @markColor;
+				box-shadow: 0px 0px 5px lighten(@markColor, 10%);
+				i{
+					border-color: @markColor;
+					&.ico_username{
+					background-position: -22px -285px;
+					}
+					&.ico_password{
+						background-position: -22px -315px;
+					}
+					&.ico_tel{
+						background-position: -22px -343px;
+					}
+					&.ico_tel_verfiy{
+						background-position: -22px -398px;
+					}
+
+					&.ico_img_verfiy{
+						background-position: -22px -367px;
+					}
+				}
+			}
+			&.error{
+				border-color: #ff0000;
+				box-shadow: 0px 0px 5px lighten(#ff0000, 10%);
+				i{
+					border-color: #ff0000;
+					&.ico_username{
+					background-position: -50px -285px;
+					}
+					&.ico_password{
+						background-position: -50 -315px;
+					}
+					&.ico_tel{
+						background-position: -50 -343px;
+					}
+					&.ico_tel_verfiy{
+						background-position: -50 -398px;
+					}
+
+					&.ico_img_verfiy{
+						background-position: -50 -367px;
+					}
+				}
+			}
+			i{
+				margin-top: 5px;
+				display: block;
+				float: left;
+				width: 35px;
+				height: 24px;
+				border-right: 1px solid @inputBorderColor;
+				background: url('@{img}/ico.png') no-repeat;
+
+				&.ico_username{
+					background-position: 9px -285px;
+				}
+				&.ico_password{
+					background-position: 9px -315px;
+				}
+				&.ico_tel{
+					background-position: 9px -343px;
+				}
+				&.ico_tel_verfiy{
+					background-position: 9px -398px;
+				}
+
+				&.ico_img_verfiy{
+					background-position: 9px -367px;
+				}
+
+			}
+			
+			.text_control{
+				margin-top: 5px;
+				border: none;
+				height: 24px;
+				float: left;
+				display: block;
+				line-height: 24px;
+				padding: 0px 10px;
+				width: 212px;
+
+			}
+			
+		}
+
+		label{
+			&.dubinput{
+
+				.inputbox{
+					float: left;
+					width: 170px;
+					margin-right: 7px;
+					.text_control{
+						width: 110px;
+					}
+
+				}
+
+				.rightbtn{
+					width: 93px;
+					float: left;
+					height: 36px;
+					img{
+						width: 93px;
+						height: 34px;
+						border:1px solid @inputBorderColor;
+						border-radius: 3px;
+					}
+				}
+
+			}
+		}
+
+
+		.alert{
+			height: 20px;
+			line-height: 20px;
+			font-size: 12px;
+			clear: both;
+			color: #ff0000;
+		}
+	}
+
+	.fogetpass{
+		._clearfix();
+		.l{
+			float: left;
+		}
+		.r{
+			float: right;
+			text-align: right;
+			a{
+				color: @markColor;
+				&:hover{
+					color: @auxColor;
+				}
+			}
+		}
+		.mem{
+			cursor: pointer;
+			color: #b1917a;
+			._clearfix();
+			i{
+				float: left;
+				display:inline-block;
+				height: 20px;
+				width: 20px;
+				margin-right: 5px;
+				background: url('@{img}/ico.png') no-repeat 0px -424px;
+
+
+			}
+			&.empty{
+				i{
+					background: url('@{img}/ico.png') no-repeat -20px -424px;
+				}
+				
+			}
+		}
+
+	}
+}
+.porint{
+	text-align: right;
+	line-height: 51px;
+	padding: 0px 5px;
+	a{
+		padding: 0px 5px;
+		color: @markColor;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_bind_bank.css" type="text/css">
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>银行账户</h2>
+                    </div>
+
+                    <div class="mycontent">
+                    	<div class="mybankbox">
+                    		<div class="content empty">
+                    			<a href="my_money_bind_bank_add.html" class="add">
+                    				<i class="icon"></i>
+                    				<p>添加一张银行卡</p>
+                    			</a>
+                    		</div>
+                    	</div>
+                    </div>
+
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript"> </script>
+
+</body>
+</html>

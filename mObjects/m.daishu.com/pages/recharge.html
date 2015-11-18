@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>贷鼠网-充值</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/recharge.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+            <form class="register">
+                <div class="input input-warp">
+                   <input type="number" placeholder="充值金额" />
+                </div>
+
+                <div class="title">
+                    <div class="flex">支付方式：<span class="payselect">连连支付</span></div> 
+                    <!-- <a href="javascript:void(0)" class="more">更多<i class="icoFt jt icon-jiantou"></i></a> -->
+                </div>
+
+
+                <div class="paybox">
+                    <div class="banklist">
+                        <label class="lis on">
+                            <div class="content">
+                                <h2>连连支付</h2>
+                            </div>
+                            <input type="radio" name="zf" class="radio" checked="checked">
+                            <i class="select icoFt icon-checkmark"></i>
+                        </label>
+                        <label class="lis">
+                            <div class="content">
+                                <h2>贝付</h2>
+                            </div>
+                            <input type="radio" class="radio" name="zf">
+                            <i class="select icoFt icon-checkmark"></i>
+                        </label>
+                    </div>
+                    <div class="alert nopayfun">没有支付方式</div>
+                </div>
+              
+
+                <div class="btnbox">
+                    <input type="submit" value="确认充值">
+                </div>
+
+                <p class="mino-color mt20">
+                    温馨提示：同阿里的招财宝个人贷理财产品，悟空理财创新月账户的资金去向也为优质个人小微金融债权，所以可以实现整体较高的收益率。
+                </p>
+            </form>
+		</section>
+	</section>
+
+
+    
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+	<!--页面JS-->
+
+    <script>
+        (function(){
+            $(".more").on("click",function(){
+                if($(".paybox").is(":hidden")){
+                   $(".paybox").show(); 
+                }else{
+                    $(".paybox").hide();
+                }
+            })
+
+            $("input[name='zf']").on("change",function(){
+                var html=""
+                if($(this)[0].checked=true){
+                    html=$(this).parent().find("h2").html();
+                    $(".payselect").html(html)
+                }
+
+            })
+
+
+        })()
+    </script>
+</body>
+</html>

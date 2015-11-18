@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title袋鼠网用户后台</title>
+
+     
+	<title>会员登录--袋鼠网</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />	
+	<link rel="stylesheet" href="css/login.css">
+	<!--公共提示框start-->
+	</head>
+		<body>
+			<div class="m2-pwdBg" style="display:none;z-index:9000"></div>
+			<div class="m2-pwdConfirm" style="display:none;z-index:9001">
+				<i class="m2-pwdConfirm-close"></i>
+				<i class="m2-pwdConfirm-ture" id="dialog-status"></i>
+				<div class="m2-pwdConfirm-con">
+					
+				</div>
+			</div>
+	<script type="text/javascript">
+		function infoDialogClose(){
+			$('.m2-pwdConfirm-close').click(function(){
+				$('.m2-pwdBg').hide();
+				$('.m2-pwdConfirm').hide();
+				$('.m2-pwdConfirm-con').text('');
+				$('#dialog-status').removeClass('m2-pwdConfirm-ture');
+				$('#dialog-status').removeClass('m2-pwdConfirm-false');
+				$(this).unbind();
+			});
+		}
+		function showInfoDialog(text,status,func,callback){
+			$('.m2-pwdConfirm-con').text(text);
+			if(status){
+				$('#dialog-status').addClass('m2-pwdConfirm-ture');
+			}else{
+				$('#dialog-status').addClass('m2-pwdConfirm-false');
+			}
+			$('.m2-pwdBg').show();
+			$('.m2-pwdConfirm').show();
+			if(typeof(callback)=='function'){
+				$('.m2-pwdConfirm-close').click(callback);
+			}
+			infoDialogClose();
+			if(typeof(func)=='function'){
+				func();
+			}
+		}
+	</script>
+<!--公共提示框end-->
+
+	<div class="m2-regist-main">
+		<div class="m2-regist-center">
+		
+			<div class="m2-loginBox">
+				<div class="m2-loginArea">
+					<div class="m2-loginArea-rig">
+						<div class="m2-loginArea-rigHead">
+							<h2>贷鼠网P2P初始化</h2>
+							
+						</div>
+						<form class="m2-login-form" action="">
+							
+						
+							
+
+							<div class="m2-loginForm-item m2-login-username" style="margin:30px 0 10px 0;">
+								<span><i></i>网站名称</span>
+								<input type="text" id="user_name" placeholder="请输入网站">
+								<b></b>
+							</div>
+
+							<div class="m2-loginForm-item m2-login-pwd" style="margin:10px 0 10px 0;">
+								<span><i></i>公司名称</span>
+								<input type="password" id="pass_word" placeholder="请输入密码">
+								<b></b>
+							</div>
+						
+							<div class="m2-loginForm-item m2-login-pwd" style="margin:10px 0 10px 0;">
+								<span><i></i>设置密码</span>
+								<input type="password" id="pass_word" placeholder="请输入密码">
+								<b></b>
+							</div>
+			
+							
+							<div class="m2-login-submit">
+								<a href="javascript:;" onclick="login();" class="m2-loginBtn">下一步</a>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	//codeShow();
+	//显示验证码
+		function codeShow(){
+			$('.m2-login-code').show();
+			$('.m2-login-pwd,.m2-login-username').css('margin',"0px");
+		}
+	</script>
+	
+
+
+<script type="text/javascript">
+function login(){
+	var p = makevar(['user_name','pass_word','vcode']);
+	var canSubmit = true;
+	if(typeof p.user_name=="undefined"){
+		$(".m2-login-username b").html("用户名不能为空");
+		return false;
+	}
+   if(typeof p.vcode=="undefined"){
+       // showInfoDialog("验证码不能为空",0);
+		//return false;
+	}
+	if(typeof p.pass_word=="undefined"){
+		showInfoDialog("密码不能为空",0);
+		return false;
+	}
+	if(canSubmit!==true) return false;
+	postData("/Home-Login-login_new",p,function(d){
+      d.url = decodeURIComponent(d.url);
+		if(d.status==3){
+			showInfoDialog(d.message,1);
+			setTimeout(function(){ 
+				window.location.href=d.url;				
+			},3000);
+		}else if(d.status==2){
+			showInfoDialog(d.comments,1);
+			setTimeout(function(){ 
+				window.location.href=d.url;				
+			},3000);
+		}else if(d. status==1){
+			showInfoDialog(d.comments,1);
+			setTimeout(function(){ 
+				window.location.href=d.url;				
+			},1500);
+		}else if(d.status==5){
+			showInfoDialog(d.message,0);
+			if(d.verify_nums>3){
+             $("#reverifyCode").click();
+             codeShow();
+			}
+		}
+		else{
+			showInfoDialog(d.message,0);
+			if(d.verify_nums>3){
+				$("#reverifyCode").click();
+				codeShow();
+			}
+		}
+	});
+}
+$(document).keydown(function(e){
+	if(e.keyCode == 13) {
+		login();
+	}
+});
+</script>
+<script type="text/javascript">
+		$(function(){
+			var docTop=$(document).height()-$(window).height();
+			if (docTop>0) {
+				$(document).scrollTop(docTop/2);
+			}
+			
+		});
+</script>
+<script type="text/javascript">
+	$('.m2-login-actLink i').click(function(){
+		$('.m2-loginEwm1').toggle();
+		$('.m2-loginEwm2').toggle();
+	});
+</script></body></html>

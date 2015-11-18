@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>投资详情</title>
+		<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+		<link rel="stylesheet" href="../public/styles/invedetail.css" type="text/css">
+		<link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+		<div class="box">
+    	<div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+            <div class="ui-container">
+                <span class="fn-left">
+                    <a href="javascript:void(0)" rel="nofollow" target="_blank"><i class="icon-sp1 sp1-puhui-min"></i>众诚金融信息</a> 旗下在线投资理财金融服务平台
+          
+                </span>
+                <span id="menu-had-login" class="fn-right menu-had-login" style="display: inline;">
+                    
+                    <span class="nav-down">
+                        <a id="userInfo" class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" style="height:40px; margin-right:10px; display:inline-block" rel="nofollow">
+                            <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                            <span class="menu-user">test123 </span>
+                            <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a><a href="/loginOut.aspx" rel="nofollow">[退出]</a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white" style="top: 35px; right: 29px; display: none;">
+                            <div class="ui-poptip-shadow-dis">
+                                <div class="ui-poptip-container">
+                                    <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                        <em></em>
+                                        <span></span>
+                                    </div>
+                                    <div class="ui-poptip-content">
+                             
+                                        <ul>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/Index.aspx">
+                                                    <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                    个人中心
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/replenishonline.aspx?meunid=2">
+                                                    <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                    账户充值
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/account/succeedlist.aspx?meunid=3">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </span>
+                </span>
+                <span id="menu-not-login" class="fn-right menu-not-login" style="">
+                    <a class="ml20" href="/Register.aspx" rel="nofollow">注册</a>
+                    <span class="ml10 mr10 split">|</span>
+                    <a href="/Login.aspx" rel="nofollow">登录</a>
+                </span>
+                <a href="http://www.baidu.com" class="fn-right ml20 icon-nl kefu">关注我们</a>
+                <a class="fn-right ml20" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f6559f873cbe67afe8fe3c4e2bc96ffc6ba3d1dc913bab8923d84a1e28b1e5df">
+                    <img border="0" style="padding-top: 8px;" src="http://pub.idqqimg.com/wpa/images/group.png" alt="5620538" title="5620538"></a>
+                <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>加盟热线：0538-2103-456</a>
+
+            </div>
+            </div>
+            <div class="pg-header-main">
+			    <div class="container_10">
+			         <div class="grid_2_2">
+                            <span class="f36 mt15 fl">
+                                <a href="#">
+                                    <img src="../public/img/logo1.png" width="153" height="63"> 
+                                    <img src="../public/img/slogn.png" width="294" height="63">
+                                </a>
+                            </span>
+                        </div>
+			        <div class="grid_6">
+			            <ul class="main-nav" style="margin-right: -25px;">
+			                <li class="main-nav-item"><a href="/Home.aspx" class="main-nav-item-link af current">首页</a></li>
+			                <li class="main-nav-item nav-list-top">
+                                <a href="/Lend/Index.aspx" class="main-nav-item-link af ">我要投资<i class="down_img"></i></a>
+                                <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+                                    <ul>
+                                        <li class="nav-dropdown-angle"><span></span></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">投资列表</a></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">债权转让</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+			                <li class="main-nav-item"><a href="/Borrow/index.aspx" class="main-nav-item-link af ">我要借款</a></li>
+			                <li class="main-nav-item"><a href="/Account/Index.aspx" class="main-nav-item-link af ">我的账户</a></li>
+			                <li class="main-nav-item nav-list-top">
+			                    <a href="/GuideInvest.aspx" class="main-nav-item-link af ">新手指引<i class="down_img"></i></a>
+			                    <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+			                        <ul>
+			                            <li class="nav-dropdown-angle"><span></span></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">理财帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">借款帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/Security.aspx">安全保障</a></li>
+			                        </ul>
+			                    </div>
+			                </li>
+			                <li class="main-nav-item relative nav-list-top">
+			                    <a href="/AboutUs.aspx" class="main-nav-item-link af ">关于我们</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+
+    	</div>
+
+				<!--主体内容-->
+				<div class="container">
+					 <div class="la-my">
+
+
+						<div class="mbx">
+							<a href="#">投资详情</a>><a href="#">BNOV15000516</a>
+						</div>
+
+						<div class="titles">
+							太安全车贷项目
+						</div>
+
+						<div class="top">
+							<div class="left">
+							        <div class="title">
+							            太安全车贷-CD15031大众帕萨特质押借款
+							        </div>
+							        <div class="tables">
+							            <div class="tr th">
+							                <div class="td">标的总额</div>
+							                <div class="td">年利率</div>
+							                <div class="td">借标期限</div>
+							                <div class="td">进度</div>
+							            </div>
+							            <div class="tr">
+							                <div class="td">¥60,000.00</div>
+							                <div class="td">16.00%</div>
+							                <div class="td">3月</div>
+							                <div class="td">
+							                    <span class="myspeed">
+							                        <span class="smalls">100%</span>
+							                        <span class="barbox"><span style="width:100%"></span></span>
+							                    </span>
+							                </div>
+							            </div>
+							        </div>
+							        <div class="tables">
+							            <div class="tr th">
+							                    <div class="td">收款方式</div>
+							                <div class="td">最低投标金额</div>
+							                <div class="td">最高投标金额</div>
+							                <div class="td">剩余时间</div>
+							            </div>
+							            <div class="tr">
+							                    <div class="td">按月还息,到期返本</div>
+							                <div class="td">¥10.00</div>
+							                <div class="td">¥60,000.00</div>
+							                    <div class="td" id="showData" style="display: none">0秒</div>
+							               
+							            </div>
+							        </div>
+							        <div class="tables">
+							            <div class="tr th">
+							                <div class="td">剩余金额</div>
+							                <div class="td">已投金额</div>
+							                <div class="td">预计总收益</div>
+							                <div class="td">借标状态</div>
+							            </div>
+							            <div class="tr">
+							                <div class="td">¥300.00</div>
+							                <div class="td">¥59,700.00</div>
+							                <div class="td">¥2,388.00</div>
+							                <div class="td">正在还款</div>
+							            </div>
+							        </div>
+
+							    </div>
+							<div class="right">
+								<div class="r">
+									<div class="headtit">
+										<span>可投资金额（元）</span>
+										<h2>2,300,000</h2>
+									</div>
+
+									<div class="contentbox">
+										<div class="section">
+											<p>请输入购买金额：</p>
+											<div class="inputmeny row">
+												<input type="text" class="text" data-type='money'>
+												<input type="button" class="btn" value="购买">
+											</div>
+											<p class="row">
+												<span>账户余额 1000,000.00（元）</span>
+												<a href="#">充值</a>
+											</p>
+											
+										</div>
+										
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+
+
+
+
+
+
+<div class="bottom">
+    <div class="tabview">
+        <div class="tab">
+            <a href="javascript:void(0)" class="">借标详情</a>
+            <a href="javascript:void(0)" id="aBidTenderList" class="on">投资记录</a>
+        </div>
+        <div class="contant">
+            <div class="tabcontent" style="display: none;">
+                <div class="warpper">
+                    <div class="li_box_s">
+                        <div class="ti">
+                            借款人资料
+                        </div>
+                        <div>
+                                   <div class="left">
+            <div class="title">借标人基本信息</div>
+            <div class="msg">
+                <div class="l">姓 名： 郑*</div>
+                <div class="l r">性 别： 男</div>
+            </div>
+            <div class="msg">
+                <div class="l">现居地：</div>
+                <div class="l r">最高学历： 大专</div>
+            </div>
+
+            <div class="msg">
+                <div class="l">婚姻状况： 未婚 </div>
+                <div class="l r">月均收入： 未知</div>
+            </div>
+        </div>
+        <div class="right">
+            <span class="gungun l"></span>
+            <span class="gungun r"></span>
+            <div class="warrpe">
+                <div class="title">太安全信用审核</div>
+                
+            </div>
+            <img src="../public/img/tg.png" alt="" class="sy">
+        </div>
+
+                        </div>
+                    </div>
+                    <div class="li_box_s">
+                        <div class="ti">
+                            借款详情
+                        </div>
+                        <div>
+                            品牌：大众帕萨特　车牌号：鲁JXXXX   公里数：98000    购买日期：2009年09月10日 　　 购买价格：230000元　年审检验合格至：2016年01月 　　泰安二手车出售价：90000元  借款金额60000元 一重保险：足值抵押物。抵押物借款金额；60000元，该汽车原值230000元，该车出售价为90000元，足以覆盖整个风险； 　 二重保险：该车已经质押在太安全指定的仓库，已经签署质押协议和二手车委托买卖协议，如果债权逾期，太安全可以在1天内将汽车出售，确保投资人资金安全。
+                        </div>
+                    </div>
+                    <div class="li_box_s imgb">
+                        <div class="ti">
+                            图片资料
+                        </div>
+                        <div class="imgboxlist">
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/0a5d9de0-c600-43cc-bbe9-1d76e8dfdce1.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/0a5d9de0-c600-43cc-bbe9-1d76e8dfdce1.jpg" alt="车实照-车头" width="600" height="600">
+                                    <div class="title">车实照-车头</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/650e1b11-c4c4-4720-9018-64721ee7178e.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/650e1b11-c4c4-4720-9018-64721ee7178e.jpg" alt="车实照-车侧" width="600" height="600">
+                                    <div class="title">车实照-车侧</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/3b204119-4b88-44d0-b246-fe48e6eb831f.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/3b204119-4b88-44d0-b246-fe48e6eb831f.jpg" alt="车实照-车后" width="600" height="600">
+                                    <div class="title">车实照-车后</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/6b649992-eb12-4856-883e-5a55461ef0e0.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/6b649992-eb12-4856-883e-5a55461ef0e0.jpg" alt="借款人身份证-正面" width="600" height="600">
+                                    <div class="title">借款人身份证-正面</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/af8c2523-ec9b-475c-a493-f4b0834e6fe9.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/af8c2523-ec9b-475c-a493-f4b0834e6fe9.jpg" alt="借款人身份证-反面" width="600" height="600">
+                                    <div class="title">借款人身份证-反面</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/eaa79056-bc4e-41cb-a00b-49d60a151733.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/eaa79056-bc4e-41cb-a00b-49d60a151733.jpg" alt="行车证" width="600" height="600">
+                                    <div class="title">行车证</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/02194c53-a785-4b96-9052-fdcbcc6f954a.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/02194c53-a785-4b96-9052-fdcbcc6f954a.jpg" alt="大本" width="600" height="600">
+                                    <div class="title">大本</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/e7275f95-228d-435b-855a-bd773e95da83.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/e7275f95-228d-435b-855a-bd773e95da83.jpg" alt="委托协议" width="600" height="600">
+                                    <div class="title">委托协议</div>
+                                </div>
+                                <div class="imgwarp mlbig">
+                                    <img src="http://img.daishu360.com/0x600/Upload/Merchant/4/Borrow/BNOV15000516/99e16108-eaf0-492c-b330-0831c9a7553b.jpg" origin-src="http://img.daishu360.com/Upload/Merchant/4/Borrow/BNOV15000516/99e16108-eaf0-492c-b330-0831c9a7553b.jpg" alt="客户签字" width="600" height="600">
+                                    <div class="title">客户签字</div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tabcontent" id="dvBidTenderList" style="display: block;"><div class="tables">
+    <div class="tr th">
+        <div class="td" style="width: 14%">投资人</div>
+        <div class="td" style="width: 12%">投标金额</div>
+        <div class="td" style="width: 12%">有效金额</div>
+        <div class="td" style="width: 12%">预计收益</div>
+        <div class="td" style="width: 12%">投资状态</div>
+        <div class="td" style="width: 12%">投资平台</div>
+        <div class="td" style="width: 14%">投标日期</div>
+        <div class="td" style="width: 10%">操作</div>
+    </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">1*********5</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:43:33</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">c*******0</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:38:11</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">爱**贝</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:20:34</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">z*********1</div>
+            <div class="td" style="width: 12%">¥300.00</div>
+            <div class="td" style="width: 12%">¥300.00</div>
+            <div class="td" style="width: 12%">¥12.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:10:40</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">x****i</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:07:47</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">c*******0</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资失败</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:04:29</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">g***************4</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:04:28</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">x***********3</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 11:02:44</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">张*</div>
+            <div class="td" style="width: 12%">¥246.00</div>
+            <div class="td" style="width: 12%">¥246.00</div>
+            <div class="td" style="width: 12%">¥9.84</div>
+            <div class="td" style="width: 12%">投资成功</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 10:58:45</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+        <div class="tr">
+            <div class="td" style="width: 14%">c******************5</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥200.00</div>
+            <div class="td" style="width: 12%">¥8.00</div>
+            <div class="td" style="width: 12%">投资失败</div>
+            <div class="td" style="width: 12%">网站</div>
+            <div class="td" style="width: 14%">2015-11-15 10:55:26</div>
+            <div class="td" style="width: 10%">
+无            </div>
+        </div>
+</div>
+<!--分页-->
+<div class="page-list">
+    <a value="1" href="javascript:void(0);" title="上一页">
+        上一页
+    </a>
+        <a class="num on" name="pagelink" value="1" href="javascript:void(0);">1</a>
+        <a class="num" name="pagelink" value="2" href="javascript:void(0);">2</a>
+    <a name="pagelink" value="2" href="javascript:void(0);" title="下一页">
+        下一页
+    </a>
+</div>
+<input id="hidPageIndex" type="hidden" value="1"></div>
+        </div>
+    </div>
+</div>
+					 </div>
+				</div>
+
+
+
+				
+		<div class="footer">
+			<div class="pg-footer-quick mt30 pt10 pb20 ">
+		    	<div class="container_10 pt10 pb10 row-fluid">
+		            <div class="span4">
+		                <h4 class="f16">联系我们</h4>
+		            	<p class="h40">地址</p>
+		                <p class="h30"><a href="#"><i class="icons i-email"></i> kefu@goodsure.cn</a></p>
+		                <!--<p class="h30"><i class="icons i-kefu"></i>在线客服</p>-->
+		            </div>
+		            <div class="span2">
+		                <h4 class="f16">关注我们</h4>
+		            	<p class="mt10"><a href="#" target="_blank" class="icons pg-footer-weibo"></a></p>
+		                <p class="mt10"><a href="#" data-reveal-id="wx-div" class="icons pg-footer-weixin big-link"></a></p>
+		            </div> 
+		            <div class="span2">
+		                <h4 class="f14 bold">关于贷鼠</h4>
+		            	<p class="mt10"><a href="#">公司简介</a></p>
+		                <p class="mt10"><a href="#">团队介绍</a></p>
+		            	<p class="mt10"><a href="#">官方公告</a></p>
+		                <p class="mt10"><a href="#">媒体报道</a></p>
+		            </div> 
+		            <div class="span2">
+		                <h4 class="f14 bold">帮助中心</h4>
+		            	<p class="mt10"><a href="#">新手指引</a></p>
+		                <p class="mt10"><a href="#">安全保障</a></p>
+		            	<p class="mt10"><a href="#">融资借款</a></p>
+		                <p class="mt10"><a href="#">实时财务</a></p>
+		            </div> 
+		            <div class="span2 tl">
+		                <h4 class="f16">客服热线</h4>
+		            	<h2>4008-3210-33</h2>
+		                <h5>09:00-17:30</h5> 
+		            </div> 
+		        </div>
+		    </div>
+		    <div class="pg-footer-info">
+		    
+		    	<div class="container_10 pt20 pb10 tc">
+		            <ul class="fn-clear">
+		                <li class="fl pr20 bold">友情链接：</li>
+		                <li class="fl pr20"><a title="互联网金融招聘社区" target="_blank" href="http://www.itjinrong.cn">互联网金融招聘社区</a></li>
+		                <li class="fl pr20"><a title="佳璐数据" target="_blank" href="http://www.jlsj888.cn/">佳璐数据</a></li>
+		                <li class="fl pr20"><a title="网贷能量" target="_blank" href="http://www.wangdainengliang.com/">网贷能量</a></li>
+		                <li class="fl pr20"><a title="网贷管家" target="_blank" href="http://www.wd568.com/">网贷管家</a></li>
+		                <li class="fl pr20"><a title="金融加盟" target="_blank" href="http://jinrong.jiameng.com">金融加盟</a></li>
+		                <li class="fl pr20"><a title="网贷天眼" target="_blank" href="http://www.p2peye.com/">网贷天眼</a></li>
+		                <li class="fl pr20"><a title="棕榈树p2p研究" target="_blank" href="http://www.zongls.cn/">棕榈树p2p研究</a></li>
+		                <li class="fl pr20"><a title="网贷网" target="_blank" href="http://www.wangdaiwang.com">网贷网</a></li>
+		                <li class="fl pr20"><a title="好利网" target="_blank" href="http://www.haolyy.com/">好利网</a></li>
+		                <li class="fl pr20"><a title="网贷精英" target="_blank" href="http://www.p2pjy.com">网贷精英</a></li>
+		                <li class="fl pr20"><a title="网贷门户" target="_blank" href="http://www.wangdaisky.com/portal.php">网贷门户</a></li>
+		                <li class="fl pr20"><a title="数金网" target="_blank" href="http://www.shujinwang.com/daohang.html">数金网</a></li>
+		                <li class="fl pr20"><a title="网贷中心" target="_blank" href="http://www.wdzx.com/">网贷中心</a></li>
+		                <li class="fl pr20"><a title="第二客栈" target="_blank" href="http://dierkezhan.com/portal.php">第二客栈</a></li>
+		            </ul>
+		            <p class="mt15">
+		                <a href="#"></a>
+		                <a style="vertical-align:middle; width:92px; height:34px; display:inline-block; " target="_blank" href="#"></a>
+		                <a href="#"></a>
+		            </p>
+		        	<p class="pt20">
+		            	深圳市前海贷鼠互联网金融服务有限公司(www.goodsure.cn) Copyright Reserved 2014 | 粤ICP备14047484号 
+		            </p>
+		        </div>
+		    </div>
+			
+		</div>
+
+
+
+		<!--QQ客服-->
+		<div class="online-service hidden-form" id="online-service-hide" style="display: block;">
+		    <a class="online-service-title cc">
+		        <div class="online-service-qq icons"></div>
+		        <h5 style="">在线客服</h5>
+		    </a>
+		</div>
+		<div class="online-service-show show-form hide" id="online-service-show">
+		  	<h5 class="h40 ti15">客服中心</h5>
+		    <ul class="ti15">
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=449422301&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:449422301:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	张晓东</a>
+		        </li>
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=315949248&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:315949248:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	瑶琳</a>
+		        </li>
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=416814848&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:416814848:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	周超</a>
+		        </li>
+		    </ul>
+		    <ul class="qun-list">
+		    	<li class="ml10 mr10 mt10 tc">
+		        	服务热线
+		        </li>
+		    	<li class="h30 ml10 mr10 green tc f16">
+		        	4008-321-033
+		        </li>
+		    	<li class="ml10 mr10 mt10 tc">
+		        	官方交流群
+		        </li>
+		    	<li class="h30 ml10 mr10 green tc f16">
+		        	201385713
+		        </li>
+		    </ul>
+		</div>
+		</div>
+
+
+		<div id="popup"></div>
+
+
+		<div id="popcontent" style="display: none">
+
+          <div class="popcon">
+    <div class="warpper">
+        <div class="basicfrome">
+            <div class="label">
+                <div class="subject">借标标题：</div>
+                <span class="title">公司周转</span>
+            </div>
+            <div class="label">
+                <div class="left" style="width: 230px;">
+                    <div class="subject">借标金额：</div>
+                    <span>¥30,000.00</span>
+                </div>
+                <div class="right" style="padding-right: 50px;">
+                    <div class="subject">剩余金额：</div>
+                    <span class="xinghao">¥30,000.00</span>
+                </div>
+            </div>
+            <div class="label">
+                <div class="left" style="width: 230px;">
+                    <div class="subject">最低投标金额：</div>
+                    <span class="xinghao">¥1,000.00</span>
+                </div>
+                <div class="right" style="padding-right: 50px;">
+                    <div class="subject">最高投标金额：</div>
+                    <span class="xinghao">¥5,000.00</span>
+                </div>
+            </div>
+            <div class="label">
+                <div class="subject">账户可用余额：</div>
+                <span class="xinghao">¥55,002.26</span>
+            </div>
+
+             <div class="label ">
+                <div class="subject">可参与活动：</div>
+                <span class="xinghao" style="color:#ff0000;width: 380px;float: left;">投资满1000得5元现金券 <br />投资满1000得5元现金券<br />投资满1000得5元现金券</span><br>
+            
+            </div>
+            <div class="label">
+                <div class="subject">投标金额：</div>
+                <input type="text" id="txtLendMoney" class="length4" placeholder="请输入投标金额">
+                <span class="xinghao">*</span>
+                
+            </div>
+            <div class="label">
+                <div class="subject">交易密码：</div>
+                <input type="password" id="txtTradePwd" class="length4">
+                <span class="xinghao">*</span>
+            </div>
+            <div class="label xinghao" id="message">
+            </div>
+        </div>
+    </div>
+</div>
+<input id="hidBorrowNo" type="hidden" value="BSEP15000400">
+<input id="hidMinTenderMoney" type="hidden" value="1000">
+<input id="hidMaxTenderMoney" type="hidden" value="5000">
+<input id="hidTenderBidSubmitUrl" type="hidden" value="/Borrow/TenderBidSubmit">
+        </div>
+
+        <div class="imgshowmask"></div>
+
+        <div class="imgshow">
+			<img src="../public/images/loading.gif" alt="">
+
+			<h2 class="title">标题</h2>
+
+			<div class="next"></div>
+			<div class="prev"></div>
+		</div>
+
+	 <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	 <script type="text/javascript" src="../public/scripts/popup.js"></script>
+     <script src="../public/scripts/global.js"></script>
+     <script type="text/javascript" src="../public/scripts/swipe.js"></script>
+
+	 <script type="text/javascript">
+	  	$("#swipe").swipe({
+	        timeout:"no",
+	        events:"click"
+	    });
+	 	$(function(){
+	 		$(".tab a").click(function(){
+	 			var num=$(this).index();
+	 			var parent=$(this).parents(".tabview");
+	 			$(this).addClass("on");
+	 			$(this).siblings("a").removeClass("on");
+	 			parent.find(".tabcontent").eq(num).show();
+	 			parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide()
+	 		
+	 		})
+	 	})
+
+	 	 function PropDivInfo() {
+           
+            $.popup({
+                title: "当前可用余额：10,010.00元", //标题
+                content: function() {
+                    return $("#popcontent").html();
+                }, //内容
+                close: true, //是否关闭
+                closeCallback: null,
+                popupStyle: "",
+                popupPosition: "fixed",
+                Dwidth:580,
+                btnList: [
+                    {
+                        "class": "",
+                        "text": "充值",
+                        "callback": function(){
+                        	window.location.href="http://www.dongyingdai.cn/Account/ReplenishOnline"
+                        }
+                    },
+                    {
+                        "class": "comfbox",
+                        "text": "确认",
+                        "callback": function(){
+                        	window.location.href="comfrim_inv.html"
+                        }
+                    }
+                ]
+            });
+        }
+
+
+
+
+
+
+
+	 </script>
+
+
+
+	 <script language="javascript" type="text/javascript"> 
+			var interval = 1000; 
+			function ShowCountDown(year, month, day, divname) { 
+			var now = new Date(); 
+			var endDate = new Date(year, month - 1, day, 14, 07); 
+			var leftTime = endDate.getTime() - now.getTime(); 
+			var leftsecond = parseInt(leftTime / 1000); 
+			var day1 = Math.floor(leftsecond / (60 * 60 * 24)); 
+			var hour1 = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600); 
+			var hour = Math.floor((leftsecond - 60 * 60) / 3600); 
+			hour=hour-(day1*24);
+			//如果小时为负数 显示0 
+			if (hour > 0) { 
+			} 
+			else { 
+			hour = 0; 
+			} 
+			if (day1 < 0) { 
+			hour = hour1 
+			} 
+			var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour1 * 3600) / 60); 
+			var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour1 * 3600 - minute * 60); 
+			var cc = document.getElementById(divname); 
+			//如果结束时间为负数 就显示0 
+			if (leftTime > 0) { 
+			cc.innerHTML = day1 + "天" + hour + "小时" + minute + "分" + second + "秒"; 
+			//如果显示年份 取消注释 
+			//cc.innerHTML = "距离" + year + "年" + month + "月" + day + "日还有：" + hour + "小时" + minute + "分" + second + "秒"; 
+			} 
+			else { 
+			cc.innerHTML = 0 + "小时" + 0 + "分" + 0 + "秒"; 
+			} 
+			} 
+			//showData是DIV的ID 2010，8，10表示是年月日的意思 参数根据自己的需求设置。 
+			window.setInterval(function () { ShowCountDown(2015, 3, 1, 'showData'); }, interval); 
+
+
+
+
+			//新增图片点击切换模块函数
+			(function(){
+				var eqDEFAULT=0
+				$(".imgboxlist .imgwarp").click(function(){
+					var eq=$(this).index();
+					eqDEFAULT=eq
+					showimg($(this),eq);
+					
+				})
+				$(".imgshow").hover(function(){
+					$(this).find("div").animate({
+
+						 'filter': "alpha(opacity=40)",
+				        '-ms-filter':"progid:DXImageTransform._Microsoft._Alpha(Opacity=40)",
+				       'opacity': 0.4
+
+					})
+				},function(){
+					$(this).find("div").animate({
+						'filter': "alpha(opacity=0)",
+					        '-ms-filter':"progid:DXImageTransform._Microsoft._Alpha(Opacity=0)",
+					       'opacity': 0
+					 })
+				})
+				$(".imgshowmask").click(function(){
+					$(".imgshowmask,.imgshow").css({
+						"visibility": "hidden"
+					})
+				})
+				$(".imgshow .next").click(function(){
+
+					if(eqDEFAULT>=$(".imgboxlist .imgwarp").length-1){
+						eqDEFAULT=0
+					}else{
+						eqDEFAULT++
+					}
+					$(".imgboxlist .imgwarp").eq(eqDEFAULT).trigger("click");	
+				})
+				$(".imgshow .prev").click(function(){
+					if(eqDEFAULT<=0){
+						eqDEFAULT=$(".imgboxlist .imgwarp").length
+					}else{
+						eqDEFAULT--
+					}
+					$(".imgboxlist .imgwarp").eq(eqDEFAULT).trigger("click");
+				})
+				function showimg(obj,eq){
+					var src=obj.find("img").attr("src");
+					var title=obj.find("img").attr("alt")
+					$(".imgshow .title").html(title)
+					$(".imgshow").find("img").attr("src",src).css({height:"400px"});
+					var width=$(".imgshow").find("img").width();
+					var height=$(".imgshow").find("img").height();
+					$(".imgshow").css({
+						"width":width+"px",
+						"height":height+"px",
+						"left":"50%",
+						"top":"50%",
+						"margin-left":parseInt((0-width)/2)+"px",
+						"margin-top":parseInt((0-height)/2)+"px",
+					})
+					//alert(src)
+					$(".imgshowmask,.imgshow").css({"visibility": "visible"});
+				}
+			})()
+
+
+
+
+			$("#txtLendMoney").live("keyup",function(){
+				var val=$(this).val();
+				if(parseInt(val)>=1000){
+					$("#jiangLiQuan").removeAttr("disabled");
+				}else{
+					$("#jiangLiQuan").attr("disabled","disabled");
+				}
+			})
+		</script> 
+
+		
+</body>
+</html>

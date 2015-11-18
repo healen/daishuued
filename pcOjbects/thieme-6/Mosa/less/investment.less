@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+/*首页样式*/
+
+._invest(invest,top);
+._invest(invest,mid);
+._invest(invest,bot);
+._biaobox(biaobox);
+
+
+._tabBtnBox(defalut,@auxColor);
+
+
+.tab_btn_defalut{
+	&.linkstyle{
+		padding-top: 20px;
+		height: 43px;
+		margin-top: 0px;
+		a{
+			&.active{
+				color: @titleFtColor;
+			}
+		}
+	}
+}

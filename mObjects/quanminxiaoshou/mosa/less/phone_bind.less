@@ -1,0 +1,89 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************注册样式********************/
+body{
+	background-color: @querBgColor;
+}
+.myhead{
+	padding: 0rem 1rem;
+	.-bg ._color(@barBgColor);
+	.top{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
+		height: 12rem;
+		border-bottom: 1px solid @borderColor;
+		position: relative;
+		.set{
+			position: absolute;
+			.-box ._size(1.9rem,1.9rem);
+			top: 2rem;
+			right: 0rem;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			color: @assistColor;
+
+		}
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;
+		}
+	}
+	.bottom{
+		
+		.-display ._box();
+		.-display ._box-align(center,start);
+		.qure{
+
+			.-display ._flex(1);
+			text-align: center;
+			line-height: 2rem;
+			padding: 10px 0px;
+			box-sizing: border-box;
+			
+			h2{
+				font-size: @bigFontSize;
+				color: @markColor;
+				font-size: 1.8rem;
+			}
+			p{
+				color: @assistColor;
+				font-size: 1.4rem;
+				line-height: 1.4rem;
+			}
+
+			
+		}
+		.line{
+			width: 1px;
+			height: 2rem;
+			background: @borderColor;
+		}
+	}
+}
+._input(warp);
+.btnbox{
+	.-display ._box();
+	input{
+		._btn();
+		.-display ._flex(1);
+		// box-shadow: 0px 4px 0px lighten(@markColor, 20%);
+	}
+	padding-top: 1rem;
+}
+.sloginbox{
+	.-box ._size(27rem,4.5rem);
+	.-bg ._img('@{bgURL}slogin1.png');
+	.-bg ._size(contain);
+	margin-bottom: 10px;
+}
+

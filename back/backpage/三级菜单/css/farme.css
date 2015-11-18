@@ -1,0 +1,42 @@
+.contains_box {
+  padding: 10px;
+}
+.contains_box .num {
+  color: #2e709c;
+  font-weight: bold;
+}
+.contains_box .titleborder {
+  border-bottom: 1px solid #ddd;
+}
+.contains_box h4 {
+  color: #2679b5;
+}
+.contains_box .h2title {
+  color: #2679b5;
+  font-size: 22px;
+}
+.contains_box .editorbox {
+  margin-top: 10px;
+}
+.contains_box .icoa {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.contains_box .icoa i {
+  margin-right: 3px;
+}
+.contains_box .icoa:hover {
+  text-decoration: none;
+}
+.contains_box .leftbox {
+  float: left;
+}
+.contains_box .toplin {
+  margin-top: 20px;
+}
+.contains_box .toplin .leftbox {
+  margin-right: 10px;
+}
+.contains_box .clear {
+  clear: both;
+}

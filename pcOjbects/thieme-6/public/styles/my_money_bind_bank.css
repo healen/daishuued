@@ -1,0 +1,109 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*标地内容*/
+/*银行卡样式*/
+.mybankbox {
+  width: 334px;
+  height: 178px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.mybankbox .content {
+  height: 176px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+.mybankbox .content .add {
+  display: none;
+}
+.mybankbox .content .bankcart .title {
+  *zoom: 1;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 50px;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.mybankbox .content .bankcart .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.mybankbox .content .bankcart .title .l {
+  float: left;
+  *zoom: 1;
+}
+.mybankbox .content .bankcart .title .l:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.mybankbox .content .bankcart .title .l i {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-right: 5px;
+  line-height: 24px;
+}
+.mybankbox .content .bankcart .title .r {
+  float: right;
+  font-size: 14px;
+  color: #404040;
+}
+.mybankbox .content .bankcart .incontant {
+  padding: 20px;
+}
+.mybankbox .content .bankcart .incontant .row {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.mybankbox .content .bankcart .incontant .row .ellipsis {
+  float: left;
+  width: 220px;
+}
+.mybankbox .content .bankcart .incontant .row a {
+  float: right;
+  color: #ff6527;
+}
+.mybankbox .content.empty {
+  border: 1px dotted #a6a6a6;
+}
+.mybankbox .content.empty .bankcart {
+  display: none;
+}
+.mybankbox .content.empty .add {
+  display: block;
+  width: 140px;
+  height: 94px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -47px;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 18px;
+}
+.mybankbox .content.empty .add .icon {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 5px auto 15px auto;
+  background: url('../images/ico.png') no-repeat -1px -614px;
+}
+.mybankbox .content.empty .add:hover {
+  color: #a6a6a6;
+}
+.my_money_bind_bank_warp {
+  width: 380px;
+  margin: 50px auto;
+}

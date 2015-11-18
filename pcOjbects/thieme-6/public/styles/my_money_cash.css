@@ -1,0 +1,213 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*标地内容*/
+/*银行卡样式*/
+/*银行卡样式*/
+.mybankbox {
+  width: 334px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mybankbox .content {
+  height: 176px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+.mybankbox .content .add {
+  display: none;
+}
+.mybankbox .content .bankcart .title {
+  *zoom: 1;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 50px;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.mybankbox .content .bankcart .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.mybankbox .content .bankcart .title .l {
+  float: left;
+  *zoom: 1;
+}
+.mybankbox .content .bankcart .title .l:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.mybankbox .content .bankcart .title .l i {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-right: 5px;
+  line-height: 24px;
+}
+.mybankbox .content .bankcart .title .r {
+  float: right;
+  font-size: 14px;
+  color: #404040;
+}
+.mybankbox .content .bankcart .incontant {
+  padding: 20px;
+}
+.mybankbox .content .bankcart .incontant .row {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.mybankbox .content .bankcart .incontant .row .ellipsis {
+  float: left;
+  width: 220px;
+}
+.mybankbox .content .bankcart .incontant .row a {
+  float: right;
+  color: #ff6527;
+}
+.mybankbox .content.empty {
+  border: 1px dotted #a6a6a6;
+}
+.mybankbox .content.empty .bankcart {
+  display: none;
+}
+.mybankbox .content.empty .add {
+  display: block;
+  width: 140px;
+  height: 94px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -47px;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 18px;
+}
+.mybankbox .content.empty .add .icon {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 5px auto 15px auto;
+  background: url('../images/ico.png') no-repeat -1px -614px;
+}
+.mybankbox .content.empty .add:hover {
+  color: #a6a6a6;
+}
+.rechargebox {
+  padding: 20px  40px;
+}
+.my_form_group .input_group .input_row .inputwarp input[type='text'],
+.my_form_group .input_group .input_row .inputwarp input[type='password'] {
+  width: 190px;
+}
+.my_form_group .input_group .input_row .inputwarp a.btn {
+  width: 212px!important;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.discribe {
+  border-top: 1px dotted #f2f2f2;
+}
+.discribe h2 {
+  font-size: 16px;
+  color: #404040;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+.discribe p {
+  padding: 10px 0px;
+  *zoom: 1;
+}
+.discribe p:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.discribe p span {
+  float: left;
+}
+.discribe p a {
+  float: right;
+  color: #ff6527;
+}
+.dis {
+  padding-left: 26px;
+}
+.pop_box {
+  *zoom: 1;
+  margin: 10px 0px;
+}
+.pop_box:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.pop_box .l,
+.pop_box .r {
+  width: 49%;
+  float: left;
+  height: 100%;
+  *zoom: 1;
+}
+.pop_box .l:after,
+.pop_box .r:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.pop_box .l .content,
+.pop_box .r .content {
+  width: 114px;
+  height: 93px;
+  margin: 0px auto;
+  text-align: center;
+}
+.pop_box .l .content a.btn,
+.pop_box .r .content a.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%!important;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-right: 0px;
+}
+.pop_box .l h2,
+.pop_box .r h2 {
+  font-size: 16px;
+  color: #404040;
+}
+.pop_box .l {
+  border-right: 1px solid #f2f2f2;
+}
+.remove_bank {
+  margin-top: 5px;
+}
+.remove_bank a {
+  color: #ff6527;
+}
+.title_line {
+  border-top: 1px dotted #f2f2f2;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.bind_title {
+  font-size: 16px;
+  color: #404040;
+}

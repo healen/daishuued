@@ -1,0 +1,413 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*标地内容*/
+/*首页样式*/
+.headtit {
+  height: 57px;
+  line-height: 57px;
+}
+.invest_top {
+  height: 310px;
+  *zoom: 1;
+  margin-bottom: 28px;
+}
+.invest_top:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_top .l {
+  box-shadow: 2px 2px 10px #ddd;
+  background: #ffffff;
+  float: left;
+  width: 592px;
+  margin-right: 28px;
+  height: 100%;
+}
+.invest_top .l .contentbox {
+  padding: 30px 0px;
+}
+.invest_top .l .headtit {
+  background: #fafafa;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0px 40px;
+  *zoom: 1;
+}
+.invest_top .l .headtit:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_top .l .headtit h2 {
+  color: #404040;
+  float: left;
+  font-size: 24px;
+}
+.invest_top .l .headtit h2 em {
+  font-size: 16px;
+  color: #404040;
+}
+.invest_top .l .headtit span {
+  color: #3dbdff;
+  float: right;
+}
+.invest_top .l .artlist {
+  margin-top: 60px;
+  padding: 0px 60px;
+}
+.invest_top .l .artlist p {
+  line-height: 25px;
+  color: #404040;
+}
+.invest_top .l .artlist span {
+  color: #a6a6a6;
+}
+.invest_top .r {
+  box-shadow: 2px 2px 10px #ddd;
+  background-color: #ffffff;
+  float: left;
+  width: 388px;
+  height: 100%;
+}
+.invest_top .r .headtit {
+  border-bottom: 1px dotted #d9d9d9;
+  padding: 0px 0px;
+  *zoom: 1;
+  margin: 0px 20px;
+}
+.invest_top .r .headtit:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_top .r .headtit h2 {
+  color: #ff6527;
+  float: right;
+  font-size: 24px;
+}
+.invest_top .r .headtit span {
+  float: left;
+}
+.invest_top .r .headtit em {
+  font-size: 16px;
+  color: #404040;
+  padding-left: 10px;
+}
+.invest_top .r .contentbox {
+  padding: 30px;
+}
+.invest_top .r .section {
+  margin-top: 20px;
+}
+.invest_top .r .section .inputmeny {
+  margin: 20px auto 10px auto;
+}
+.invest_top .r .section .row span {
+  float: left;
+}
+.invest_top .r .section .row a {
+  float: right;
+  color: #3dbdff;
+  padding-right: 5px;
+}
+.invest_top .r .section .row a:hover {
+  color: #ff6527;
+}
+.invest_top .r .section .text {
+  height: 40px;
+  display: block;
+  border: 1px solid #d9d9d9;
+  float: left;
+  width: 70%;
+  padding: 0px 2%;
+  font-size: 24px;
+  color: #ff6527;
+}
+.invest_top .r .section .text:foucs {
+  border: 1px solid #ff6527;
+}
+.invest_top .r .section .btn {
+  height: 42px;
+  width: 30%;
+  border: none;
+  width: 80px;
+  background-color: #ff6527;
+  color: #ffffff;
+  border-bottom: 2px solid #f34600;
+}
+.invest_top .r .section .btn:hover {
+  background-color: #ff895a;
+}
+.headtit {
+  height: 57px;
+  line-height: 57px;
+}
+.invest_mid {
+  box-shadow: 2px 2px 10px #ddd;
+  background: #ffffff;
+  padding: 0px 35px;
+  min-height: 150px;
+  margin-bottom: 28px;
+}
+.invest_mid .headtit {
+  border-bottom: 1px solid #d9d9d9;
+  *zoom: 1;
+  padding: 0px 10px;
+}
+.invest_mid .headtit:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_mid .headtit h2 {
+  color: #404040;
+  font-size: 24px;
+  float: left;
+}
+.invest_mid .midcontent {
+  padding: 0px 20px 20px 0px;
+}
+.invest_mid .midcontent .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.invest_mid .midcontent .title div.ico {
+  width: 4px;
+  height: 18px;
+  background: #ffc13c;
+  float: left;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.invest_mid .midcontent .title h3 {
+  font-size: 18px;
+  color: #404040;
+  float: left;
+}
+.invest_mid .midcontent .title span {
+  float: right;
+  color: #ff6527;
+}
+.invest_mid .art p {
+  text-indent: 2rem;
+}
+.invest_mid .art .ls {
+  text-indent: 0rem;
+  padding: 0px 15px;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.invest_mid .art .ls:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_mid .art .ls p {
+  text-indent: 0rem;
+  float: left;
+  width: 33%;
+  font-size: 16px;
+}
+.imglist {
+  width: 828px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.imglist ul {
+  width: 918px;
+  *zoom: 1;
+}
+.imglist ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.imglist ul li {
+  width: 155.6px;
+  margin-right: 12px;
+  height: 140px;
+  float: left;
+}
+.imglist ul li a {
+  display: block;
+  width: 100%;
+}
+.imglist ul li a .picebox {
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+.imglist ul li a img {
+  width: 100%;
+}
+.imglist ul li a .name {
+  line-height: 40px;
+  text-align: center;
+}
+.headtit {
+  height: 57px;
+  line-height: 57px;
+}
+.invest_bot {
+  box-shadow: 2px 2px 10px #ddd;
+  background: #ffffff;
+  min-height: 150px;
+}
+.invest_bot .headtit {
+  border-bottom: 1px solid #d9d9d9;
+  *zoom: 1;
+  padding: 0px 38px;
+}
+.invest_bot .headtit:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.invest_bot .headtit h2 {
+  color: #404040;
+  font-size: 24px;
+  float: left;
+}
+.invest_bot .discribe {
+  line-height: 40px;
+  height: 40px;
+  padding: 0px 70px;
+  text-align: right;
+}
+.invest_bot .discribe .ren {
+  color: #404040;
+}
+.invest_bot .discribe .meny {
+  color: #ff6527;
+}
+.invest_bot .tablebox {
+  padding: 0px 38px;
+}
+.invest_bot table.botbor {
+  text-align: center;
+  width: 100%;
+}
+.invest_bot table.botbor thead td {
+  background-color: #f2f2f2;
+  line-height: 35px;
+}
+.invest_bot table.botbor thead td.frist {
+  width: 10%;
+}
+.invest_bot table.botbor td {
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 40px;
+}
+.biaobox {
+  width: 100%;
+  *zoom: 1;
+}
+.biaobox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.biaobox .colme {
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+.biaobox .colme h2 {
+  font-size: 30px;
+  color: #ff6527;
+  padding-bottom: 5px;
+}
+.biaobox .colme h2 span {
+  color: #a6a6a6;
+  font-size: 14px;
+}
+.biaobox .colme h2.hei {
+  color: #404040 !important;
+}
+.biaobox .colme.first {
+  width: 29%;
+}
+.biaobox .colme p {
+  text-align: center;
+}
+.biaobox.ment_right .colme {
+  width: 25%;
+}
+.tab_btn_defalut {
+  height: 54px;
+  line-height: 54px;
+}
+.tab_btn_defalut.init a {
+  display: inline-block;
+  padding-right: 10px;
+  color: #aaaaaa;
+  font-size: 18px;
+  *zoom: 1;
+}
+.tab_btn_defalut.init a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tab_btn_defalut.init a span {
+  float: left;
+  padding-left: 10px;
+  line-height: 52px;
+}
+.tab_btn_defalut.init a.active {
+  color: #3dbdff;
+}
+.tab_btn_defalut.linkstyle {
+  background: #ffffff;
+  height: 44px;
+  line-height: 42px;
+  padding: 0px 50px;
+  margin-top: 24px;
+}
+.tab_btn_defalut.linkstyle a {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 0px 10px;
+}
+.tab_btn_defalut.linkstyle a span {
+  display: none;
+}
+.tab_btn_defalut.linkstyle a.active {
+  border-bottom: 2px solid #ff6527;
+  height: 42px;
+  line-height: 42px;
+  color: #ff6527;
+}
+.tab_btn_defalut.linkstyle {
+  padding-top: 20px;
+  height: 43px;
+  margin-top: 0px;
+}
+.tab_btn_defalut.linkstyle a.active {
+  color: #404040;
+}

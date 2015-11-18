@@ -1,0 +1,239 @@
+@import "../variables";
+@import "../lib/basic";
+
+
+body{
+	padding-bottom: 90px;
+	font-family: '微软雅黑'
+}
+.header{
+	height: 44px;
+	line-height: 44px;
+	background: @barColor;
+	color: #ffffff;
+	.inheader{
+		margin:0px auto;
+		color: #ffffff;
+		font-size: @titleFoutSize;
+		text-align: center;
+		._clearfix();
+		p{
+			padding-top: 1px;
+		}
+
+		img{
+			display: block;
+			float: left;
+			margin-top:4px;
+			margin-right: 10px; 
+		}
+
+	}
+}
+
+
+.pull-right{
+	line-height: 35px;
+}
+
+
+
+
+.footer{
+	border-top: 1px solid #eee;
+	text-align: center;
+	p{
+		padding-top: 30px;
+		color: #666;
+		padding-bottom: 30px;
+		font-size: 12px;
+	}
+	height: 80px;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	// background: #fff;
+	font-size: 14px;
+    p{
+        color: #ffffff;
+    }
+}
+
+
+.center{
+	text-align: center;
+}
+.ftbig{
+	font-size: @bigFontSize;
+}
+
+.mb30{
+	margin-bottom: 50px;
+}
+.backa{
+	&:hover{
+		color: #eeeeee;
+	}
+}
+
+
+
+.inwarp{
+	padding: 10px;
+}
+
+
+
+
+.login_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -270px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #fff;
+    width: 380px;
+    height: 540px;
+    box-shadow: #999 0 2px 10px;
+    -moz-box-shadow: #999 0 2px 10px;
+    -webkit-box-shadow: #999 0 2px 10px
+}
+
+.login_box .qrcode {
+    text-align: center
+}
+
+.login_box .qrcode.hide {
+    display: none
+}
+
+.login_box .qrcode .img {
+    display: block;
+    width: 276px;
+    height: 276px;
+    margin: 42px auto 5px
+}
+
+.login_box .qrcode .sub_title {
+    text-align: center;
+    font-size: 18px;
+    color: #353535
+}
+
+.login_box .qrcode .extension {
+    display: inline-block;
+    text-align: left;
+    padding:0px 30px;
+}
+
+.login_box .qrcode .extension .icon {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.login_box .qrcode .extension .item {
+    margin-bottom: 30px
+}
+
+.login_box .qrcode .extension .cont {
+    overflow: hidden
+}
+
+.login_box .qrcode .extension .title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535
+}
+
+.login_box .qrcode .extension .desc {
+    font-size: 12px;
+    color: #353535
+}
+
+.login_box .qrcode .extension .desc a {
+    text-decoration: none;
+    color: #459ae9
+}
+
+.login_box .avatar {
+    display: none;
+    text-align: center;
+    margin-top: 100px
+}
+
+.login_box .avatar.show {
+    display: block
+}
+
+.login_box .avatar .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-bottom: 80px;
+    border: 1px solid rgba(0,0,0,.1)
+}
+
+.login_box .avatar .sub_title {
+    font-size: 24px;
+    color: #353535;
+    margin-bottom: 14px;
+    font-weight: 400
+}
+
+.login_box .avatar .action {
+    position: absolute;
+    bottom: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #459ae9;
+    font-size: 14px
+}
+
+html{
+	height: 100%;
+}
+.qrcodebg{
+	background-image: url(../images/background.png);
+	-webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.qrcodebgfoot{
+	background: none;
+	border-color:#ffffff;
+	p{
+		color: #ffffff;
+	}
+}
+
+.backa{
+        text-decoration: none;
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        &:hover{
+            color: #337AB7;
+            text-decoration: none;
+        }
+}
+
+
+
+
+
+
+/***************************************主体框架结束*********************************/

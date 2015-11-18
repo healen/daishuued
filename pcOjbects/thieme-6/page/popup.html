@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+    <div id="popup"></div>
+    <div id="popcontent" style="display:none">
+      <span>ffff</span>
+    </div>
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../public/scripts/popup.js"></script>
+
+    <script type="text/javascript">
+       $.popup({
+            title: "标题", //标题
+            content: function(){
+              return $("#popcontent").html();
+            }, //内容
+            close: true, //是否关闭
+            closeCallback:null,
+            popupStyle: "",
+            popupPosition:"fixed",
+            btnList: [
+                // {
+                //     "class": "",
+                //     "text": "确认",
+                //     "callback": null
+                // },
+                // {
+                //     "class": "comfbox",
+                //     "text": "取消",
+                //     "callback": null
+                // }
+            ]
+       })
+    </script>
+   
+    
+</body>
+</html>

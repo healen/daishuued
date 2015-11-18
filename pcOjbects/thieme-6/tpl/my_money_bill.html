@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<!-- <link rel="stylesheet" href="../public/styles/my_bind_bank.css" type="text/css"> -->
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>资金流动记录</h2>
+                    </div>
+
+                    <div class="mycontent">
+
+
+	                    <div class="mycontent">
+
+	                    	<div class="mylistcontent">
+
+	                    		<div class="my_top_list">
+	                    			<div class="row top_list">
+	                    				<span class="title">时间范围：</span>
+	                    				<a href="javascript:void(0)">1个月</a>
+	                    				<a href="javascript:void(0)" class="active">3个月</a>
+	                    				<a href="javascript:void(0)">6个月</a>
+
+	                    				<span>从</span>
+	                    				<input type="text" class="j-xl timebg" placeholder="请输入开始时间" onclick="laydate();">
+	                    				<span>到</span>
+	                    				<input type="text" class="j-xl timebg" placeholder="请输入结束时间" onclick="laydate();">
+	                    			</div>
+
+	                    			<div class="row top_list">
+	                    				<span class="title">资金类型：</span>
+	                    				<a href="javascript:void(0)">全部</a>
+	                    				<a href="javascript:void(0)" class="active">充值</a>
+	                    				<a href="javascript:void(0)">提现</a>
+	                    				<a href="javascript:void(0)">投资</a>
+	                    				<a href="javascript:void(0)">回收</a>
+	                    				<a href="javascript:void(0)">债权转让</a>
+	                    				
+	                    			</div>
+	                    			
+	                    		</div>
+		                    	<table class="botbor">
+									<thead>
+										<tr>
+											<td>交易时间</td>
+											<td>交易类型</td>
+											<td>交易金额（元）</td>
+											<td>账户总额（元）</td>
+											<td>备注</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2015-9-10</td>
+											<td>充值</td>
+											<td>￥500</td>
+											<td>￥5001</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="5">暂无记录</td>
+										</tr>
+									</tbody>
+								</table>
+	                    	</div>
+
+	                    </div>
+                    	
+                    </div>
+
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+
+
+<script type="text/javascript">
+
+
+	
+</script>
+
+</body>
+</html>

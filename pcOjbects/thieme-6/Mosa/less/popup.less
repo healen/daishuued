@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+/*弹窗*/
+.popup{
+	.dialog{
+		background: #fff;
+		width: 720px;
+		position: relative;
+		overflow: hidden;
+		a{
+			&.close{
+				display: block;
+				width: 22px;
+				height: 22px;
+				position: absolute;
+				top: 20px;
+				right: 40px;
+				cursor: pointer;
+				background: url('@{img}/ico.png') no-repeat -22px -227px #ffffff;
+			}
+		}
+		.dialog-content{
+			padding: 10px 24px;
+			.dialog-title{
+				height: 43px;
+				line-height: 43px;
+				text-align: left;
+				color: @titleFtColor;
+				border-bottom: 1px solid @borderColor;
+				span{
+					padding-left: 20px;
+				}
+			}
+			.popupbtnbox{
+				text-align: center;
+				padding-bottom: 15px;
+				.popupbtn{
+					display: inline-block;
+					background: @markColor;
+					color: #fff;
+					width: 154px;
+					line-height: 36px;
+					margin-right: 10px;
+					cursor: pointer;
+					&:hover{
+						background-color:darken(@markColor, 10%);
+					}
+					&.comfbox{
+						background: @auxColor;
+						&:hover{
+							background-color:darken(@auxColor, 10%);
+						}
+					}
+
+				}
+			}
+			.warp{
+				max-height: 650px;
+				overflow: auto;
+				margin-top: 10px;
+				padding-bottom: 5px;
+
+			}
+		}
+	}
+}
+.popupcontent{
+	display: none;
+}
+.popcon{
+	padding: 0px 22px;
+	line-height: 30px;
+	.top{
+		.mail{
+			color: @auxColor;
+		}
+		margin-bottom: 10px;
+	}
+	.bottom{
+		text-align: center;
+		 a.jhwc{
+            display: inline-block;
+            background: @markColor;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            &:hover{
+                background:darken(@markColor, 10%);
+            }
+        }
+	}
+	
+}

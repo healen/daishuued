@@ -1,0 +1,152 @@
+//                    _ooOoo_
+//                   o8888888o
+//                   88" . "88
+//                   (| -_- |)
+//                   O\  =  /O
+//                ____/`---'\____
+//              .'  \\|     |//  `.
+//             /  \\|||  :  |||//  \
+//            /  _||||| -:- |||||-  \
+//            |   | \\\  -  /// |   |
+//            | \_|  ''\---/''  |   |
+//            \  .-\__  `-`  ___/-. /
+//          ___`. .'  /--.--\  `. . __
+//       ."" '<  `.___\_<|>_/___.'  >'"".
+//      | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//      \  \ `-.   \_ __\ /__ _/   .-` /  /
+// ======`-.____`-.___\_____/___.-`____.-'======
+//                    `=---='
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//          佛祖保佑       永无BUG
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************表单样式********************/
+body{
+	
+	
+	height: 100%;
+	
+}
+.body-content{
+	background-image: url('@{bgURL}banckground.png');
+	background-size: cover;
+	height: 100%;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	height: 100%;
+	.erweimabox{
+		width: 90%;
+		// height: 90%;
+		
+		background-color: rgba(255,255,255,0.5);
+		.-display ._box();
+		.-display ._box-align(center,center);
+		border-radius: 0.5rem;
+		.in{
+
+			p{
+				padding: 0 1rem;
+				&.title{
+					font-size: 1.6rem;
+				}
+				span{
+					color: @alertColor;
+				}
+			}
+			.bold{
+				font-weight: bold;
+				font-size: 2rem;
+				padding-bottom: 1rem;
+				&.bigft{
+					font-size: 2.4rem;
+				}
+			}
+			padding-top: 1rem;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			background-color: rgba(255,255,255,0.6);
+			width: 90%;
+			border-radius: 0.5rem;
+			text-align: center;
+			padding-bottom: 10px;
+			img{
+				display: block;
+				width: 100%;
+
+				&.point{
+					width: 70%;
+					display: block;
+					margin: 0 auto 1.5rem auto;
+				}
+			
+			}
+		}
+
+	}
+
+
+}
+
+
+.erweimapicebox{
+	.-display ._box();
+	.-display ._box-align(center,center);
+	// border:1px solid #ff0000;
+	margin: 1.5rem auto 3.5rem auto;
+	padding: 1.5rem;
+	width: 80%;
+	position: relative;
+
+
+	.xiejiao{
+		width: 1.4rem;
+		height: 1.4rem;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border-top: 2px solid #fcfeff;
+		border-left: 2px solid #fcfeff;
+		&.rt{
+			border-top: 2px solid #fcfeff;
+			border-right: 2px solid #fcfeff;
+			border-left: none;
+
+			right: 0px;
+			left: auto;
+		}
+		&.lb{
+			border-bottom: 2px solid #fcfeff;
+			border-left: 2px solid #fcfeff;
+			border-top: none;
+			border-right: none;
+
+			right: auto;
+			left: 0;
+			bottom: 0;
+			top: auto;
+		}
+		&.rb{
+			border-bottom: 2px solid #fcfeff;
+			border-left: none;
+			border-top: none;
+			border-right: 2px solid #fcfeff;
+
+			right: 0;
+			left: auto;
+			bottom: 0;
+			top: auto;
+		}
+
+	}
+}
+.text_left{
+	text-align: left;
+}
+
+body > .warp {
+  height: 100%;
+  padding-bottom: 0rem;
+}

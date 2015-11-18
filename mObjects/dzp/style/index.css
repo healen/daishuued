@@ -1,0 +1,91 @@
+.warpZhuanpan{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0px auto;
+    
+}
+.bgpice{
+   
+}
+.rotaclass{
+   -webkit-transition: 7s ease;
+    -moz-transition:7s ease;
+    -o-transition:7s ease;
+    transition:7s ease;  
+}
+.pinot{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.zhuanpanbtn,.relottery{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:3;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+}
+.relottery{
+    display: none;
+    z-index: 4;
+}
+
+.deng{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2
+}
+.alerttitle{
+    text-align: center;
+}
+
+#zjjg{
+    display: none;
+}
+.fontred{ 
+    /*-webkit-animation:red 0.3s infinite;*/
+    color: #ff0000;
+}
+
+.topmsg div:nth-child(2){
+    display: none;
+}
+
+
+/*@keyframes red{
+    from{
+        color:#747474
+    }
+    to{
+        color:#ff0000;
+    }
+}
+@-webkit-keyframes red{
+    from{
+        color:#747474
+    }
+    to{
+        color:#ff0000;
+    }
+}
+@-moz-keyframes red{
+    from{
+        color:#747474
+    }
+    to{
+        color:#ff0000;
+    }
+}*/
+
+
+
+
+
+

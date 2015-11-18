@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贷鼠网-个人中心</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_bind_bank.css" type="text/css">
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="right_title">
+                        <span class="line"></span><h2>编辑绑定银行卡</h2>
+                    </div>
+
+                    <div class="mycontent">
+                    	                    	<div class="my_money_bind_bank_warp">
+	                    	<div class="my_form_group">
+	                    		<div class="input_group">
+	                    			<div class="input_row">
+	                    				<div class="title">持卡人</div>
+	                    				<div class="inputwarp">
+	                    					<input type="text" value="张晓东" placeholder="输入持卡人姓名">
+	                    				</div>
+	                    			</div>
+
+	                    			<div class="input_row">
+	                    				<div class="title">卡号</div>
+	                    				<div class="inputwarp">
+	                    					<input type="text" value="6225880130133557" placeholder="请输入银行卡号">
+	                    				</div>
+	                    			</div>
+
+
+	                    			<div class="input_row">
+	                    				<div class="title">银行</div>
+	                    				<div class="inputwarp">
+	                    					<select>
+	                    						<option value="">中国银行</option>
+	                    						<option value="">招商银行</option>
+	                    						<option value="">农业银行</option>
+	                    					</select>
+	                    				</div>
+	                    			</div>
+
+
+	                    			<div class="input_row">
+	                    				<div class="title">开通城市</div>
+	                    				<div class="inputwarp">
+	                    					<input type="text" value="北京" placeholder="中文/拼音">
+	                    				</div>
+	                    			</div>
+
+
+	                    			<div class="input_row">
+	                    				<div class="title">开户行</div>
+	                    				<div class="inputwarp">
+	                    					<input type="text" value="北京银行" placeholder="中文">
+	                    				</div>
+	                    			</div>
+
+
+	                    			<div class="input_row">
+	                    				<div class="title">支付密码</div>
+	                    				<div class="inputwarp">
+	                    					<input type="password" placeholder="支付密码">
+	                    					<a class="text-link" href="forget_password.html">忘记密码？</a>
+	                    				</div>
+	                    			</div>
+
+
+	                    			<div class="input_row">
+	                    				<div class="title">&nbsp;</div>
+	                    				<div class="inputwarp">
+	                    					    <a href="investment.html" class="btn btn-primary mr10">添加</a>
+												<a href="investment.html" class="btn btn_mark">取消</a>
+	                    				</div>
+	                    			</div>
+
+
+
+	                    		</div>
+	                    	</div>
+
+                    	</div>
+                    	
+                    </div>
+
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+<script type="text/javascript"> </script>
+
+</body>
+</html>

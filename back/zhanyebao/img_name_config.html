@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta name="description" content="User login page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--basic styles-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />	
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />	
+	<!--ace styles-->
+	<link rel="stylesheet" href="css/ace.min.css" />
+
+	<link rel="stylesheet" href="css/font.css">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="css/font-ie7.css">
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ace-ie.min.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/farme.css">
+	<link rel="stylesheet" href="css/popup.css" />
+</head>
+
+
+<body class="skin-4">
+<!-- header -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid" style='background:#2283c5'>
+			<a href="#" class="brand" style="line-height:40px">
+				<small> 
+					<img src="img/logo.png" alt="" height="40" style="float:left">
+				</small>
+			</a>
+			<!--/.brand-->
+			<ul class="nav ace-nav pull-right">
+				<li class="light-blue" style='background:#2AA4F7'>
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle slideer_box">
+						<img class="nav-user-photo" src="img/noHeader.png" alt="Jason's Photo">
+						<span class="user-info">
+							<small>欢迎,</small>
+							超级管理员
+						</span>
+
+						<i class="icon-caret-down"></i>
+					</a>
+
+					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+					    
+						<li>
+							<a href="#">
+								<i class="icon-cog"></i>
+								设置
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="http://122.114.52.239:8082/sjzx/page/manager/userprofile.jsp">
+								<i class="icon-user"></i>
+								用户信息
+							</a>
+						</li>
+						
+						<li class="divider"></li>
+
+						<li>
+							<a href="../adminUserPage/logout.jsp">
+								<i class="icon-off"></i>
+								注销
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+			<!--/.ace-nav-->
+		</div>
+		<!--/.container-fluid-->
+	</div>
+	<!--/.navbar-inner-->
+</div>
+<!-- /header -->
+
+<div class="main-container container-fluid">
+	<!-- leftMenu -->
+	<div class="sidebar">	
+		<!--#sidebar-shortcuts-->
+		<div id="leftMenu"  style="display: block;">
+			<ul class="nav nav-list" >    
+				<li>
+				    <a href="sale_list.html">
+	                 	<i class="icon-dashboard"></i>
+	                    <span class="menu-text">销售列表</span> 
+	                </a>
+				</li>
+
+				<li>
+				    <a href="comtomer_list.html">
+	                 	<i class="icon-group"></i>
+	                    <span class="menu-text">客户列表</span> 
+	                </a>
+				</li>
+
+				<li>
+				    <a href="apply_list.html">
+	                 	<i class="icon-laptop"></i>
+	                    <span class="menu-text">申请列表</span> 
+	                </a>
+				</li>
+
+				<li class="active">
+				    <a href="img_name_config.html">
+	                 	<i class="icon-picture"></i>
+	                    <span class="menu-text">图片名称配置</span> 
+	                </a>
+				</li>
+			
+			</ul>
+		</div>
+		<!--/.nav-list-->
+		<div class="sidebar-collapse" id="sidebar-collapse">
+			<i id="menu_button_arr" class="icon-double-angle-left icon-double-angle-right"></i>
+		</div>
+	</div>
+	<div class="main-content" >
+		<!--head bar begin-->
+		<div id="breadcrumbs" class="breadcrumbs">
+			
+			<ul class="breadcrumb">
+				<li> <i class="icon-home icon-backward"></i>
+					<a href="javascript:void(0)">返回</a>
+					>
+					<span>图片名称配置</span>
+					
+				</li>
+			
+			</ul>
+		</div>
+		<!--head bar end-->
+
+
+
+
+		<!--主体框架-->
+							
+		<div class="contains_box">
+			<div class="position-relative">
+				<h2 id="pageH1" class="h2title">
+					<span id="aliasTitle">图片名称配置</span>
+					<button class="btn btn-primary btn-xs" style="float:right"><i class="icon-plus-sign"></i>添加名称</button>
+					<div class="clearfix"></div>
+					<!-- <span style="float:right" class="addname"></span>				 -->
+				</h2>
+			</div>
+			<table style="margin-bottom:10px;" class="table table-list table_formlist table-striped table-bordered">
+				   <thead>
+					    <tr>
+						    
+						     <th class="center" width="80%">图片名称</th>
+						     <th class="center">操作</th>
+					    </tr>
+				   </thead>
+				   <tbody id="picelist">
+					    		
+				   </tbody>
+			</table>
+			<ul class="pagination">
+				<li class="disabled">
+					<a href="#">
+						<i class="icon-double-angle-left"></i>
+					</a>
+				</li>
+
+				<li class="active">
+					<a href="#">1</a>
+				</li>
+
+				<li>
+					<a href="#">2</a>
+				</li>
+
+				<li>
+					<a href="#">3</a>
+				</li>
+
+				<li>
+					<a href="#">4</a>
+				</li>
+
+				<li>
+					<a href="#">5</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="icon-double-angle-right"></i>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+											
+	<div style="clear:both"></div>
+</div>
+
+
+
+<!-- <div class="loding show">
+	<i class="icon-spinner icon-spin white bigger-125 loginding"></i>
+	<span class="discribe">我们正在努力加载中...</span>
+
+	
+</div> -->
+			
+
+
+
+								
+<div id="qxzt" style="display:none">
+	<div style="text-align:center">
+		<span class="col-sm-4" style="line-height:35px; text-align:right">输入名称：</span>
+		<input type="text" class="picename col-xs-10 col-sm-6 height35 inputsbox">
+	</div>
+</div>
+
+
+<div id="deleteclome" style="display:none">
+	<div style="text-align:center">
+		您确定要删除吗？
+	</div>
+</div>
+
+
+<div id="popup"></div>
+<script src="js/jquery.js"></script>
+<script src="js/ace.js"></script>
+<script src="js/popup.js"></script>
+<!-- 菜单高亮展开 -->
+<script type="text/javascript">
+	$(function(){
+		//判断是否有菜单操作权限，显示该用户拥有权限的菜单
+		$("[actionName]").each(function(){
+		 	//获取页面权限的severname
+		 	var actionName = $(this).attr("actionName");
+		 	//格式是actionName@ServiceName.
+		 	actionInfoArry = actionName.split("@");
+		 	if(actionInfoArry.length !=2) return true;
+		 	var actionList = authorityData[actionInfoArry[1]] || null;
+		 	if(!actionList) return true;
+		 	//遍历权限数组，寻找对应alias和servename
+		 	for (var i = 0; i < actionList.length; i++){
+		 		if(actionList[i].actionName == actionInfoArry[0]){
+		 			$(this).show();
+		 			break;
+		 		}
+		 	}
+		});
+		$(".slideer_box").bind("click",function(){
+			var $showbox=$(this).next(".user-menu");
+			$showbox.toggle();
+		})
+		//高亮展开显示当前菜单
+		var paramUrl = document.location.href.split("/")[document.location.href.split("/").length-1];
+		$("#sidebar").find("li a").each(function(){
+			if($(this).attr("href") == paramUrl){
+				$(this).parent().addClass("open");
+				$(this).parents("li").addClass("active");
+			}
+		});
+	});
+
+
+
+
+	/*添加名称*/
+	$(".addname").click(function(){
+				$.popup({
+		            title:"添加图片名称",
+		            content: function(){
+		              return $("#qxzt").html() //$("#popupcontent").html();//内容
+		            },
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 400,
+		            popupPosition:"fixed",
+		             btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "添加",
+		                        "callback": addNameFun
+		                    },
+		                     {
+		                        "class": "comfbox",
+		                        "text": "不添加",
+		                        "callback": function(){
+		                        	$.close('popup')
+		                        }
+		                    }
+		            ]
+		           
+		     });
+	});
+
+	// 添加名称操作
+	function addNameFun(){
+		var picename=$("#popup .picename").val();
+		if(picename.length>2){
+			var htmlString='<tr class="listname"><td class="td_cid center lname">'+picename+'</td><td class="td_cid center"><a  class="icoa resetcolem"> <i class="icon-edit align-top bigger-125"></i>修改</a><a href="javascript:void(0)" class="icoa deletecolem"> <i class="icon-trash align-top bigger-125"></i>删除</a></td></tr>';
+			$("#picelist").append(htmlString);
+			$.close(".popup");
+		}else{
+			alert('您输入的名称不合法');
+		}
+		
+	}
+
+	
+	// 删除
+	function deletelist(el){
+		$("table").delegate(el,'click',function(){
+			var colmes=$(this).parents('tr');
+			$.popup({
+		            title:"确定要删除吗？",
+		            content: function(){
+		              return $("#deleteclome").html() //$("#popupcontent").html();//内容
+		            },
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 400,
+		            popupPosition:"fixed",
+		             btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "删除",
+		                        "callback": function(){
+		                        	colmes.remove();
+		                        	$.close(".popup");
+		                        }
+		                    },
+		                    {
+		                     	"class": "comfbox",
+		                        "text": "不删除",
+		                        "callback": function(){
+		                        	$.close(".popup")
+		                        }	
+		                    }
+		            ]
+		           
+		     });
+		})
+
+	}
+	function resetlist(el){
+		$("table").delegate(el,'click',function(){
+			var colmes=$(this).parents('tr');
+			var vals=colmes.find('.lname').html();
+			// alert(vals);
+			$.popup({
+		            title:"修改名称",
+		            content: function(){
+		              return $("#qxzt").html() //$("#popupcontent").html();//内容
+		            },
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 400,
+		            popupPosition:"fixed",
+		             btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "修改",
+		                        "callback": function(){
+		                        	colmes.find('.lname').html($("#popup .picename").val());
+		                        	$.close(".popup")
+
+		                        }
+		                    },
+		                    {
+		                     	"class": "comfbox",
+		                        "text": "不修改",
+		                        "callback": function(){
+		                        	$.close(".popup")
+		                        }	
+		                    }
+		            ]
+		           
+		     });
+
+		
+				$("#popup .picename").val(vals)
+			
+		})
+		function resetok(){
+
+		}
+	}
+	deletelist(".deletecolem");
+	resetlist(".resetcolem")
+</script>  
+
+</body>
+</html>

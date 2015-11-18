@@ -1,0 +1,48 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************注册样式********************/
+@import "register"; 
+
+@import "login"; 
+
+@import "index"; 
+
+@import "my"; 
+
+.frompdx{
+	padding: 0.8rem 1rem;
+}
+.bghui{
+	background: @docBgColor;
+}
+
+
+body{
+	overflow-y: hidden;
+	&>.warp{
+		display: none;
+		height: 100%;
+		padding-bottom: 0px;
+		position: relative;
+		z-index: 2;
+
+	}
+}
+
+.navbtn{
+	z-index: 1;
+}
+
+
+.markPointer{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 9;
+}

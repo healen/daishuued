@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+/*首页样式*/
+.my_index_top{
+	height: 94px;
+}
+.harcharsbox{
+	height: 386px;
+}
+
+.totb{
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+	padding-bottom: 20px;
+	color: @titleFtColor;
+}
+
+.righttop{
+    border-bottom: 1px solid @borderColor2;
+    & > .row{
+        color: @titleFtColor;
+        padding: 35px;
+        .d2{
+             width: 68%;
+             float: left;
+             ._clearfix();
+            h2{
+                font-size: @titleSize;
+                margin-bottom: 15px;
+            }
+            .clomn3{
+                width: 33%;
+                float: left;
+            }
+            .icopice{
+                width: 40px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 10px;
+                 margin-left: 10px;
+                 background: url("@{img}/ico.png") no-repeat -52px -423px;
+                 float: left;
+                 margin-top: 7px;
+
+            }
+
+        }
+        .d3{
+            text-align:center;
+             width: 32%;
+             float: left;
+             ._clearfix();
+             margin-top: 20px;
+        }
+    }
+}
+
+.datashow{
+    padding: 25px 30px 0px 30px;
+
+    .col_s,.col_s_b{
+        float: left;
+        text-align: center;
+        &.col_st{
+            width: 19%;
+        }
+        &.col_ln{
+            width: 40%;
+        }
+
+
+    }
+    .col_s_b{
+        width: 10%;
+        font-size: 30px;
+        margin-top: 18px;
+    }
+
+    .title{
+        text-align: center;
+        font-size: @titleSize;
+        color: @titleFtColor;
+        span{
+            font-size: @baseFontSize;
+            color: @baseTextColor;
+        }
+    }
+    .content{
+        text-align: center;
+        font-size: @titleSize;
+        span{
+            &.yuan{
+                 font-size: @titleSize;
+                 color: @titleFtColor;
+            }
+           
+        }
+    }
+
+}
+
+
+

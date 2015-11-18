@@ -1,0 +1,250 @@
+/******************个人中心设置样式********************/
+.body-content {
+  padding: 0rem 0rem;
+}
+.myhead {
+  padding: 0rem 1rem;
+  background-color: #ffffff;
+}
+.myhead .top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  height: 12rem;
+  border-bottom: 1px solid #dfe3f0;
+  position: relative;
+}
+.myhead .top img {
+  display: block;
+  width: 71px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.myhead .top h2 {
+  font-size: 1.6rem;
+}
+.myhead .bottom {
+  height: 60px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.myhead .bottom .qure {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+}
+.myhead .bottom .qure:active {
+  background: #eeedfa;
+}
+.myhead .bottom .qure:visited {
+  background: #ffffff;
+}
+.myhead .bottom .qure .yuan {
+  font-family: Arial;
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #ffd93f;
+  text-align: center;
+  line-height: 2rem;
+  color: #cb5f1d;
+  margin-right: 5px;
+}
+.myhead .bottom .qure h2 {
+  font-size: 1.6rem;
+}
+.myhead .bottom .qure:nth-child(1) {
+  border-right: 1px solid #dfe3f0;
+}
+.mybottom {
+  padding: 0.8rem 1rem;
+}
+.mybottom .listpx {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  border: 1px solid #3dbdff;
+  background: #3dbdff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  margin-bottom: 1rem;
+}
+.mybottom .listpx .jiao {
+  width: 1rem;
+  height: 1rem;
+  background: #3dbdff;
+  position: absolute;
+  left: -0.5rem;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -0.5rem;
+}
+.mybottom .listpx img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin-right: 1rem;
+}
+.mybottom .listpx div {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #ddd;
+}
+.mybottom .listpx div section {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.mybottom .listpx div section span {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.mybottom .listpx:active {
+  background: #008dd6;
+  border-color: #008dd6;
+}
+.mybottom .listpx:active .jiao {
+  background: #008dd6;
+}
+.mybottom .listpx:visited {
+  background: #3dbdff;
+  border-color: #3dbdff;
+}
+.mybottom .listpx:visited .jiao {
+  background: #3dbdff;
+}
+.right {
+  text-align: right;
+  margin-right: 0.5rem;
+  animation: cloud2 200ms linear infinite alternate;
+  -moz-animation: cloud2 200ms linear infinite alternate;
+  /* Firefox */
+  -webkit-animation: cloud2 200ms linear infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: cloud2 200ms linear infinite alternate;
+  /* Opera */
+  font-size: 1.4rem;
+}
+.right i {
+  font-size: 1.2rem;
+}
+.right .jingxi {
+  font-weight: 100;
+}
+.big {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ffffff;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FFFFFF!important;
+}
+@-webkit-keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
+}
+@-o-keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
+}
+@keyframes cloud2 {
+  form {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px reba(255, 255, 255, 0), -2px -2px 3px reba(255, 255, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #e4ff00, -1px -1px 2px #e4ff00;
+  }
+}

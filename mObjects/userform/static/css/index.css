@@ -1,0 +1,154 @@
+/******************注册样式********************/
+body {
+  background: #ffffff;
+}
+.warp {
+  padding: 2rem;
+}
+.warp .title {
+  font-size: 1.5rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+.warp h2 {
+  font-size: 1.8rem;
+  color: #4c4c4c;
+  font-weight: bold;
+}
+.warp .formbox {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  min-height: 5.2rem;
+}
+.warp .formbox.topalign {
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  box-align: start;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  padding-top: 1rem;
+}
+.warp .formbox.topalign .lastt {
+  margin-top: 0.5rem;
+}
+.warp .formbox input[type='text'] {
+  background: #f2f2f2;
+  height: 3rem;
+  padding: 0rem 1rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  margin-left: 2.5rem;
+  border-radius: 1.8rem;
+  -webkit-box-shadow: 1px 1px 5px #e4e2e2 inset;
+  box-shadow: 1px 1px 5px #e4e2e2 inset;
+}
+.warp .formbox label {
+  position: relative;
+  float: left;
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+.warp .formbox label > div {
+  padding: 0px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 1.8rem;
+}
+.warp .formbox .check {
+  *zoom: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.warp .formbox .check:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.warp .formbox input[type='checkbox'] {
+  background: #ff0000;
+  opacity: 0;
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.warp .formbox input[type='checkbox']:checked + div {
+  border: 1px solid #3cbdff;
+  color: #3cbdff;
+}
+.warp .formbox .input-submit {
+  width: 10.8rem;
+  height: 3.8rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+  background: #3cbdff;
+  display: block;
+  margin: 0px auto;
+  margin-top: 2rem;
+  box-shadow: 0.2rem 0.2rem 0 #89d7ff;
+}
+.warp .formbox .input-submit:active {
+  background-color: #09acff;
+}
+.warp .formbox .input-submit:visible {
+  background-color: #ffffff;
+}
+footer {
+  height: 7.8rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  width: 100%;
+  background-image: url('../img/bg/footbg.png');
+  background-size: cover;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+footer p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #404040;
+  bottom: 1rem;
+  left: 0;
+}
+@media screen and (min-height: 620px) {
+  footer {
+    position: fixed;
+  }
+}

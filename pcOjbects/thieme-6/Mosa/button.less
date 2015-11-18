@@ -1,0 +1,76 @@
+@import "variables";
+
+.-buttons{
+	._slide_button(@bg:@markColor,@ft:#ffffff,@ftsize:@titleSize,@pdx:10px,@pdy:40px,@radus:5px){
+		background-color: @bg;
+		color: @ft;
+		font-size: @ftsize;
+		padding: @pdx @pdy;
+		border-radius: @radus;
+		display: inline-block;
+		&:hover{
+			background: lighten(@bg, 5%);
+			color: @ft;
+		}
+	}
+
+	._hollow_button(@sideColor:@markColorLighten,@ft:@markColorLighten,@ftsize:@titleSize,@pdx:8px,@pdy:31px,@radus:5px){
+		border:1px solid @sideColor;
+		color: @ft;
+		font-size: @ftsize+-4;
+		padding: @pdx @pdy;
+		border-radius: @radus;
+		display: inline-block;
+		&:hover{
+			color: #ffffff;
+			background-color: @sideColor;
+			// border:1px solid @markColor;
+		}
+	}
+}
+
+.-btn{
+	._btn-default(@bg:#ccc,@ft:#666,@w:100%,@h:36px){
+		font-size: 16px;
+		background-color: @bg;
+		color: @ft;
+		width: @w;
+		height: @h;
+		border:none;
+		cursor: pointer;
+		border-radius: 3px;
+		&:hover{
+			background-color: lighten(@bg, 10%);
+		}
+	}
+	._btn-primary(){
+		._btn-default(@bg:@markColor,@ft:#ffffff,@w:100%,@h:36px);
+		&:disabled{
+			._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:36px);
+			background-color: #ccc;
+		}
+	}
+	._btn-info(){
+		._btn-default(@bg:@markColorLighten,@ft:#ffffff,@w:100%,@h:36px);		
+		&:disabled{
+			._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:36px);
+			background-color: #ccc;
+			&:hover{
+				background-color: #ccc;
+			}
+		}
+		&.btn-mx{
+			._btn-default(@bg:@markColorLighten,@ft:#ffffff,@w:100%,@h:42px);
+			
+			&:disabled{
+				._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:42px);
+				background-color: #ccc;
+				&:hover{
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+
+}
+

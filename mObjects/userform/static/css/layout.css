@@ -1,0 +1,371 @@
+/*************************************************************************重置样式************************************************************/
+html {
+  font-family: '黑体', STHeiti, arial, verdana, helvetica, sans-serif;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #eeedfa;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #535a66;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  font-weight: 300;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp,
+span,
+em,
+i,
+img {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+/*body,input,textarea,button,select,pre,tt,code,kbd,samp,optgroup,option{
+    line-height:@baseLineHeight;
+}*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: inherit;
+}
+ul,
+ol,
+menu {
+  list-style: none;
+}
+img,
+object,
+input,
+textarea,
+button,
+select {
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+  font-style: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+textarea,
+input {
+  -webkit-outline: none;
+  outline: none;
+  border: none;
+}
+ins,
+s,
+u,
+del {
+  text-decoration: none;
+}
+a {
+  color: #3dbdff;
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  outline: none;
+}
+a:active {
+  color: #0aacff;
+}
+a:visited {
+  color: #3dbdff;
+}
+button {
+  border: 0 none;
+}
+button::-moz-focus-inner {
+  border: none;
+}
+button:focus {
+  outline: none;
+  /* for Firefox，IE8.0等 */
+}
+input[disabled] {
+  background: #ececec;
+  color: #cccccc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #b2b2b2;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #b2b2b2;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b2b2b2;
+}
+::-ms-reveal {
+  display: none;
+}
+:focus {
+  outline: none;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  -moz-outline: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus,
+textarea:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  z-index: 1010;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.loading i {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 32px;
+}
+.loading i:before {
+  display: block;
+  -webkit-animation: rotate 700ms linear 0ms infinite;
+  -o-animation: rotate 700ms linear 0ms infinite;
+  animation: rotate 700ms linear 0ms infinite;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@font-face {
+  font-family: 'dsFont';
+  src: url('../font/dsFont.eot?-ttl47x');
+  src: url('../font/dsFont.eot?#iefix-ttl47x') format('embedded-opentype'), url('../font/dsFont.ttf?-ttl47x') format('truetype'), url('../font/dsFont.woff?-ttl47x') format('woff'), url('../font/dsFont.svg?-ttl47x#dsFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i.icoFt {
+  font-family: 'dsFont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-coin-yen:before {
+  content: "\e60c";
+}
+.icon-heart:before {
+  content: "\e60b";
+}
+.icon-loading1:before {
+  content: "\e606";
+}
+.icon-loading2:before {
+  content: "\e607";
+}
+.icon-loading3:before {
+  content: "\e608";
+}
+.icon-loading4:before {
+  content: "\e609";
+}
+.icon-loading5:before {
+  content: "\e60a";
+}
+.icon-huiyuan:before {
+  content: "\e600";
+}
+.icon-huodong:before {
+  content: "\e601";
+}
+.icon-jiantou:before {
+  content: "\e602";
+}
+.icon-mima:before {
+  content: "\e603";
+}
+.icon-qian:before {
+  content: "\e604";
+}
+.icon-s:before {
+  content: "\e958";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-cool:before {
+  content: "\e605";
+}

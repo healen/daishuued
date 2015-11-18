@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>展业宝•借款二维码列表页</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/list.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+            <div class="banklist">
+                <div class="lis">
+                    <div class="content">
+                        <span>借款二维码</span>
+                    </div>
+                </div>
+             
+                <!-- <a href="up_pice.html" class="uppice">上传照片</a> -->
+            </div>
+            <div class="slidebox">
+                    <div class="loadingbox">
+                        
+                        <div class="banklist" style="margin-bottom:1rem">
+                                <div class="lis" style="padding-top:1.3rem">
+                                    <div class="content">
+                                        <div>公司名称：<em>东营吉诺 </em></div>
+                                        
+                                    </div>
+                                </div>
+                                <a href="ent_erweima.html" class="uppice">查看详情二维码</a>
+                        </div>
+
+                        <div class="banklist" style="margin-bottom:1rem">
+                                <div class="lis" style="padding-top:1.3rem">
+                                    <div class="content">
+                                        <div>公司名称：<em>普惠添翼 </em></div>
+                                    </div>
+                                </div>
+                                <a href="ent_erweima.html" class="uppice">查看详情二维码</a>
+                        </div>
+
+
+                       
+
+                    </div>
+                    
+          
+                <div class="pageloading">
+                    数据加载中<i class="icoFt icon-loading1"></i>
+                </div>              
+               
+            </div>
+		</section>
+	</section>
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+    <script>
+        $(".loadingmore span").on("click",function(){
+            var data='<div class="banklist">fsdfsafdsf</div>'
+            $(".loadingbox:visible").append(data)
+        })
+    </script>
+
+    <!--页面-->
+    <script type="text/javascript" src="../static/js/page.js"></script>
+    <!--页面JS-->
+    <script>
+        $.page(function(){
+             var data='<div class="banklist">fsdfsafdsf</div>';
+             
+                $(".loadingbox:visible").append(data);
+             
+            
+        })
+    </script>
+	
+	
+
+
+
+	
+
+</body>
+</html>

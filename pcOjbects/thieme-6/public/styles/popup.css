@@ -1,0 +1,93 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*标地内容*/
+/*弹窗*/
+.popup .dialog {
+  background: #fff;
+  width: 720px;
+  position: relative;
+  overflow: hidden;
+}
+.popup .dialog a.close {
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+  background: url('../images/ico.png') no-repeat -22px -227px #ffffff;
+}
+.popup .dialog .dialog-content {
+  padding: 10px 24px;
+}
+.popup .dialog .dialog-content .dialog-title {
+  height: 43px;
+  line-height: 43px;
+  text-align: left;
+  color: #404040;
+  border-bottom: 1px solid #e6e6e6;
+}
+.popup .dialog .dialog-content .dialog-title span {
+  padding-left: 20px;
+}
+.popup .dialog .dialog-content .popupbtnbox {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn {
+  display: inline-block;
+  background: #ff6527;
+  color: #fff;
+  width: 154px;
+  line-height: 36px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn:hover {
+  background-color: #f34600;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn.comfbox {
+  background: #3dbdff;
+}
+.popup .dialog .dialog-content .popupbtnbox .popupbtn.comfbox:hover {
+  background-color: #0aacff;
+}
+.popup .dialog .dialog-content .warp {
+  max-height: 650px;
+  overflow: auto;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.popupcontent {
+  display: none;
+}
+.popcon {
+  padding: 0px 22px;
+  line-height: 30px;
+}
+.popcon .top {
+  margin-bottom: 10px;
+}
+.popcon .top .mail {
+  color: #3dbdff;
+}
+.popcon .bottom {
+  text-align: center;
+}
+.popcon .bottom a.jhwc {
+  display: inline-block;
+  background: #ff6527;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.popcon .bottom a.jhwc:hover {
+  background: #f34600;
+}

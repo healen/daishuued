@@ -1,0 +1,703 @@
+/***********************************************************************重置样式开始**********************************************************/
+html {
+  background: #ffffff;
+  color: #808080;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+body,
+input,
+textarea,
+button,
+select,
+pre,
+tt,
+code,
+kbd,
+samp,
+optgroup,
+option {
+  line-height: 1.5;
+  font-family: 'Microsoft YaHei', arial, 'Hiragino Sans GB', '\5fae\8f6f\96c5\9ed1', '\5b8b\4f53', arial, verdana, helvetica, sans-serif;
+}
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+caption,
+th {
+  text-align: inherit;
+}
+ul,
+ol,
+menu {
+  list-style: none;
+}
+fieldset,
+img {
+  border: none;
+}
+img,
+object,
+input,
+textarea,
+button,
+select {
+  vertical-align: top;
+}
+article,
+aside,
+footer,
+header,
+section,
+nav,
+figure,
+figcaption,
+hgroup,
+details,
+menu {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+button,
+select,
+small {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+  font-style: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+textarea,
+input {
+  outline: none;
+}
+mark {
+  background-color: #fa655a;
+}
+ins,
+s,
+u,
+del {
+  text-decoration: none;
+}
+a {
+  color: #808080;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #5eabf2;
+  text-decoration: none;
+}
+button {
+  border: 0 none;
+}
+input[disabled] {
+  background: #ececec;
+  color: #cccccc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aaaaaa;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+::-ms-reveal {
+  display: none;
+}
+:focus {
+  -moz-outline-style: none;
+}
+button::-moz-focus-inner {
+  border: none;
+}
+button:focus {
+  outline-style: none;
+}
+/* for Firefox，IE8.0等 */
+/*清除浮动*/
+.hidden {
+  overflow: hidden;
+}
+/***********************************************************************主体框架样式开始**********************************************************/
+.box .header {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+}
+.box .header .hhead {
+  width: 100%;
+  height: 56px;
+  background: #e0e0e0;
+  color: #999999;
+}
+.box .header .hhead .content {
+  margin: auto;
+  overflow: hidden;
+  width: 1133px;
+  height: 56px;
+  *zoom: 1;
+}
+.box .header .hhead .content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .hhead .content .l {
+  float: right;
+  line-height: 56px;
+}
+.box .header .hhead .content .l span {
+  padding: 0px 5px;
+}
+.box .header .hhead .content .r {
+  font-size: 18px;
+  float: left;
+  line-height: 56px;
+  text-align: left;
+  width: 500px;
+  position: relative;
+  *zoom: 1;
+}
+.box .header .hhead .content .r:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .hhead .content .r div {
+  float: left;
+  *zoom: 1;
+}
+.box .header .hhead .content .r div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .hhead .content .r div > span > span {
+  font-size: 14px;
+}
+.box .header .hhead a {
+  color: #999999;
+}
+.box .header .hhead a:hover {
+  color: #fa655a;
+}
+.box .header .hbody {
+  width: 1133px;
+  height: 60px;
+  position: relative;
+  z-index: 9;
+  margin: auto;
+  *zoom: 1;
+}
+.box .header .hbody:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .hbody h1 {
+  *zoom: 1;
+  float: left;
+}
+.box .header .hbody h1:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .hbody h1.logo {
+  height: 60px;
+}
+.box .header .hbody h1 img {
+  display: block;
+  height: 100px;
+  float: left;
+}
+.box .header .navbox {
+  border-top: 1px solid #dcdcdc;
+  *zoom: 1;
+}
+.box .header .navbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .navbox .navs {
+  width: 1133px;
+  margin: 0px auto;
+}
+.box .header .navbox .navs > ul {
+  *zoom: 1;
+}
+.box .header .navbox .navs > ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .header .navbox .navs > ul.nav {
+  font-size: 16px;
+  float: right;
+  height: 36px;
+}
+.box .header .navbox .navs > ul.nav > li {
+  float: left;
+  position: relative;
+  z-index: 9;
+  margin-top: -10px;
+}
+.box .header .navbox .navs > ul.nav > li > a {
+  display: inline-block;
+  height: 46px;
+  line-height: 55px;
+  padding: 0px 10px;
+  margin-left: 20px;
+}
+.box .header .navbox .navs > ul.nav > li > a .xiejiao {
+  width: 8px;
+  height: 10px;
+  position: absolute;
+  right: -8px;
+  top: 0px;
+  display: block;
+  background-image: url('../images/xiejiao.png');
+  display: none;
+}
+.box .header .navbox .navs > ul.nav > li > a:hover {
+  color: #ffffff;
+  background: #fa655a;
+}
+.box .header .navbox .navs > ul.nav > li > a:hover .xiejiao {
+  display: block;
+}
+.box .header .navbox .navs > ul.nav > li > a:hover .down_img {
+  border-top: 4px solid #ffffff;
+}
+.box .header .navbox .navs > ul.nav > li > a.on {
+  color: #ffffff;
+  background: #fa655a;
+}
+.box .header .navbox .navs > ul.nav > li > a.on .xiejiao {
+  display: block;
+}
+.box .header .navbox .navs > ul.nav > li > a.on .down_img {
+  border-top: 4px solid #ffffff;
+}
+.box .header .navbox .navs > ul.nav > li .nav-dropdown {
+  position: absolute;
+  padding-left: 20px;
+  width: 101px;
+  display: none;
+}
+.box .header .navbox .navs > ul.nav > li .nav-dropdown ul {
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 0px;
+  border-top: 1px solid #dedede;
+  background: #fa655a;
+  font-size: 16px;
+  text-align: left;
+}
+.box .header .navbox .navs > ul.nav > li .nav-dropdown ul li a {
+  margin-left: 0px;
+  display: block;
+  color: #ffffff;
+  line-height: 38px;
+  padding-left: 10px;
+  text-align: left;
+}
+.box .header .navbox .navs > ul.nav > li .nav-dropdown ul li a:hover {
+  background: #f93728;
+}
+.box .container {
+  min-height: 500px;
+}
+.box .footer {
+  font-size: 14px;
+  margin-top: 30px;
+  border-top: 1px solid #dddddd;
+}
+.box .footer .inwarp {
+  width: 1133px;
+  *zoom: 1;
+  margin: 0px auto;
+}
+.box .footer .inwarp:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .footer .contant_us {
+  font-size: 14px;
+  *zoom: 1;
+  margin-top: 10px;
+}
+.box .footer .contant_us:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .footer .contant_us i {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico.png");
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+.box .footer .contant_us p {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+.box .footer .contant_us.address i {
+  background-position: -2px -3px;
+}
+.box .footer .contant_us.emial i {
+  background-position: -36px -3px;
+}
+.box .footer .picebox {
+  text-align: center;
+  padding-top: 10px;
+  width: 150px;
+}
+.box .footer .picebox img {
+  width: 70px;
+}
+.box .footer .ftbody {
+  padding: 20px 0px;
+  background: #f2f2f2;
+  *zoom: 1;
+}
+.box .footer .ftbody:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.box .footer .ftbody .footlist {
+  float: left;
+  width: 20%;
+}
+.box .footer .ftbody .footlist.frist {
+  width: 40%;
+}
+.box .footer .ftbody h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.box .footer .tel {
+  color: #fa655a;
+  font-size: 24px;
+  font-family: Arial;
+}
+.box .footer .ftflink {
+  background: #e0e0e0;
+  line-height: 52px;
+}
+.box .footer .ftflink a {
+  padding-right: 20px;
+}
+.box .footer .ftfoot {
+  background: #cccccc;
+  line-height: 52px;
+}
+.box .footer ul {
+  padding-top: 10px;
+}
+/*过渡样式*/
+a {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/*三角*/
+.underline {
+  text-decoration: underline;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+.warp {
+  width: 1133px;
+  margin: 0px auto;
+}
+.xinghao {
+  color: #fa655a;
+}
+input.text {
+  width: 160px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+}
+input.time {
+  width: 120px;
+  border: 1px solid #dddddd;
+  height: 34px;
+  padding: 0px 10px;
+  background: url('../images/ico.png') no-repeat right -113px;
+}
+input.subBut {
+  display: inline-block;
+  background: #fa655a;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.subBut:hover {
+  background: #f93728;
+}
+input.retBut {
+  display: inline-block;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+input.retBut:hover {
+  background: #c97c0a;
+}
+.bottonbox {
+  margin-top: 10px;
+  padding: 20px 0px;
+  text-align: center;
+}
+.bottonbox.subBut {
+  display: inline-block;
+  background: #fa655a;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.subBut:hover {
+  background: #f93728;
+}
+.bottonbox.retBut {
+  display: inline-block;
+  margin-right: 10px;
+  background: #f39913;
+  line-height: 35px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+.bottonbox.retBut:hover {
+  background: #c97c0a;
+}
+/*信用等级*/
+span.samllmark {
+  font-size: 12px;
+}
+span.dj {
+  width: 45px;
+  height: 24px;
+  background: #73c343;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+}
+span.e {
+  background: #fa655a;
+}
+/*ICO*/
+.icobxo i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+  background-image: url('../images/ico.png');
+  background-position: 0px -213px;
+  cursor: pointer;
+}
+.icobxo i.tx {
+  background-position: 0px -213px;
+}
+.icobxo i.tx:hover,
+.icobxo i.tx.on {
+  background-color: #c3e9ff;
+  background-position: 0px -248px;
+}
+.icobxo i.suo {
+  background-position: -35px -213px;
+}
+.icobxo i.suo:hover {
+  background-color: #c3e9ff;
+  background-position: -35px -248px;
+}
+.icobxo i.sj {
+  background-position: -70px -213px;
+}
+.icobxo i.sj:hover {
+  background-color: #c3e9ff;
+  background-position: -70px -248px;
+}
+.icobxo i.xx {
+  background-position: -105px -213px;
+}
+.icobxo i.xx:hover {
+  background-color: #c3e9ff;
+  background-position: -105px -248px;
+}
+.mbx {
+  padding: 5px 25px;
+}
+.mbx a {
+  color: #808080;
+  padding: 0px 0px;
+}
+.mbx a:hover {
+  color: #5eabf2;
+}
+.loding {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  top: 0px;
+  left: 0px;
+  z-index: 1003;
+  filter: alpha(opacity=50);
+  -ms-filter: progid:DXImageTransform._Microsoft._Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.loding .loginding {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+.show {
+  display: block;
+}
+.down_img {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top: 4px solid #666;
+  margin-top: -10px;
+  margin-left: 4px;
+  *margin-top: -16px;
+}
+.page-list {
+  text-align: center;
+  padding: 10px 0px;
+}
+.page-list a {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.page-list a.num {
+  border: 1px solid #dddddd;
+}
+.page-list a.num.on {
+  border: 1px solid #f39913;
+  background: #f39913;
+  color: #fff;
+}

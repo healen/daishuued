@@ -1,0 +1,118 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+/******************个人中心样式********************/
+.body-content{
+	padding:0rem 0rem;
+}
+.myhead{
+	margin-bottom: 1.5rem;
+	padding: 0rem 1rem;
+	.-bg ._color(@barBgColor);
+	.top{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
+		// height: 12rem;
+		padding: 1.2rem 0;
+		border-bottom: 1px solid @borderColor;
+		position: relative;
+		.set{
+			position: absolute;
+			.-box ._size(1.9rem,1.9rem);
+			top: 2rem;
+			right: 0rem;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			color: @assistColor;
+
+		}
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;
+		}
+	}
+	.bottom{
+		// height: 60px;
+		
+		padding: 1rem 0;
+		.-display ._box();
+		.-display ._box-align(center,start);
+		.qure{
+			position: relative;
+			.-display ._flex(1);
+			text-align: center;
+			h2{
+				font-size: @bigFontSize;
+				color: @markColor;
+
+			}
+			p{
+				color: @minorColor;
+			}
+
+			&:nth-child(1){
+				border-right: 1px solid @borderColor;
+			}
+		}
+	}
+
+	&.mid{
+		padding: 0 0;
+		.qure{
+			&:active{
+			background-color: #eeeeee;
+			}
+			&:visible{
+				background-color: #ffffff
+			}
+
+		}
+
+	}
+
+	
+}
+
+.qurelist{
+	._clearfix();
+	.-display ._flex(1);
+	border-top:1px solid @borderColor;
+	border-bottom: 1px solid @borderColor;
+	.list{
+		width: 25%;
+		box-sizing: border-box;
+		border-right: 1px solid @borderColor;
+		float: left;
+		text-align: center;
+		position: relative;
+		color: @minorColor;
+		padding: 1rem 0; 
+		border-bottom: 1px solid @borderColor;
+		margin-bottom: -1px;
+		&:nth-child(4n){
+			border-right: none;
+		}
+		&:active{
+			background-color: #eeeeee;
+		}
+		&:visible{
+			background-color: #ffffff
+		}
+	}
+}
+
+
+
+
+
+
+
+

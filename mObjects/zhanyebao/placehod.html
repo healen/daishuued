@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"> 
+    <style type="text/css">
+        input[type="date"]:before {
+            content: attr(placeholder);
+            color:#ccc;
+        }
+   
+    </style>  
+</head>
+<body>
+    <input type="date" placeholder="我是日期" id="date">
+   
+ 
+    <script type="text/javascript">
+        var o = document.getElementById('date');
+        o.onfocus = function(){
+            this.removeAttribute('placeholder');
+        };
+        o.onblur = function(){
+            if(this.value == '') this.setAttribute('placeholder','我是日期');
+        };
+ 
+    </script>
+</body>
+</html>

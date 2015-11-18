@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>贷鼠网-转盘</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/zhuanpan.css">
+</head>
+<body>
+	<section class="warp">
+
+	
+		<section class="body-content">
+            <div class="rurntable">
+                <div class="pan">
+                    <div class="partition_line"></div>
+                </div>
+            </div>
+		</section>
+	</section>
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+    <script type="text/javascript">
+
+    /*初始化转盘函数*/
+    function lottery(){
+        var init={
+            nRing:360*6,//初始化圈数
+            aPrize_id:[1,2,3,4,5,6,7,8,9,10]//初始化奖品
+        }
+        render_pan(".rurntable .pan",init.aPrize_id.length)//执行渲染表盘
+    }
+
+    /*渲染转盘表盘盘*/
+    function render_pan(element,num){
+        if(num%2!=0){
+            console.log("错误：%c奖品个数必须是偶数！%c BUG详情：http://www.qianduango.com","color:#ee0000","color:#cccccc");
+            console.log("错误：%c奖品个数必须是偶数！%c BUG详情：http://www.qianduango.com","color:#ee0000","color:#cccccc");
+            console.log("错误：%c奖品个数必须是偶数！%c BUG详情：http://www.qianduango.com","color:#ee0000","color:#cccccc");
+            console.log("错误：%c奖品个数必须是偶数！%c BUG详情：http://www.qianduango.com","color:#ee0000","color:#cccccc");
+                 
+            return 
+        }
+        var strhtml="";
+        var area_len=parseInt(360/num);
+        for(var i=0;i<num;i++){
+            strhtml+="<div class='partition_line' style='-webkit-transform: rotate("+(i*area_len)+"deg);-ms-transform: rotate("+(i*area_len)+"deg);-o-transform: rotate("+(i*area_len)+"deg);transform: rotate("+(i*area_len)+"deg)'></div>"
+        }
+        $(element).html(strhtml);
+    }
+    lottery()
+    </script>
+
+</body>
+</html>

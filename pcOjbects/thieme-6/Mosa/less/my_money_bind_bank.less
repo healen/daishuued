@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+
+
+/*银行卡样式*/
+
+.mybankbox{
+	width: 334px;
+	height: 178px;
+	margin: 0 auto;
+	padding-top: 50px;
+	.content{
+		height: 176px;
+		border-radius: 10px;
+		position: relative;
+		.add{
+			display: none;
+		}
+		border:1px solid @borderColor;
+
+		.bankcart{
+			.title{
+				._clearfix();
+				height: 50px;
+				border-bottom: 1px solid @borderColor;
+				line-height: 50px;
+				padding: 0px 20px;
+				font-size: 20px;
+				.l{
+					float: left;
+					._clearfix();
+					i{
+						display: block;
+						float: left;
+						margin-top: 15px;
+						margin-right: 5px;
+						line-height: 24px;
+					}
+				}
+				.r{
+					float: right;
+					font-size: @baseFontSize;
+					color: @titleFtColor;
+				}
+			}
+
+			.incontant{
+				padding: 20px;
+				.row{
+					font-size: 16px;
+					line-height: 24px;
+					margin-bottom: 10px;
+					.ellipsis{
+						float: left;
+						width: 220px;
+					}
+					a{
+						float: right;
+						color: @markColor;
+					}
+				}
+			}
+		}
+		&.empty{
+			border:1px dotted @lighten;
+			.bankcart{
+				display: none;
+			}
+			.add{
+				display: block;
+				width: 140px;
+				height: 94px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -47px;
+				margin-left: -70px;
+				text-align: center;
+				.icon{
+					height: 40px;
+					width: 40px;
+					display: block;
+					margin: 5px auto 15px auto;
+					background: url('@{img}/ico.png') no-repeat -1px -614px;
+				}
+				font-size: 18px;
+				&:hover{
+					color: @baseTextColor;
+				}
+
+			}
+
+		}
+
+
+	}
+}
+
+.my_money_bind_bank_warp{
+	width: 380px;
+	margin: 50px auto;
+}
+
+

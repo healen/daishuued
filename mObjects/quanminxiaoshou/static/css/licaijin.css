@@ -1,0 +1,197 @@
+/******************个人中心样式********************/
+.body-content {
+  padding: 0rem 0rem;
+}
+body {
+  background: #ffffff;
+}
+.myhead {
+  height: 6.7rem;
+  padding: 0rem 1rem;
+  background-color: #ffffff;
+  background-size: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2b9dfd;
+  background-image: url('../img/bg/topimg.png');
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.myhead .top {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  padding-top: 1rem;
+  position: relative;
+}
+.myhead .top .set {
+  position: absolute;
+  width: 1.9rem;
+  height: 1.9rem;
+  top: 2rem;
+  right: 0rem;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.myhead .top img {
+  display: block;
+  width: 52px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.myhead .top h2 {
+  font-size: 1.6rem;
+}
+.myhead .bottom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  margin-right: 2rem;
+}
+.myhead .bottom .qure {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  line-height: 2rem;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.myhead .bottom .qure h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.myhead .bottom .qure p {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+.myhead .bottom .line {
+  width: 1px;
+  height: 2rem;
+  background: #dfe3f0;
+}
+.myhead .userbar {
+  top: 1.5rem;
+  left: 1.5rem;
+  line-height: 3.5rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  color: #ffffff;
+  font-size: 1.8rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.myhead .userbar img {
+  display: block;
+  margin-right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 3.5rem;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 9;
+}
+.mybottom .setlist {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.mybottom .setlist .list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.mybottom .setlist .list:active {
+  background-color: #eeeeee;
+}
+.mybottom .setlist .list:visible {
+  background-color: #ffffff;
+}
+.mybottom .setlist .list .icon {
+  color: #2ca2ff;
+  display: block;
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mybottom .setlist .list .con {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: start;
+  -webkit-box-pack: start;
+  box-pack: start;
+  height: 4.5rem;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-bottom: 1px solid #dfe3f0;
+  line-height: 4.5rem;
+  color: #a2a9b2;
+  padding-right: 1rem;
+}
+.mybottom .setlist .list .con div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.mybottom .setlist .list .con i.icon-jiantou {
+  color: #dbdbdb;
+}

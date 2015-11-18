@@ -1,0 +1,57 @@
+/******************表单样式********************/
+body {
+  height: 100%;
+}
+.body-content {
+  background-image: url('../img/bg/banckground.png');
+  background-size: cover;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  height: 100%;
+}
+.body-content .erweimabox {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  border-radius: 0.5rem;
+}
+.body-content .erweimabox .in {
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.body-content .erweimabox .in .bold {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.body-content .erweimabox .in img {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+}
+body > .warp {
+  height: 100%;
+  padding-bottom: 0rem;
+}

@@ -1,0 +1,188 @@
+//                    _ooOoo_
+//                   o8888888o
+//                   88" . "88
+//                   (| -_- |)
+//                   O\  =  /O
+//                ____/`---'\____
+//              .'  \\|     |//  `.
+//             /  \\|||  :  |||//  \
+//            /  _||||| -:- |||||-  \
+//            |   | \\\  -  /// |   |
+//            | \_|  ''\---/''  |   |
+//            \  .-\__  `-`  ___/-. /
+//          ___`. .'  /--.--\  `. . __
+//       ."" '<  `.___\_<|>_/___.'  >'"".
+//      | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//      \  \ `-.   \_ __\ /__ _/   .-` /  /
+// ======`-.____`-.___\_____/___.-`____.-'======
+//                    `=---='
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//          佛祖保佑       永无BUG
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************表单样式********************/
+body{
+	
+	
+	height: 100%;
+	
+}
+.mb1{
+	margin-bottom: 0.8rem;
+}
+.body-content{
+	// background:#f0e7dc;
+	background-image: url('@{bgURL}banckground1.png');
+	// background-size: cover;
+	height: 100%;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	height: 100%;
+	.erweimabox{
+		position: relative;
+		width: 100%;
+		// height: 90%;
+		background-size:cover;
+		background-image: url('@{bgURL}cardbg.png');
+		background-color: rgba(212,212,212,0.8);
+		.-display ._box();
+		.-display ._box-align(center,center);
+		border-radius: 2.5rem;
+		.in{
+			p{
+				padding: 0 1rem;
+				&.title{
+					font-size: 1.6rem;
+				}
+				span{
+					color: @alertColor;
+				}
+			}
+			h2{
+				font-size: 2.4rem;
+				color: @alertColor;
+				margin-bottom: 2rem;
+				&.mb0{
+					margin-bottom: 0px;
+				}
+			}
+			.bold{
+				font-weight: bold;
+				font-size: 2rem;
+				padding-bottom: 1rem;
+				&.bigft{
+					font-size: 2.4rem;
+				}
+			}
+			padding-top: 2.6rem;
+			padding-bottom: 2.2rem;
+			margin-top: 5.0rem;
+			margin-bottom: 3.2rem;
+			background-color: #ffffff;
+
+			width: 85%;
+
+			border-radius: 2.5rem;
+			text-align: center;
+	
+			img{
+				cursor: p
+				display: block;
+				width: 100%;
+
+				&.point{
+					width: 70%;
+					display: block;
+					margin: 0 auto 1.5rem auto;
+				}
+			
+			}
+		}
+
+	}
+}
+
+
+.erweimapicebox{
+	.-display ._box();
+	.-display ._box-align(center,center);
+
+	// border:1px solid #ff0000;
+	margin: 1rem auto 1.5rem auto;
+	padding: 1rem;
+	width: 70%;
+	position: relative;
+	.xiejiao{
+		width: 1.4rem;
+		height: 1.4rem;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border-top: 2px solid #ffffff;
+		border-left: 2px solid #ffffff;
+		&.rt{
+			border-top: 2px solid #ffffff;
+			border-right: 2px solid #ffffff;
+			border-left: none;
+
+			right: 0px;
+			left: auto;
+		}
+		&.lb{
+			border-bottom: 2px solid #ffffff;
+			border-left: 2px solid #ffffff;
+			border-top: none;
+			border-right: none;
+
+			right: auto;
+			left: 0;
+			bottom: 0;
+			top: auto;
+		}
+		&.rb{
+			border-bottom: 2px solid #ffffff;
+			border-left: none;
+			border-top: none;
+			border-right: 2px solid #ffffff;
+
+			right: 0;
+			left: auto;
+			bottom: 0;
+			top: auto;
+		}
+
+	}
+}
+.text_left{
+	text-align: left;
+}
+
+.guajian{
+	width: 3rem;
+	height: 1rem;
+	position: absolute;
+	background: #f0e7dc;
+	border-radius: 0.5rem;
+	margin-left: -1.5rem;
+	left: 50%;
+	top: 10px;
+
+	.line{
+		width: 300px;
+		height: 139px;
+		background-size:cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		background-image: url('@{bgURL}/yaoshikou.png');
+		top: -133px;
+		left: -218px;
+	}
+}
+
+body > .warp {
+  height: 100%;
+  padding-bottom: 0rem;
+}

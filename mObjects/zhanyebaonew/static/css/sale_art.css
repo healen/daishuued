@@ -1,0 +1,478 @@
+/******************个人中心设置样式********************/
+.banklist {
+  margin-top: 0px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.banklist .lis {
+  padding-top: 2.5rem;
+  border-bottom: none;
+  height: 6.4rem;
+  line-height: 2.2rem;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.banklist .lis.show {
+  overflow: visible;
+  height: auto;
+}
+.banklist .lis i {
+  color: #535a66;
+  line-height: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+}
+.banklist .lis em {
+  color: #a2a9b2;
+}
+.banklist .lis .content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.banklist .lis .content span {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+.banklist .lis .content span.jxz {
+  color: #ff5a49;
+}
+.banklist .lis .content span.cg {
+  color: #3dbdff;
+}
+.banklist .lis .content span.sb {
+  color: #cccccc;
+}
+.banklist:active {
+  background: #FEFEFE;
+}
+.banklist:visited {
+  background: #ffffff;
+}
+.more {
+  display: inline-block;
+  padding: 4px 10px 0px 10px;
+  border: 1px solid #3dbdff;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+.more i {
+  -webkit-transition: all 80ms;
+  -o-transition: all 80ms;
+  transition: all 80ms;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: inline-block;
+  color: #3dbdff;
+  font-size: 1.4rem;
+}
+.more.show i {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  display: inline-block;
+  color: #3dbdff;
+  font-size: 1.4rem;
+}
+.listbox {
+  min-height: 200px;
+  *zoom: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 8;
+}
+.listbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.listbox .list {
+  width: 25%;
+  min-height: 50px;
+  margin-left: 5.3%;
+  position: relative;
+  float: left;
+  margin-top: 2.5rem;
+}
+.listbox .list .picebox {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 1rem;
+}
+.listbox .list .close {
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f54949;
+  position: absolute;
+  right: -0.8rem;
+  top: -0.8rem;
+  display: block;
+  line-height: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.listbox .list .close span {
+  display: block;
+  background: #fff;
+  height: 0.2rem;
+  width: 1rem;
+}
+.listbox .list img {
+  width: 150%;
+}
+.body-content > .banklist {
+  border-top: 2px solid #3dbdff;
+}
+.body-content > .banklist .lis {
+  padding-top: 1.3rem;
+  padding-right: 0rem;
+}
+.body-content > .banklist .lis .content {
+  font-size: 1.6rem;
+}
+.body-content > .banklist .info {
+  padding-right: 1.3rem;
+  font-size: 1.2rem;
+}
+.body-content > .banklist .info em {
+  color: #a2a9b2;
+}
+.list {
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-top: 0px!important;
+  margin-bottom: 1rem;
+}
+.btnbox {
+  clear: both;
+  text-align: center;
+  display: block;
+}
+.okbtn {
+  margin: 0px auto;
+  line-height: 3rem;
+  padding: 0px 2rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.6rem;
+  border-radius: 2rem;
+}
+section.info {
+  background: #ffffff;
+  margin-top: -5px;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  height: 0px;
+  overflow: hidden;
+}
+section.info .wapper {
+  position: relative;
+  padding: 0rem 1.3rem 0.8rem 1.3rem;
+}
+section.info .wapper a.rechartbtn {
+  height: 4rem;
+  border-radius: 2rem;
+  display: block;
+  background: none;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  font-size: 1.6rem;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+}
+section.info .wapper a.rechartbtn:active {
+  border-color: #0aacff;
+  background: #eeedfa;
+}
+section.info .wapper a.rechartbtn:visited {
+  border-color: #3dbdff;
+}
+section.info .wapper a.rechartbtn.disable {
+  background: #ccc;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+section.info .wapper p {
+  line-height: 2.0rem;
+  color: #a2a9b2;
+}
+.on section.info {
+  height: 90px;
+}
+.on section.info .wapper {
+  padding: 0rem 1.3rem 0.8rem 1.3rem;
+}
+.on section.info .wapper p {
+  line-height: 2.0rem;
+  color: #a2a9b2;
+}
+.banklist .lis {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.banklist .lis .jt {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+.banklist .lis .btnbox {
+  padding-bottom: 1rem;
+}
+.status {
+  color: #ffffff;
+  background: #3dbdff;
+  border-radius: 0rem 0rem 0rem 1rem;
+  line-height: 2.5rem;
+  padding: 0px 1rem;
+  display: block;
+  box-shadow: 0 2px 2px #d1f0ff;
+}
+.statusbox {
+  position: absolute;
+  left: 0px;
+  top: -6px;
+}
+.statusbox .sanjiao {
+  height: 6px;
+  width: 20px;
+  background-color: #008dd6;
+  position: absolute;
+  right: -2px;
+  top: 0px;
+  z-index: -1;
+  -webkit-transform: skew(45deg);
+  -ms-transform: skew(45deg);
+  -o-transform: skew(45deg);
+  transform: skew(45deg);
+}
+.banklist a.uppice {
+  margin-right: 1.5rem;
+  border-radius: 0.5rem;
+  display: block;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  padding: 3px 10px;
+}
+.banklist a.uppice:active {
+  border: 1px solid #008dd6;
+}
+.banklist a.uppice:visited {
+  border: 1px solid #3dbdff;
+}
+.selectpice {
+  padding-bottom: 2rem;
+}
+.selectpice .listbox {
+  min-height: 200px;
+  *zoom: 1;
+  padding: 2rem 0rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 8;
+}
+.selectpice .listbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.selectpice .listbox .list {
+  width: 25%;
+  min-height: 50px;
+  margin-left: 5.3%;
+  position: relative;
+  border: 1px dotted #dfe3f0;
+  overflow: visible;
+  background: #efefef;
+  float: left;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 4.5rem;
+}
+.selectpice .listbox .list .titles {
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  bottom: -45px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+.selectpice .listbox .list .picebox {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 1rem;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.selectpice .listbox .list .close {
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f54949;
+  position: absolute;
+  right: -0.8rem;
+  top: -0.8rem;
+  display: block;
+  line-height: 2rem;
+  text-align: center;
+  z-index: 3;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.selectpice .listbox .list .close span {
+  display: block;
+  background: #fff;
+  height: 0.2rem;
+  width: 1rem;
+}
+.selectpice .listbox .list img {
+  width: 150%;
+}
+.imgbox {
+  display: none;
+}
+.imgbox .close {
+  display: none;
+}
+.imgbox .close span {
+  margin: 0px auto;
+  margin-top: 11px;
+}
+.buttons {
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  display: none;
+}
+.buttons .add {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  height: 100%;
+}
+.buttons .add .inbox {
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 6rem;
+  line-height: 4.5rem;
+}
+.renderbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  z-index: 9;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.renderbox.show {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.renderbox .swiper-container {
+  height: 100%;
+  width: 100%;
+}
+.renderbox .swiper-container .swiper-slide {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.upfiles {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.0;
+}
+.noupfile {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  display: block;
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要借款</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/apply_borrow.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+       
+         
+ <!-----header.tpl开始读取---->
+   <div class="header">
+        <div class="hhead">
+            <div class="content">
+                <div class="l">
+                   
+                    <a href="login.html">用户登录</a>
+                    <span>|</span>
+                    <a href="reg.html">免费注册</a>
+                </div>
+                <div class="r">
+                    <div class="tel">
+                        <span><span>服务热线：</span>400-666-8888</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="hbody">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="../public/img/logo1.png" alt="" style="height:60px">
+                    <img src="../public/img/slogn.png" alt="" style="height:60px">
+                </a>
+            </h1>         
+        </div>
+
+        <div class="navbox">
+                <div class="navs">
+                      <ul class="nav">
+                        <li>
+                            <a href="index_.html">首页<div class="xiejiao"></div></a>
+                        </li>
+                        <li>
+                            <a href="tenderList.html">我要投资 <div class="xiejiao"></div></a>
+                        
+                        </li>
+                         <li><a href="my_borrow.html">我要借款<div class="xiejiao"></div></a></li>
+
+                           <li>
+                            <a href="javascript:void(0)">新手专区 <div class="xiejiao"></div><i class="down_img"></i></a>
+                            <div class="nav-dropdown" style="left: 0px;">
+                                <ul>
+                                    <li class="nav-dropdown-angle"><span></span></li>
+                                    <li class="nav-dropdown-item"><a href="#">列表1</a></li>
+                                    <li class="nav-dropdown-item"><a href="#">列表2</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="my.html">我的账户<div class="xiejiao"></div></a></li>
+                        
+                        <li><a href="about.html">关于我们<div class="xiejiao"></div></a></li>
+                      
+                        <!-- <li><a href="#">活动专区</a></li> -->
+                    </ul>  
+                    
+                </div>
+            
+        </div>
+    
+
+         
+
+
+    </div>
+
+
+ <!-----header.tpl读取完成---->
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+               <div class="borrow top">
+                  <div class="bar">
+                      <div class="bars" style="width:225px"></div> <!--选中个数此宽度是225的倍数 从0开始-->
+                      <div class="qiu n1 on">
+                        <span>选择借款产品</span>
+                      </div>
+
+                       <div class="qiu n2 on">
+                        <span>填写借款信息</span>
+                      </div>
+
+                       <div class="qiu n3">
+                        <span>审 核</span>
+                      </div>
+
+                       <div class="qiu n4">
+                        <span>筹集借款</span>
+                      </div>
+
+                       <div class="qiu n5">
+                        <span>获得借款</span>
+                      </div>
+                  </div>
+               </div>
+               <div class="borrow mit">
+                    <div class="title">
+                        选择借款产品
+                    </div>
+                    <div class="borrowcard">
+                        <div class="inborrcard">
+                          <div class="card">
+                            <h2>工薪贷</h2>
+                            <p>（适用工薪阶层）</p>
+                          </div>
+                          <div class="card">
+                             <h2>生意贷</h2>
+                            <p>（适用私营业主）</p>
+                          </div>
+                          <div class="card">
+                             <h2>网商贷</h2>
+                            <p>（适用淘宝商户）</p>
+                          </div>
+                          <div class="card">
+                             <h2>学生贷</h2>
+                            <p>（适用在校学生）</p>
+                          </div>
+
+                        </div>
+                      
+                    </div>
+               </div>
+
+               <div class="borrow mit">
+                    <div class="title">
+                        填写借款申请
+                    </div>
+                    <div class="form">
+                          <form class="basicfrome">
+                                <div class="label">
+                                    <div class="subject">借款金额：</div>
+                                    <input type="text" class="length3" placeholder="请输入借款金额" value="5000">
+                                    &nbsp;
+                                    元
+                                   
+                                </div>
+
+                                 <div class="label">
+                                    <div class="subject">借款期限：</div>
+                                    <input type="text" class="length3" placeholder="请输入昵称" value="3个月">
+                                 
+                                </div>
+
+                                 <div class="label">
+                                    <div class="subject">月还款额：</div>
+                                    <span class="xinghao">￥560</span>
+                                   
+                                   
+                                </div>
+
+                                  <div class="label">
+                                    <div class="subject">借款用途：</div>
+                                    <input type="text" class="length3" placeholder="请输入昵称" value="3个月">
+                                 
+                                </div>
+
+                                  <div class="label">
+                                    <div class="subject">借款标题：</div>
+                                    <input type="text" class="length3" placeholder="请输入昵称" value="3个月">
+                                 
+                                </div>
+
+                                
+                                 <div class="label">
+                                    <div class="subject">借款描述：</div>
+                                    <textarea name="" id="" ></textarea>
+                            
+                                </div>
+
+
+
+                                <p>已阅读并同意签署<a href="">《借款协议》</a></p>
+
+                                <p>已阅读并接受 <a href="">《网站收费细则》</a></p>
+                                <p>温馨提示：“逾期有成本，为了您和家人的幸福，请谨慎借贷！”</p>
+
+                                <p><input type="submit" class="submit" value="立即申请"></p>
+
+                              
+                            </form>
+                    </div>
+               </div>
+         
+  
+
+
+
+            
+
+
+
+
+            </div>
+        </div>
+
+        <!--footer.tpl开始读取-->
+    <div class="footer">
+        <div class="ftbody">
+            <div class="inwarp">
+                <div class="footlist frist">
+                    <h2>联系我们</h2>
+                    <div class="contant_us address">
+                        <i></i>
+                        <p>山东省东营市东营区黄河路金领国际B座803</p>
+                    </div>
+                    <div class="contant_us emial">
+                        <i></i>
+                        <p><a href="mailto:dongyingdaicn@163.com">dongyingdaicn@163.com</a></p>
+                        
+                    </div>
+                </div>
+
+                <div class="footlist">
+                    <h2>客服热线</h2>
+                    <div class="tel">400-0546-966</div>
+                    <p>服务时间：09:00-17:30</p>
+                    <p class="picebox">
+                        <img src="../public/img/erweima.jpg" alt="">
+                    </p>
+                </div>
+
+                <div class="footlist">
+                    <h2>新手指引</h2>
+                    <ul>
+                        <li><a href="">理财通知</a></li>
+                        <li><a href="">理财帮助</a></li>
+                        <li><a href="">安全保障</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlist">
+                     <h2>关于我们</h2>
+                     <ul>
+                        <li><a href="">相关法律</a></li>
+                        <li><a href="">媒体报道</a></li>
+                        <li><a href="">招贤纳士</a></li>
+                        <li><a href="">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ftflink">
+            <div class="inwarp">
+                友情链接：   <a href="">贷鼠网</a>     <a href="">网贷之家</a>    <a href="">搜狐互联网金融</a>     <a href="">老虎财经</a>    <a href="">慧博咨询</a>    <a href="">网贷之眼</a>
+            </div>
+            
+        </div>
+        <div class="ftfoot">
+             <div class="inwarp">
+                ©2015东营贷All rights reserved | 鲁ICP备15006745号 | 东营吉诺投资咨询有限公司 | 鲁ICP备15006745号-1
+            </div>
+            
+        </div>
+        
+    </div>
+<!--footer.tpl读取完成-->
+
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script src="../public/scripts/global.js"></script>  
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/auto_bid.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    <!--页眉-->
+
+    <!-----header.tpl开始读取---->
+      {% inc='header.tpl' %}
+
+ <!-----header.tpl读取完成---->
+
+   
+
+
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+                <div class="myleft">
+
+                    <a href="index.html" class="index">管理首页</a>
+                    <div class="list">
+                        <div class="navbtn on">
+                            <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                            <div class="childlist" style="display:block">
+                                 <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                                 <a href="javascript:void(0)"><span>信用认证</span></a>
+                                 <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                 <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                 <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                 <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                 <a href="javascript:void(0)"><span>登录密码</span></a>
+                                 <a href="javascript:void(0)"><span>交易密码</span></a>
+                                  <a href="javascript:void(0)"><span>安全问题</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="navbtn">
+                            <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                            <div class="childlist">
+                                 <a href="javascript:void(0)"><span>基本资料</span></a>
+                                 <a href="javascript:void(0)"><span>实名认证</span></a>
+                            </div>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="myright">
+                     <div class="mbx">您当前所在的位置><a href="#">首页</a> > <a href="#">自动投标设置</a></div>
+                     <div class="topcontent">
+
+                        <div class="warp">
+                        <div class="tabview">
+                              
+                                <div class="contant">
+                                   
+                                    <div class="transferpopup">
+
+                                      
+                                        <table class="transfertable"> 
+                                          
+
+                                          
+                                          
+
+                                          
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">借标年利率(%)：</span><input type="text" class="txtbox" style="width:100px" /> ~ <input type="text" class="txtbox"  style="width:100px"/> </td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                             <tr>
+                                                <!-- <td class="title"><span class="spantitle">转让折扣：</span><input type="text" class="txtbox" /></td> -->
+                                                <td class="title"><span class="spantitle">借款期限(月)：</span><input type="text" class="txtbox" style="width:100px" /> ~ <input type="text" class="txtbox"  style="width:100px"/></td>
+                                            </tr>
+                                           
+                                            <tr>  
+                                                <td class="title"><span class="spantitle">单笔最大投资金额：</span><input type="text" class="txtbox"  style="width:237px"/> 元</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">单笔最大投资次数：</span><input type="text" class="txtbox"  style="width:237px"/> 次</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">账户最小余额：</span><input type="text" class="txtbox"  style="width:237px"/> 元</td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                         
+
+                                            
+                                            <tr>
+                                                <td class="title">
+                                                    <span class="spantitle"></span>
+                                                    <label>
+                                                         <input type="checkbox" class="checkbs"/>是否开启
+                                                    </label>
+                                                   
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td class="title"><span class="spantitle">自动投标时间设置：</span>
+                                                    <input  type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time txtbox" style="width:110px" />
+                                                     ~ 
+                                                    <input type="text" name="time1" onclick="WdatePicker()" maxlength="21" class="time txtbox" style="width:110px"  /> 
+                                                </td>
+                                                <!-- <td class="title"><span class="spantitle">标题：</span><input type="text" class="txtbox" /></td> -->
+                                            </tr>
+
+                                             <tr>
+                                                <td class="title"></span>
+                                                   
+                                                </td>
+                                               
+                                            </tr>
+
+                                            
+
+
+
+                                          
+                                           
+                                            
+                                       
+                                          
+
+                                              <tr>
+                                                <td class="title">
+                                                   <span class="spantitle"></span>
+                                                   <input type="button" value="保存" class="sub subBut" style="width:150px;">
+                                                    <input type="button" value="开启" class="sub retBut" style="width:150px;">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </table>
+                                        
+                                    </div>
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+           <!--footer.tpl开始读取-->
+             {% inc='footer.tpl' %}
+    
+            <!--footer.tpl读取完成-->
+
+
+
+
+
+	
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../public/scripts/lib/date/WdatePicker.js"></script>
+    <script src="../public/scripts/global.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        });
+
+       
+
+         $(function(){
+            $(".tab a").click(function(){
+                var num=$(this).index();
+                var parent=$(this).parents(".tabview");
+                $(this).addClass("on");
+                $(this).siblings("a").removeClass("on");
+                parent.find(".tabcontent").eq(num).show();
+                parent.find(".tabcontent").eq(num).siblings(".tabcontent").hide();
+            
+            });
+        });
+
+
+        
+    })
+   </script>
+    
+</body>
+</html>

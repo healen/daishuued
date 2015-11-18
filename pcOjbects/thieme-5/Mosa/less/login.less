@@ -1,0 +1,166 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+/*
+*2015
+*登录页面样式
+*zxd
+*/
+body{
+    background: #ffffff;
+}
+@documentWidth:1000px;
+.box{
+
+    .header{
+       
+          box-shadow: 0 1px 4px rgba(0,0,0,.2);
+        
+    }
+    .container{
+        min-height: 200px;
+    }
+}
+.login{
+    @documentWidth:1000px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: @documentWidth;
+    height: 420px;
+    border:1px solid @borderColor;
+    margin: 30px auto 30px auto;
+    ._clearfix();
+    .l{
+        .-box ._size(586px,385px);
+        margin-top: 20px;
+        float: left;
+        border-right: 1px solid @borderColor;
+        text-align: center;
+        img{
+            display: block;
+            margin: 28px auto;
+
+        }
+    }
+    .r{
+        float: left;
+        .-box ._size(410px,385px);
+        .-bg ._color(#fff);
+        margin-top: 20px;
+        form{
+            display: block;
+            .-box ._size(300px,auto);
+            margin: 53px auto;
+            .title{
+                margin-bottom: 15px;
+            }
+            div.input{
+             
+                border:1px solid @borderColor;
+                border-radius: 3px;
+                overflow: hidden;
+                position: relative;
+                ._clearfix();
+                 &.username{
+                    .-icon ._base(login,50,'@{img}/ico.png',-1px,-162px,@huiBackground);
+                 }
+
+                 &.password{
+                    .-icon ._base(login,50,'@{img}/ico.png',-50px,-162px,@huiBackground);
+                 }
+                .i-login-50{
+                    display: block;
+                    float: left;
+                    border-left: 1px solid @borderColor; 
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+
+                input{
+                    height: 40px;
+                    *line-height: 40px;
+                    display: block;
+                    padding-left: 10px;
+                    width: 280px;
+                    border:1px solid #fff;
+                    float: left;
+
+                }
+            }
+            .tips{
+                color: @inputPlaceholderColor;
+            }
+            div.yzm{
+               ._clearfix();
+               div.input{
+                    width: 166px;
+                    float: left;
+                    margin-right: 10px;
+                    input{
+                        width: 220px;
+                    }
+               }
+               img{
+                width: 120px;
+                height: 40px;
+                border:1px solid @borderColor;
+               }
+            }
+            div.alert{
+                height: 20px;
+                line-height: 20px;
+                padding: 0px 10px;
+                text-align: center;
+                color: @alertTextColor;
+            }
+            .btnbox{
+               
+                .m-btn{
+                    .-form ._btnbase();
+
+                }
+                .-form ._button(login,40px,@markBgColor,1px solid @markBgColor,@color:#ffffff);
+
+                .btn-login{
+                    display: block;
+                    padding:0px 0px;
+                    width: 100%;
+                    margin: 0px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+
+                    cursor: pointer;
+                    &:hover{
+                        background-color: darken(@markBgColor, 10%);
+                    }
+                }
+            }
+
+            .alist{
+                ._clearfix();
+                width: 95%;
+                margin: 0px auto;
+                a{
+                    display:block;
+                    &.left{
+                        float: left;
+                        text-align: left;
+                        color: @markBgColor;
+                        &:hover{
+                            color: darken(@markBgColor, 10%);
+                        }
+
+                    }
+                    &.right{
+                        float: right;
+                        text-align: right;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

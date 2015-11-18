@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>展业宝</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../public/styles/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../public/styles/bootstrap/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../public/styles/layout.css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="qrcodebg">
+
+	<div class="header navbar navbar-default">
+		<div class="inheader">
+			<!-- <img src="../public/img/logo.png" alt=""> -->
+			<p>
+				展业宝-企业申请信息
+				<!-- <a href="#" class="backa" style="float:right">返回企业审核</a> -->
+			</p>
+
+		</div>
+	</div>
+
+
+
+	<div class="container" style="padding-top:20px">
+		<div class="inwarp">
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 col-xs-2 control-label hidden-xs">手机号：</label>
+			    <div class="col-sm-8 col-xs-7">
+			      <input type="text" class="form-control"  placeholder="请输入手机号">
+			    </div>
+			    <div class="col-sm-2 col-xs-5">
+			    	<input type="button" value="获取验码"  class="form-control btn-info" id="verify">
+			    	<!-- <button type="button"></button> -->
+			    </div>
+
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 col-xs-2 control-label hidden-xs">验证码：</label>
+			    <div class="col-sm-10 col-xs-12">
+			      <input type="text" class="form-control" placeholder="获取验证码">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10 col-xs-12">
+			      <button type="button" class="btn btn-primary" onclick="window.location.href='ant_list.html'">申请查询</button>
+			      <!-- <p class="pull-right"><a href="ant_result.html">申请查询结果</a></p> -->
+			    </div>
+			  </div>
+			  <hr>
+			  <div class="form-group">
+			  	<div class="col-sm-2"></div>
+			  	<div class="text-success col-sm-10 col-xs-10">
+					<p>温馨提示：</p>
+					<p>本页面仅供已提交申请信息的用户查看申请结果，如果您未提交过申请信息，请点击这里进行展业宝企业申请。</p>
+					<p>如有需要，请联系我们：010-53677696</p>
+				</div>
+			  </div>
+			</form>
+
+		</div>
+
+		
+	</div>
+
+
+
+
+
+
+	<div class="footer">
+		<p>
+			版权所有：贷鼠金服
+		</p>
+		
+	</div>
+
+	<div id="popup"></div>
+
+	<div id="qxzt" style="display:none">
+		<div style="text-align:center">
+			 <p>很抱歉！您的电话号码已经提交过申请，您可以<a href="apply_result.html">点击这里</a>查看申请结果。</p>
+		</div>
+	</div>
+
+
+
+	<script src="../public/scripts/popup.js"></script>
+	<script type="text/javascript">
+		var verify=function(ele,time){
+			var timer=null;
+			var sce=time;
+			$(ele).on("click",function(){
+				var oW=$(this);
+				oW.attr("disabled","disabled");
+				oW.val(sce+"秒重新获取");
+				clearInterval(timer);
+				timer=setInterval(function(){
+					sce--
+					if(sce<1){
+						oW.removeAttr("disabled").val("获取验证码");
+						clearInterval(timer);
+						sce=time
+						return
+					}
+					oW.val(sce+"秒重新获取");
+				},1000);
+			})
+		}
+		verify("#verify",5)
+
+
+
+
+		$(".xiugai").click(function(){
+				$.popup({
+		            title:"提示！",
+		            content: function(){
+		              return $("#qxzt").html() //$("#popupcontent").html();//内容
+		            },
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 400,
+		            popupPosition:"fixed",
+		             btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "确认",
+		                        "callback": null
+		                    }
+		            ]
+		           
+		     });
+		});
+
+	</script>
+
+
+
+
+</body>
+</html>

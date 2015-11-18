@@ -1,0 +1,211 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+
+
+/*银行卡样式*/
+
+
+
+/*银行卡样式*/
+
+.mybankbox{
+	width: 334px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.content{
+		height: 176px;
+		border-radius: 10px;
+		position: relative;
+		.add{
+			display: none;
+		}
+		border:1px solid @borderColor;
+
+		.bankcart{
+			.title{
+				._clearfix();
+				height: 50px;
+				border-bottom: 1px solid @borderColor;
+				line-height: 50px;
+				padding: 0px 20px;
+				font-size: 20px;
+				.l{
+					float: left;
+					._clearfix();
+					i{
+						display: block;
+						float: left;
+						margin-top: 15px;
+						margin-right: 5px;
+						line-height: 24px;
+					}
+				}
+				.r{
+					float: right;
+					font-size: @baseFontSize;
+					color: @titleFtColor;
+				}
+			}
+
+			.incontant{
+				padding: 20px;
+				.row{
+					font-size: 16px;
+					line-height: 24px;
+					margin-bottom: 10px;
+					.ellipsis{
+						float: left;
+						width: 220px;
+					}
+					a{
+						float: right;
+						color: @markColor;
+					}
+				}
+			}
+		}
+		&.empty{
+			border:1px dotted @lighten;
+			.bankcart{
+				display: none;
+			}
+			.add{
+				display: block;
+				width: 140px;
+				height: 94px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -47px;
+				margin-left: -70px;
+				text-align: center;
+				.icon{
+					height: 40px;
+					width: 40px;
+					display: block;
+					margin: 5px auto 15px auto;
+					background: url('@{img}/ico.png') no-repeat -1px -614px;
+				}
+				font-size: 18px;
+				&:hover{
+					color: @baseTextColor;
+				}
+
+			}
+
+		}
+
+
+	}
+}
+
+.rechargebox{
+	padding: 20px  40px;
+}
+
+.my_form_group{
+	.input_group{
+		.input_row {
+			.inputwarp{
+				input[type='text'],input[type='password']{
+					width: 190px;
+				}
+				a{
+					&.btn{
+						width: 212px!important;
+						border-radius: 0px;
+						box-shadow: none;
+					}
+				}			
+			}			
+		}		
+	}
+}  
+
+
+.discribe{
+	border-top: 1px dotted @borderColor2;
+	h2{
+		font-size: @baseFontSize + 2;
+		color: @titleFtColor;
+		padding-top: 30px;
+		margin-bottom: 10px;
+	}
+	p{
+		padding: 10px 0px;
+		._clearfix();
+		span{
+			float: left;
+		}
+		a{
+			float: right;
+			color: @markColor;
+		}
+	}
+}
+.dis{
+	padding-left: 26px;
+}
+
+
+.pop_box{
+	._clearfix();
+	margin: 10px 0px;
+	.l,.r{
+		width: 49%;
+		float: left;
+		height: 100%;
+		._clearfix();
+
+		.content{
+			width: 114px;
+			height: 93px;
+			margin: 0px auto;
+			text-align:center;
+			a{
+				&.btn{
+					margin-top: 5px;
+					margin-bottom: 5px;
+					width: 100%!important;
+					border-radius: 0px;
+					box-shadow: none;
+					margin-right: 0px;
+				}
+			}		
+
+		}
+		h2{
+			font-size: 16px;
+			color: @titleFtColor;
+		}
+	}
+	.l{
+		border-right: 1px solid @borderColor2;
+	}
+	
+}
+
+.remove_bank{
+	margin-top: 5px;
+	a{
+		color: @markColor;
+	}
+}
+
+.title_line{
+	border-top: 1px dotted @borderColor2;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.bind_title{
+	font-size: 16px;
+	color: @titleFtColor;
+}
+
+

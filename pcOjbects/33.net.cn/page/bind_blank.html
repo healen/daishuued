@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定银行卡</title>
+    <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/bind_blank.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    
+ <!-----header.tpl开始读取---->
+   <div class="head-wrap">
+  <div class="top-wrap">
+    <div class="FWApp" style="display: block;">
+        <div class="top-body">
+            <ul class="top-login-status">
+              <li class="welcome"><a href="#"><img src="../public/img/ind/home-ico.jpg"></a>&nbsp;您好，欢迎来到袋鼠网</li>
+            </ul>
+            <ul class="login-link">
+              <li> <a class="gray-word" href="#">立即登录</a> </li>
+              <li><a class="gray-word" href="#">免费注册</a></li>
+              <li><a class="gray-word" href="#">帮助中心</a></li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+    </div>
+    <div class="head-body">
+      <div class="logo" style="padding-top:15px;"> 
+        <a href="#"> 
+            <img src="../public/img/logo.png" alt="kingyoucolud" style="width:153px;height:63px"/>
+            <img src="../public/img/logo.png" alt="kingyoucolud" style="width:294px;height:63px"/>
+        </a> 
+      </div>
+      <!-- <div class="slogin">让每个人成为<span>互联网</span>的受益者</div> -->
+      <div class="logo-about"> <a href="#" target="_blank"> <img src="../public/img/ind/logo-about.jpg" alt="" style="margin-top:-10px"> </a> </div>
+      <div class="tel-400">
+
+        <span>0546-7616188</span>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+    <div class="nav warp">
+      <div class="logo f-fl"> </div>
+      <div class="menu">
+        <ul id="nav" class="on">
+          <li class="nLi on"><a href="/sjzx/frontcms/index.brp">首页</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/financing.brp" class="nLi_ed">我要理财</a>
+            
+            <ul class="sub" style="display: none;">
+              <li><a href="#">定投宝</a></li>
+              <li><a href="/sjzx/loan/clist.brp">散标投资</a></li>
+              <li><a href="/sjzx/loan/transferList.brp">债权转让</a></li>
+            </ul>
+          </li>
+          <li class="nLi"><a href="/sjzx/loan/etpborrow.brp" class="nLi_ed">我要借款</a>
+            
+           <!--  <ul class="sub">
+              <li><a href="#" >个人借款</a></li>
+              <li><a href="#">企业借款</a></li>
+            </ul> -->
+          </li>
+          <li class="nLi"><a href="/sjzx/customer/main.brp">我的账户</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=2">关于我们</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=15&amp;type=15">新人指南</a></li>
+          <li class="nLi"><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=6&amp;type=6">媒体报道</a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-----header.tpl读取完成---->
+        <!--主体内容-->
+        <div class="container">
+           <div class="la-my">
+
+                <div class="myleft">
+
+                        <a href="index.html" class="index">管理首页</a>
+                        <div class="list">
+                            <div class="navbtn on">
+                                <a href="javascript:void(0)" class="sliderview"><span>账户管理</span></a>
+                                <div class="childlist" style="display:block">
+                                     <a href="javascript:void(0)" class="on"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                     <a href="javascript:void(0)"><span>信用认证</span></a>
+                                     <a href="javascript:void(0)"><span>VIP认证</span></a>
+                                     <a href="javascript:void(0)"><span>已认证专区</span></a>
+                                     <a href="javascript:void(0)"><span>隐私设置</span></a>
+                                     <a href="javascript:void(0)"><span>提醒设置</span></a>
+                                     <a href="javascript:void(0)"><span>登录密码</span></a>
+                                     <a href="javascript:void(0)"><span>交易密码</span></a>
+                                      <a href="javascript:void(0)"><span>安全问题</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>资金管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>借出管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>借入管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                            <div class="navbtn">
+                                <a href="javascript:void(0)" class="sliderview"><span>好友管理</span></a>
+                                <div class="childlist">
+                                     <a href="javascript:void(0)"><span>基本资料</span></a>
+                                     <a href="javascript:void(0)"><span>实名认证</span></a>
+                                </div>
+                                <i></i>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="myright">
+                    <div class="mbx">您当前所在的位置><a href="my.html">我的账户</a> > <a href="bind_blank.html">银行卡列表</a></div>
+                    <div class="blanklist">
+                        <div class="title">银行卡列表</div>
+                        <ul class="blist" id="bindBlank">
+                            <li>
+                                <div class="empty">
+                                    <div class="top">+</div>
+                                    <div class="bottom">添加一张银行卡</div>
+                                </div>
+                                <div class="blankinfo">
+                                    <div class="title"><span data-id="blankStyle">中国银行</span> <a href="javascript:void(0)">默认提现卡</a></div>
+                                    <div class="content">
+                                        <div class="in">
+                                            <div class="col_1">
+                                                <div class="title">尾号</div>
+                                                <div class="info" data-id="blanklastNumber4">3557</div>
+                                                
+                                            </div>
+                                            <div class="col_1">
+                                                <div class="title">户名</div>
+                                                <div class="info" data-id="carder">姚琳</div>
+                                                
+                                            </div>
+
+                                            <div class="col_1">
+                                                <div class="title">开户行</div>
+                                                <div class="info khh" data-id="openAnAccount">北京市海淀区中关村海龙支行</div>
+                                                <a href="javascript:void(0)" data-id="resetBlank">修改</a>
+                                            </div>
+
+                                            <input type="hidden" data-id="cardNu" />
+                                            <input type="hidden" data-id="openACity" />
+                                            <input type="hidden" data-id="selectIndex" />
+                                            
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--页脚-->
+    <!--footer.tpl开始读取-->
+  
+<!--footer.tpl读取完成-->
+
+
+    </div>
+    <div class="foot">
+  <div class="footer">
+    <div class="footer-left">
+      <p class="footer-left-title">友情链接&nbsp;:</p>
+      <ul class="footer-left-ul-1">
+         
+            <li><a href="http://www.feidee.com" target="_blank">随手记</a></li>
+               
+            <li><a href="http://www.rong360.com" target="_blank">融360理财</a></li>
+               
+            <li><a href="http://bbs.wacai.com" target="_blank">挖财社区</a></li>
+               
+            <li><a href="http://www.wangdaizhijia.com" target="_blank">网贷之家</a></li>
+               
+            <li><a href="http://bj.58.com/danbaobaoxiantouzi" target="_blank">58投资担保</a></li>
+               
+            <li><a href="http://www.shopex.cn" target="_blank">ShopEX</a></li>
+               
+            <li><a href="http://credit.hc360.com" target="_blank">慧聪金融</a></li>
+               
+            <li><a href="http://www.siilu.com" target="_blank">电商服务</a></li>
+               
+            <li><a href="http://www.cjdao.com" target="_blank">财经道</a></li>
+               
+            <li><a href="http://www.gome.com.cn" target="_blank">国美在线</a></li>
+               
+            <li><a href="http://bank.hexun.com" target="_blank">和讯银行</a></li>
+               
+            <li><a href="http://shenzhen.haodai.com" target="_blank">好贷网</a></li>
+               
+            <li><a href="http://www.enfodesk.com" target="_blank">易观智库</a></li>
+      </ul>
+      <ul class="footer-about">
+         
+             <li><a href="/sjzx/customer/register.brp" target="_blank">平台注册</a></li>
+               
+             <li><a href="/sjzx/测试" target="_blank">测试</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp?flag=sf&amp;nodeCid=4" target="_blank">安全保障</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">公司简介</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">平台原理</a></li>
+               
+             <li><a href="/sjzx/frontcms/articleCenter.brp" target="_blank">常见问题</a></li>
+               
+             <li><a href="/sjzx/loan/borrow.brp" target="_blank">我要融资</a></li>
+               
+             <li><a href="/sjzx/loan/clist.brp" target="_blank">我要投资</a></li>
+              
+      
+     
+      </ul>
+    
+    </div>
+    <div class="footer-right">
+      <ul class="footer-right-1">
+        <li class="footer-right-1-1"><img src="../public/img/ind/weixin.jpg"></li>
+        <li class="footer-right-1-2"><img src="../public/img/ind/erweima.jpg"><span>扫一扫关注</span></li>
+        <li class="footer-right-1-3">
+          <ul>
+            <li><img src="../public/img/ind/tel_bg.png">&nbsp;客服热线：（工作时间 9:00-18:00）</li>
+            <li class="footer-right-1-3-2"><span class="text7">0546-7616188</span></li>
+            <li> <img src="../public/img/ind/email_bg.png">&nbsp;公司邮箱 aaa@aaa.com</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="foot-bot">
+  <div class="foot-bot-img">
+    fdkfsakfjsdkfj
+  </div>
+</div>
+
+
+
+    <div id="popup"></div>
+
+
+    <div class="bindpopupcontent" style="display:none">
+        <div class="blankfrom">
+            <label>
+                <div class="title">持卡人</div>
+                <input type="text" placeholder="输入持卡人姓名"  name="carder">
+            </label>
+            <label>
+                <div class="title">卡号</div>
+                <input type="text" placeholder="请输入银行卡号" name="blankNumber" class="blankInput">
+            </label>
+            <label>
+                <div class="title">选择银行</div>
+                <!-- <input type="text" placeholder="未选择银行"> -->
+                <select name="blankStyle">
+                    <option value="">未选择银行</option>
+                    <option value="中国银行">中国银行</option>
+                    <option value="招商银行">招商银行</option>
+                    <option value="交通银行">交通银行</option>
+                </select>
+            </label>
+            <label>
+                <div class="title">开户城市</div>
+                <input type="text" placeholder="请输入开户城市" name="openACity">
+            </label>
+
+            <label>
+                <div class="title">开户行</div>
+                <input type="text" placeholder="中文" name="openAnAccount">
+            </label>
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../public/scripts/popup.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+
+        /*slider view*/
+
+        $("a.sliderview").on("click",function(){
+            var pare=$(this).parents(".navbtn");
+            if(pare.hasClass("on")){
+                pare.removeClass("on");
+                pare.find(".childlist").stop(true, false).slideUp(300);
+                $(this).find("span").removeAttr("style");
+            }else{
+                pare.addClass("on");
+                pare.siblings(".navbtn").removeClass("on");
+                pare.siblings(".navbtn").find(".childlist").slideUp(300);
+                pare.siblings(".navbtn").find(".sliderview span").removeAttr("style");
+                pare.find(".childlist").stop(true, false).slideDown(300);
+                $(this).find("span").css({
+                    "border":"none"
+                })
+               
+            }
+        })
+
+
+
+       
+        //添加银行卡
+        $("#bindBlank .empty").click(function(){
+            popupBlank($(this));
+
+        })
+        //修改银行卡表单回填
+        $("[data-id='resetBlank']").live("click",function(){
+            formWrite($(this));//表单回填
+            popupBlank($(this));
+            
+        })
+
+
+        //获取弹框内银行卡信息
+        function getCard(obj){
+            var carder=$("#popup input[name='carder']").val();
+            var blankNumber=$("#popup input[name='blankNumber']").val();
+            var blankStyle=$("#popup select[name='blankStyle']").find("option:selected").text();//获取下拉值
+            var selectIndex=$("#popup select[name='blankStyle']").find("option:selected").index();//获取下拉索引
+            var openACity=$("#popup input[name='openACity']").val()
+            var openAnAccount=$("#popup input[name='openAnAccount']").val();
+            obj.find("[data-id='blankStyle']").html(blankStyle);
+            obj.find("[data-id='blanklastNumber4']").html(blanklast4(removeS(blankNumber)));
+            obj.find("[data-id='cardNu']").val(blankNumber);
+            obj.find("[data-id='selectIndex']").val(selectIndex);
+            obj.find("[data-id='openACity']").val(openACity);
+            obj.find("[data-id='carder']").html(carder);
+            obj.find("[data-id='openAnAccount']").html(openAnAccount);
+            obj.find(".empty").hide();
+            obj.find(".blankinfo").show();
+            $.close(".popup")
+        }
+
+
+        //表单回填
+        function formWrite(obj){
+            var selectIndex = obj.find("[data-id='selectIndex']").val();//银行种类
+            var cardNu = obj.find("[data-id='cardNu']").val();//银行卡号
+            var carder = obj.find("[data-id='carder']").html();//持卡人
+            var openACity = obj.find("[data-id='openACity']").val();//持卡人
+            var openAnAccount = obj.find("[data-id='openAnAccount']").html();//开户行
+
+
+
+          
+            
+       
+
+
+        }
+
+        //弹出修改或者添加银行卡
+        function popupBlank(obj){
+            var p=obj.parents("li");
+             $.popup({
+                    title: "添加一张银行卡", //标题
+                    content:  $(".bindpopupcontent").html(), //内容
+                    close: true, //是否关闭
+                    closeCallback:null,
+                    popupStyle: "blankpopup",
+                    Dwidth:"481",
+                    popupPosition:"fixed",
+                    btnList: [
+                        {
+                            "class": "",
+                            "text": "取消",
+                            "callback": function(){
+                                $.close(".popup")
+                            }
+                        },
+                        {
+                            "class": "comfbox",
+                            "text": "添加",
+                            "callback": function(){
+                                getCard(p);
+                            }
+                        }
+                    ]
+                    
+               })
+        }
+
+
+
+
+        
+
+
+
+        
+       
+
+
+
+        //去空格
+        function removeS(str){
+            return str.replace(/\s/g,"");
+        }
+        //获取尾号
+        function blanklast4(str){
+            return str.substring(str.length-4);
+        }
+
+    
+
+
+        //格式化输入
+        function blankformat(obj){
+            $(obj).live("keydown",function(ev){
+                var oW=$(this).val();
+                var oEvent=ev||event;
+                var arr=[];
+                if(oEvent.keyCode==8){
+                    if(oW){
+                        for(var i=0;i<oW.length;i++){
+                            var newStr=oW.replace(/\s$/g,'');
+                        }
+                        $(this).val(newStr)
+                    }
+                }else{
+                    for(var i=0;i<oW.length;i++){
+                         arr=oW.split('');
+
+                        if((i+1)%5==0){
+                            arr.splice(i,0,' ');
+                        }
+                    }
+                    $(this).val(arr.join(''));
+              
+                }
+
+            })
+
+        }
+
+        blankformat(".blankInput")
+        
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+    })
+   </script>
+
+  
+    
+</body>
+</html>

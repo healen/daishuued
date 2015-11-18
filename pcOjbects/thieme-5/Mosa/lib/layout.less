@@ -1,0 +1,477 @@
+/***********************************************************************主体框架样式开始**********************************************************/
+.box{
+    .header{
+        background: #ffffff;
+        .-box ._size(100%,auto);
+        .hhead{
+            .-box ._size(100%,56px);
+            background: @topBarBgColor;
+            .content{
+                margin: auto;
+                overflow: hidden;
+                .-box ._size(@documentWidth,56px);
+                ._clearfix();
+                .l{
+                    float: right;
+                    line-height: 56px;
+                    span{
+                        padding: 0px 5px;
+                    }
+                }
+                .r{
+                    font-size: @titleFoutSize;
+                    float: left;
+                    line-height: 56px;
+                    text-align: left;
+                    width: 500px;
+                    position: relative;
+                    ._clearfix();
+                    div{
+                        float: left;
+                        ._clearfix();
+                        &>span{
+                            &>span{
+                                font-size: 14px;
+                            }
+                        }
+                        // margin-left: 20px;
+                      
+
+                    }
+
+                }
+            }
+            color: @mainColor;
+            a{
+                color: @mainColor;
+                &:hover{
+                    color: @markBgColor;
+                }
+            }
+        }
+        .hbody{
+            .-box ._size(@documentWidth,60px);
+            position: relative;
+            z-index: 9;
+            // overflow: hidden;
+            margin: auto;
+            ._clearfix();
+            h1{
+                ._clearfix();
+                float: left;
+                &.logo{
+                    height: 60px;
+
+                }
+                img{
+                    display: block;
+                    height: 100px;
+                    float: left;
+                }
+                float: left;
+            }
+           
+
+
+        }
+
+        .navbox{
+             border-top: 1px solid #dcdcdc;
+             ._clearfix();
+            .navs{
+           
+            width: @documentWidth;
+            margin: 0px auto;
+            &>ul{
+                ._clearfix();
+                &.nav{
+                    font-size: 16px;
+                    float: right;
+                    height: 36px;
+
+                    &>li{
+                        float: left;
+                        position: relative;
+                        z-index: 9;
+                         margin-top: -10px;
+
+                        &>a{
+
+                            display: inline-block;
+                            height: 46px;
+                            line-height: 55px;
+
+
+                            .xiejiao{
+                            width: 8px;
+                                height: 10px;
+                                position: absolute;
+                                right: -8px;
+                                top: 0px;
+                                display: block;
+                                .-bg ._img('@{img}/xiejiao.png');
+                                display: none;
+                             }
+                           
+                            padding: 0px 10px;
+                            margin-left: 20px;
+                            &:hover{
+                                color: #ffffff;
+                                background: @markColor;
+                                .xiejiao{
+                                    display: block;
+                                }
+                                .down_img{
+                                    border-top: 4px solid #ffffff;
+                                }
+                            }
+                            &.on{
+                                color: #ffffff;
+                                background:@markColor;
+                                  .xiejiao{
+                                    display: block;
+                                }
+                                .down_img{
+                                    border-top: 4px solid #ffffff;
+                                }
+
+                            }
+                        }
+
+                        .nav-dropdown{
+                            position: absolute;
+                            padding-left: 20px;
+                             width: 101px;
+                             display: none;
+                            ul{
+                                // margin-left: 22px;
+                                border-radius: 0px 0px 5px 5px;
+
+                                margin-top: 0px;
+                                border-top:1px solid #dedede;
+                                 background: @markColor;
+                                font-size: 16px;
+                                text-align:left;
+                                // border-radius: 5px;
+                                li{
+                                    a{
+                                        margin-left: 0px;
+                                        display: block;
+                                        color: #ffffff;
+                                        line-height: 38px;
+                                        padding-left: 10px;
+                                        text-align: left;
+                                      
+                                        &:hover{
+                                            background: darken(@markColor, 10%)
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+        }
+
+        
+         
+    }
+    .container{
+        min-height: 500px;
+    }
+    .footer{
+    
+        font-size: @samllFoutSize;
+        margin-top: 30px;
+        border-top: 1px solid @borderColor;
+        .inwarp{
+                width: @documentWidth;
+                 ._clearfix();
+                 margin: 0px auto;
+        }
+        .contant_us{
+            font-size: 14px;
+            ._clearfix();
+            margin-top: 10px;
+            i{
+                display: block;
+                float: left;
+                width: 24px;
+                height: 24px;
+                background-image: url("@{img}/ico.png");
+                background-repeat: no-repeat;
+                margin-top: 5px;
+            }
+            p{
+                float: left;
+                width: 50%;
+                padding-left: 10px;
+            }
+            &.address{
+                i{
+                    background-position: -2px -3px;
+                }
+            }
+            &.emial{
+                i{
+                    background-position: -36px -3px;
+                }
+            }
+
+        }
+
+        .picebox{
+            text-align: center;
+            padding-top: 10px;
+            width: 150px;
+            img{
+                width: 70px;
+
+            }
+        }
+
+        .ftbody{
+            padding: 20px 0px;
+            background: #f2f2f2;
+            ._clearfix();
+            .footlist{
+                float: left;
+                width: 20%;
+                &.frist{
+                    width: 40%;
+                }
+            }
+            h2{
+                font-size: 18px;
+                margin-top: 10px;
+                // margin-bottom: 10px;
+            }
+           
+
+        }
+        .tel{
+            color: @markColor;
+            font-size: 24px;
+            font-family: Arial;
+        }
+        .ftflink{
+            background: #e0e0e0;
+            line-height: 52px;
+            a{
+                padding-right: 20px;
+            }
+        }
+        .ftfoot{
+             background: #cccccc;
+             line-height: 52px;
+             // border-top: 1px solid #adadad;
+        }
+        ul{
+            padding-top: 10px;
+        }
+    }
+}
+
+
+/*过渡样式*/
+a{
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -ms-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+
+/*三角*/
+
+
+
+.underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.warp{
+        width: @documentWidth;
+  
+         margin: 0px auto;
+}
+
+
+.xinghao{
+    color: @markBgColor;
+}
+input{
+    &.text{
+      width: 160px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px
+    }
+    &.time{
+      width: 120px;  
+      border: 1px solid @borderColor;
+      height: 34px;
+      padding: 0px 10px;
+      background: url('@{img}/ico.png') no-repeat right -113px;
+    }
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+
+
+    }
+
+     &.retBut{
+           display: inline-block;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        }
+}
+.bottonbox{
+    margin-top: 10px;
+    padding:20px 0px;
+    text-align: center;
+    &.subBut{
+        display: inline-block;
+        background: @markBgColor;
+        line-height: 35px;
+        padding: 0px 20px;
+        border-radius: 3px;
+        color: #ffffff;
+        cursor: pointer;
+        border:none;
+       
+        &:hover{
+            background:darken(@markBgColor, 10%);
+        }
+
+
+    }
+
+     &.retBut{
+           display: inline-block;
+            margin-right: 10px;
+            background: @markBgColorAux;
+            line-height: 35px;
+            padding: 0px 20px;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            border:none;
+            &:hover{
+                background:darken(@markBgColorAux, 10%);
+            }
+        }
+}
+
+/*信用等级*/
+span{
+    &.samllmark{
+        font-size: 12px;
+    }
+    &.dj{
+        width: 45px;
+        height: 24px;
+        background: @markBgColorMain;
+        display: inline-block;
+        text-align: center;
+        line-height: 24px;
+        font-size: @baseFontSize;
+        color: #fff;
+        border-radius: 12px;
+
+    }
+    &.e{
+        background: @markBgColor;
+        
+    }
+}
+
+/*ICO*/
+.icobxo{
+    i{
+        display: inline-block;
+        .-box ._size(35px,35px);
+        background-color:#f5f5f5;
+        margin-right: 20px; 
+        background-image: url('@{img}/ico.png');
+        background-position: 0px -213px;
+        cursor: pointer;
+
+        &.tx{
+            background-position: 0px -213px;
+            &:hover,&.on{
+                background-color: #c3e9ff;
+                background-position: 0px -248px;
+            }
+        }
+        &.suo{
+            background-position: -35px -213px;
+            &:hover{
+                background-color: #c3e9ff;
+                background-position: -35px -248px;
+            }
+        }
+        &.sj{
+             background-position: -70px -213px;
+             &:hover{
+                background-color: #c3e9ff;
+                background-position: -70px -248px;
+            }
+        }
+
+         &.xx{
+             background-position: -105px -213px;
+             &:hover{
+                background-color: #c3e9ff;
+                background-position: -105px -248px;
+            }
+        }
+    }
+}
+//当前位置
+.mbx{
+    padding: 5px 25px;
+    a{
+        color: @baseTextColor;
+        padding: 0px 0px;
+        &:hover{
+            color: @linkColorHover;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

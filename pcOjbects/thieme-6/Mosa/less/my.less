@@ -1,0 +1,149 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+// .-my(247px,43px);
+
+
+.-my ._myLeft(init);
+.-my ._myRight(init);
+
+.-my ._myTop(init);
+
+._table(table,botbor);
+
+.mybox{
+	margin: 20px auto 80px auto;
+}
+
+.right_title{
+	._clearfix();
+	height: 70px;
+	border-bottom: 1px solid @borderColor2;
+	line-height: 70px;
+	color: @titleFtColor;
+	font-size: @titleSize;
+
+	h2{
+		float: left;
+	}
+	.line{
+		height: 20px;
+		width: 4px;
+		border-radius: 2px;
+		background: #ffc13c;
+		float: left;
+		margin-top: 25px;
+		margin-right: 10px;
+		margin-left: 30px;
+	}
+	
+}
+.mycontent{
+	min-height: 550px;
+}
+.my_form_group{
+	.input_group{
+		.input_row{
+			._clearfix();
+			// height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			color: #666666;
+			margin-bottom: 20px;
+			.title{
+				float: left;
+				line-height: 40px;
+				text-align: right;
+				width: 90px;
+				padding-right: 10px;
+			}
+			.inputwarp{
+				float: left;
+				position: relative;
+				a{
+					&.text-link{
+						position: absolute;
+						top: 0px;
+						right: 5px;
+						color: @markColor;
+						font-size: @baseFontSize;
+					}
+					&.btn{
+						width: 128px!important;
+					}
+					
+				}
+				input[type='text'],input[type='password'],select{
+					padding: 0px 10px;
+					height: 38px;
+					border:1px solid @lighten;
+					width: 250px;
+					&:focus{
+						border: 1px solid @markColor;
+						-webkit-box-shadow: 0px 0px 2px @markColor;
+						box-shadow: 0px 0px 2px @markColor;
+					}
+				}
+				select{
+					width: 272px;
+				}
+			}
+
+		}
+	}
+}
+
+
+.mylistcontent{
+	padding: 0px 25px;
+}
+
+.my_top_list{
+	.top_list{
+		border-bottom: 1px solid @borderColor2;
+		padding: 0px 10px;
+		font-size: @baseFontSize + 2;
+		color: @titleFtColor;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		.title{
+			float: left;
+			display: inline-block;
+			padding-right: 23px;
+		}
+		a{
+			float: left;
+			display: inline-block;
+			padding-right: 23px;
+			color: @titleFtColor;
+			&.active{
+				color: @markColor;
+			}
+		}
+		span{
+			float: left;
+			display: inline-block;
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		input[type='text']{
+			font-size: @baseFontSize;
+			float: left;
+			width: 125px;
+			padding: 0px 10px;
+			margin-right: 0px;
+			height: 28px;
+			border:1px solid #a6a6a6;
+			&.timebg{
+				background: url('@{img}/time.png') no-repeat right 6px;
+
+			}
+
+		}
+
+
+	}
+}

@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta name="description" content="User login page" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--basic styles-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />	
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />	
+	<!--ace styles-->
+	<link rel="stylesheet" href="css/ace.min.css" />
+	<link rel="stylesheet" href="css/popup.css" />
+
+
+	<link rel="stylesheet" href="css/font.css">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="css/font-ie7.css">
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ace-ie.min.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/farme.css">
+</head>
+
+
+<body class="skin-4">
+<!-- header -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid" style='background:#2283c5'>
+			<a href="#" class="brand">
+				<small> 
+					<img src="img/logo.png" alt="" width="40">
+					袋鼠网
+				</small>
+			</a>
+			<!--/.brand-->
+			<ul class="nav ace-nav pull-right">
+				<li class="light-blue" style='background:#2AA4F7'>
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle slideer_box">
+						<img class="nav-user-photo" src="img/noHeader.png" alt="Jason's Photo">
+						<span class="user-info">
+							<small>欢迎,</small>
+							超级管理员
+						</span>
+
+						<i class="icon-caret-down"></i>
+					</a>
+
+					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+					    
+						<li>
+							<a href="#">
+								<i class="icon-cog"></i>
+								设置
+							</a>
+						</li>
+						
+						
+						<li>
+							<a href="http://122.114.52.239:8082/sjzx/page/manager/userprofile.jsp">
+								<i class="icon-user"></i>
+								用户信息
+							</a>
+						</li>
+						
+						<li class="divider"></li>
+
+						<li>
+							<a href="../adminUserPage/logout.jsp">
+								<i class="icon-off"></i>
+								注销
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+			<!--/.ace-nav-->
+		</div>
+		<!--/.container-fluid-->
+	</div>
+	<!--/.navbar-inner-->
+</div>
+<!-- /header -->
+
+<div class="main-container container-fluid">
+	<!-- leftMenu -->
+	<div class="sidebar" id="sidebar">	
+		<!--#sidebar-shortcuts-->
+		<div id="leftMenu" class="FWApp" style="display: block;"><ul class="nav nav-list" id="viewNodeTree">    
+				<li>
+				    <a href="javascript:void(0)" class="dropdown-toggle">
+	                        <i class="icon-dashboard"></i>
+	                    <span class="menu-text">基础信息管理</span> <b class="arrow icon-angle-down"></b>
+	                </a>
+					<ul class="submenu">
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">关于我们</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">联系方式</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">法律政策</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">媒体报道</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">招贤纳士</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">公告管理</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">会员指南</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">信用等级</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">利率比较</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">邮箱设置</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">银行账号</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">友情链接</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">网站收费细则</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">基本信息设置</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+				    <a href="javascript:void(0)" class="dropdown-toggle">
+	                        <i class="icon-dashboard"></i>
+	                    <span class="menu-text">管理员管理</span> <b class="arrow icon-angle-down"></b>
+	                </a>
+					<ul class="submenu">
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">管理员管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">修改密码</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">权限设置</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">客服管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">客服评价管理</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+				    <a href="javascript:void(0)" class="dropdown-toggle">
+	                        <i class="icon-dashboard"></i>
+	                    <span class="menu-text">会员管理</span> <b class="arrow icon-angle-down"></b>
+	                </a>
+					<ul class="submenu">
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">会员管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">会员权限管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">逾期黑名单</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">举报用户</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">会员得分记录</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+				    <a href="javascript:void(0)" class="dropdown-toggle">
+	                        <i class="icon-dashboard"></i>
+	                    <span class="menu-text">列表管理</span> <b class="arrow icon-angle-down"></b>
+	                </a>
+					<ul class="submenu">
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">初审列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">正在招标列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">复审列表</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">正在还款列表</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">正在收款列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">逾期列表</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">成功借款列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">已还清列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">评价列表</span>
+							</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+				    <a href="javascript:void(0)" class="dropdown-toggle">
+	                        <i class="icon-dashboard"></i>
+	                    <span class="menu-text">认证列表</span> <b class="arrow icon-angle-down"></b>
+	                </a>
+					<ul class="submenu">
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">会员认证</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">实名认证</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">VIP申请</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text">资料审核</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--/.nav-list-->
+		<div class="sidebar-collapse" id="sidebar-collapse">
+			<i id="menu_button_arr" class="icon-double-angle-left icon-double-angle-right"></i>
+		</div>
+	</div>
+	<div class="main-content" >
+		<!--head bar begin-->
+		<div id="breadcrumbs" class="breadcrumbs">
+			
+			<ul class="breadcrumb">
+				<li> <i class="icon-home icon-backward"></i>
+					<a href="javascript:void(0)">返回</a>
+					<span class="divider"> <i class="icon-angle-right arrow-icon"></i>
+					</span>
+				</li>
+				<li class="active">
+					
+				</li>
+			</ul>
+		</div>
+		<!--head bar end-->
+
+
+
+
+		<!--主体框架-->
+		<div class="contains_box">
+			<div class="position-relative titleborder" style="border-bottom:none">
+				<h2 id="pageH1" class="h2title">
+					<span id="aliasTitle">表单页面</span>					
+				</h2>
+
+			</div>
+
+			<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
+				   <tbody>
+					    <tr>
+						     <td class="td_cid" width="20%" style="text-align:right; line-height:30px">标题标题1：</td>
+						     <td class="td_cid"><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>			  
+					    </tr>
+					     <tr>
+						     <td class="td_cid" width="20%" style="text-align:right; line-height:30px">下拉：</td>
+						     <td class="td_cid">
+						     	<select name="" id=""  style="margin-bottom:0px; width:50%">>
+						     		<option>fff</option>
+						     	</select>
+						     	
+						     </td>			  
+					    </tr>
+					
+					   
+					    
+				   </tbody>
+			</table>
+
+
+
+			<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
+				   <tbody>
+					    <tr>
+						     <td class="td_cid" width="25%" style="text-align:right; line-height:30px">标题标题1：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>
+						     <td class="td_cid" width="25%"  style="text-align:right; line-height:30px">标题：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>			  
+					    </tr>
+					     <tr>
+						     <td class="td_cid" width="25%" style="text-align:right; line-height:30px">标题标题1：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>
+						     <td class="td_cid" width="25%"  style="text-align:right; line-height:30px">标题：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>			  
+					    </tr>
+					     <tr>
+						     <td class="td_cid" width="25%" style="text-align:right; line-height:30px">标题标题1：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>
+						     <td class="td_cid" width="25%"  style="text-align:right; line-height:30px">标题：</td>
+						     <td class="td_cid" width="25%" ><input type="text" placeholder="输入标题" style="margin-bottom:0px; width:50%"></td>			  
+					    </tr>
+					    
+					
+					   
+					    
+				   </tbody>
+			</table>
+
+
+			<button class="btn btn-warning btn-lg popsubmit" style="width:30%; margin:0px auto; display:block" >提交</button>
+
+
+
+			<ul class="pagination">
+				<li class="disabled">
+					<a href="#">
+						<i class="icon-double-angle-left"></i>
+					</a>
+				</li>
+
+				<li class="active">
+					<a href="#">1</a>
+				</li>
+
+				<li>
+					<a href="#">2</a>
+				</li>
+
+				<li>
+					<a href="#">3</a>
+				</li>
+
+				<li>
+					<a href="#">4</a>
+				</li>
+
+				<li>
+					<a href="#">5</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="icon-double-angle-right"></i>
+					</a>
+				</li>
+			</ul>
+
+
+
+
+			
+		</div>
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+											
+	<div style="clear:both"></div>
+</div>
+
+ <div id="popup"></div>							
+
+<script src="js/jquery.js"></script>
+<script src="js/ace.js"></script>
+<script src="js/popup.js"></script>
+<!-- 菜单高亮展开 -->
+<script type="text/javascript">
+	$(function(){
+		//判断是否有菜单操作权限，显示该用户拥有权限的菜单
+		$("[actionName]").each(function(){
+		 	//获取页面权限的severname
+		 	var actionName = $(this).attr("actionName");
+		 	//格式是actionName@ServiceName.
+		 	actionInfoArry = actionName.split("@");
+		 	if(actionInfoArry.length !=2) return true;
+		 	var actionList = authorityData[actionInfoArry[1]] || null;
+		 	if(!actionList) return true;
+		 	//遍历权限数组，寻找对应alias和servename
+		 	for (var i = 0; i < actionList.length; i++){
+		 		if(actionList[i].actionName == actionInfoArry[0]){
+		 			$(this).show();
+		 			break;
+		 		}
+		 	}
+		});
+
+		$(".slideer_box").bind("click",function(){
+			var $showbox=$(this).next(".user-menu");
+			$showbox.toggle();
+		})
+		//高亮展开显示当前菜单
+		var paramUrl = document.location.href.split("/")[document.location.href.split("/").length-1];
+		$("#sidebar").find("li a").each(function(){
+			if($(this).attr("href") == paramUrl){
+				$(this).parent().addClass("open");
+				$(this).parents("li").addClass("active");
+			}
+		});
+	});
+
+	$(".popsubmit").click(function(){
+					$.popup({
+		            title:"提示！",
+		            content: function(){
+		              return "提示内容" //$("#popupcontent").html();//内容
+		            },
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 400,
+		            popupPosition:"fixed",
+		             btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "确认",
+		                        "callback": null
+		                    },
+		                    {
+		                        "class": "comfbox",
+		                        "text": "取消",
+		                        "callback": null
+		                    }
+		            ]
+		           
+		     });
+			});
+
+</script>  
+
+</body>
+</html>

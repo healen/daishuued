@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>展业宝•企业申请信息</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/popup.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+            <div>
+                <div class="input input-warp">
+                   <input type="text" placeholder="公司名称" />
+                </div>
+                <div class="input input-warp">
+                   <input type="tel" placeholder="手机号" />
+                   <div> 
+                        <input type="button" value="获取验证码" class="verification"/>
+                   </div>
+                </div>
+                <div class="input input-warp">
+                   <input type="text" placeholder="验证码" />
+                </div>
+                <div class="btnbox">
+                    <input type="button" value="提交申请" onclick="window.location.href='apple_list.html'">
+                </div>
+
+                <div class="linklabel">
+                     <a href="apply_result.html">查询申请结果</a>
+                </div>
+            </div>
+
+            <div class="alertbox">
+                <div class="title">温馨提示：</div>
+     
+
+                <p>申请信息提交后，由贷鼠网后台进行人工审核，审核通过后，您可以获得二维码和企业ID。</p>
+                <p>销售人员需要扫描二维码关注公众账号之后完善个人信息填即可完成注册。</p>
+
+
+
+                <p>如有需要，请联系我们：<a href="tel:01053677696">010-53677696</a></p>
+            </div>
+		</section>
+	</section>
+
+    <div class="popupin" style="display:none">
+        <div class="msginfo">
+            <p>很抱歉！您的电话号码已经提交过申请，您可以<a href="apply_result.html">点击这里</a>查看申请结果。</p>
+
+            <p>如有需要,请联系我们: <a href="tel:01053677696">010-53677696</a></p>
+        </div>
+        
+       
+    </div>
+
+    <div id="popup"></div>
+
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../static/js/form.js"></script>
+    <script type="text/javascript" src="../static/js/popup.js"></script>
+	<!--页面JS-->
+    <script>
+        $(".verification").on("click",function(){
+            $.yanzheng(".verification",10,function(){},function(){
+                alert(1)
+            })
+        });
+
+
+        function submitFun(){
+            $.popup({
+                    title: "提交失败！", //标题
+                    content: $(".popupin").html(), //内容
+                    close: false, //是否关闭
+                    closeCallback:null,
+                    Dwidth: "",
+                    popupPosition:"fixed",
+                    btnList: [
+                        {
+                            "class": "comfbox",
+                            "text": "确认",
+                            "callback": function(){
+                                $.close("#popup");
+                            }
+                        }
+                    ]
+            })
+
+        }
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+@import "../input"; 
+
+/******************个人中心设置样式********************/
+body{
+	background: #3b3b3e;
+	&>.warp{
+		padding-bottom: 0rem;
+		height: 100%;
+	}
+}
+.body-content{
+	.-display ._box();
+	// .-display .-box-align(center,center);
+}
+.alertbox{
+	width: 100%;
+	margin: 0px auto;
+	.-display ._box();
+	.-display ._box-align(center,center);
+	.-display ._orient(vertical);
+	margin: 0px auto;
+	.duihao{
+		width: 60px;
+		height: 60px;
+		i{
+			display: block;
+			color: #ffffff;
+			line-height: 60px;
+			font-size: 35px;
+			text-align: center;
+		}
+		.-bg ._color(@markColor);
+
+		
+		border-radius: 50%;
+		margin-bottom: 1rem;
+
+	}
+	p{
+		text-align: center;
+		text-align: center;
+		line-height: 2.3rem;
+		text-indent: 0rem;
+		font-size:@titleFontSize;
+		color: @minorColor;
+		span{
+			color: @markColor;
+		}
+		
+	}
+	.btn_border{
+		._btn_border();
+		margin-top: 1rem;
+		i{
+			&.btn_ico{
+				display: block;
+				width: 12px;
+				height: 12px;
+				overflow: hidden;
+				margin-left: 3px;
+				
+			}
+		}
+		&:active {
+		  border: 1px solid darken(@markColor, 10%);
+		  color: darken(@markColor, 10%);
+		  background: @docBgColor;
+		}
+		&:visited {
+		  border: 1px solid @markColor;
+		  color: @markColor;
+		  background: @querBgColor;
+		}
+	}
+}

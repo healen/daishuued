@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+     <link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/real.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/popup.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+    	<div class="ui-header">
+            <div class="topbar-msg fn-hide" id="topbar-msg">
+                <div class="topbar-msg-bg">
+                    <div class="ui-container msg-content"></div>
+                </div>
+            </div>
+            <div class="ui-topbar">
+            <div class="ui-container">
+                <span class="fn-left">
+                    <a href="javascript:void(0)" rel="nofollow" target="_blank"><i class="icon-sp1 sp1-puhui-min"></i>众诚金融信息</a> 旗下在线投资理财金融服务平台
+          
+                </span>
+                <span id="menu-had-login" class="fn-right menu-had-login" style="display: inline;">
+                    
+                    <span class="nav-down">
+                        <a id="userInfo" class="menu-user-link ml20 red icon-nl" href="javascript:void(0)" style="height:40px; margin-right:10px; display:inline-block" rel="nofollow">
+                            <i class="icon-sp1 sp1-user-normal icon-sp1-user"></i>
+                            <span class="menu-user">test123 </span>
+                            <i class="icon-sp1 sp1-arrow-down"></i>
+                            </a><a href="/loginOut.aspx" rel="nofollow">[退出]</a>
+                            <div id="menu-ucenter" class="ui-poptip ui-poptip-white" style="top: 35px; right: 29px; display: none;">
+                            <div class="ui-poptip-shadow-dis">
+                                <div class="ui-poptip-container">
+                                    <div class="ui-poptip-arrow ui-poptip-arrow-12">
+                                        <em></em>
+                                        <span></span>
+                                    </div>
+                                    <div class="ui-poptip-content">
+                             
+                                        <ul>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/Index.aspx">
+                                                    <i class="icon-sp1 sp1-ucenter-normal"></i>
+                                                    个人中心
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/Account/replenishonline.aspx?meunid=2">
+                                                    <i class="icon-sp1 sp1-recharge-normal"></i>
+                                                    账户充值
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="icon-nl" href="/account/succeedlist.aspx?meunid=3">
+                                                    <i class="icon-sp1 sp1-touzi-normal"></i>投资记录</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </span>
+                </span>
+                <span id="menu-not-login" class="fn-right menu-not-login" style="">
+                    <a class="ml20" href="/Register.aspx" rel="nofollow">注册</a>
+                    <span class="ml10 mr10 split">|</span>
+                    <a href="/Login.aspx" rel="nofollow">登录</a>
+                </span>
+                <a href="http://www.baidu.com" class="fn-right ml20 icon-nl kefu">关注我们</a>
+                <a class="fn-right ml20" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f6559f873cbe67afe8fe3c4e2bc96ffc6ba3d1dc913bab8923d84a1e28b1e5df">
+                    <img border="0" style="padding-top: 8px;" src="http://pub.idqqimg.com/wpa/images/group.png" alt="5620538" title="5620538"></a>
+                <a class="fn-right ml20 icon-nl tel400"><i class="icon-sp1 sp1-tel-normal"></i>加盟热线：0538-2103-456</a>
+
+            </div>
+            </div>
+            <div class="pg-header-main">
+			    <div class="container_10">
+			         <div class="grid_2_2">
+                            <span class="f36 mt15 fl">
+                                <a href="#">
+                                    <img src="../public/img/logo1.png" width="153" height="63"> 
+                                    <img src="../public/img/slogn.png" width="294" height="63">
+                                </a>
+                            </span>
+                        </div>
+			        <div class="grid_6">
+			            <ul class="main-nav" style="margin-right: -25px;">
+			                <li class="main-nav-item"><a href="/Home.aspx" class="main-nav-item-link af current">首页</a></li>
+			                <li class="main-nav-item nav-list-top">
+                                <a href="/Lend/Index.aspx" class="main-nav-item-link af ">我要投资<i class="down_img"></i></a>
+                                <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+                                    <ul>
+                                        <li class="nav-dropdown-angle"><span></span></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">投资列表</a></li>
+                                        <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">债权转让</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+			                <li class="main-nav-item"><a href="/Borrow/index.aspx" class="main-nav-item-link af ">我要借款</a></li>
+			                <li class="main-nav-item"><a href="/Account/Index.aspx" class="main-nav-item-link af ">我的账户</a></li>
+			                <li class="main-nav-item nav-list-top">
+			                    <a href="/GuideInvest.aspx" class="main-nav-item-link af ">新手指引<i class="down_img"></i></a>
+			                    <div class="nav-dropdown nav-dropdown-min" style="left: 0px; display: none;">
+			                        <ul>
+			                            <li class="nav-dropdown-angle"><span></span></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideInvest.aspx">理财帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/GuideBorrow.aspx">借款帮助</a></li>
+			                            <li class="nav-dropdown-item"><a href="/Security.aspx">安全保障</a></li>
+			                        </ul>
+			                    </div>
+			                </li>
+			                <li class="main-nav-item relative nav-list-top">
+			                    <a href="/AboutUs.aspx" class="main-nav-item-link af ">关于我们</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+
+    	</div>
+        <!--主体内容-->
+        <div class="container">
+
+
+            <div class="reg">
+                <div class="basicfrome">
+
+                    <div class="msgbox">
+                        <div class="warp">
+                            <h1>注册成功，已获得<span ><b>50.00</b></span>现金券！</h1>
+
+
+                            <p>实名认证成功后再奖<span ><b>230.00</b></span>现金券！</p>
+
+                            <!-- <p><span id="daojishi">20</span> 秒后后返回<a href="#">某某某</a></p> -->
+                            
+                           <!--  <div class="btnlist">
+                                <input type="button" value="继续充值">
+                                <input type="button" value="查看充值记录">
+                            </div> -->
+                        </div>     
+                    </div>
+                    <div class="label">
+                        <div class="subject">姓名：</div>
+                        <input type="text" class="length2" placeholder="请输入真实姓名" value="">
+                      
+                    </div>
+
+                    <div class="label">
+                        <div class="subject">身份证号：</div>
+                        <input type="text" class="length2" name="bID" placeholder="输入身份证号" value="">
+                      
+                    </div>
+
+                   
+
+                    <div class="label">
+                        <div class="subject"> &nbsp;</div>
+
+                        <input type="button" value="立即认证" class="sub"/>
+                    </div>
+
+                    <div class="label">
+                         <a href="index_.html" class="qkk">去首页看看</a>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    	<div class="ui-footer">
+	        <div class="ui-container">
+                <img src="../public/img/erweima.jpg" alt="" class="erweima" />
+	           <div class="site-link">
+                    <ul class="fn-clear">
+                        <li><a href="javascript:void(0)" rel="nofollow">友情链接:</a></li>
+                        
+                        <li><a href="http://http://www.wangdaiclub.com/" target="_blank">网贷俱乐部</a></li>
+                        
+                        <li><a href="http://www.tayctz.com" target="_blank">宇诚投资</a></li>
+                        
+                        <li><a href="http://www.wangdaizhijia.com" target="_blank">网贷之家</a></li>
+                        
+                        <li><a href="http://http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
+                        
+                    </ul>
+                    <ul class="fn-clear">
+                        <li><a href="/Legislation.aspx" target="_blank">安全保障</a></li>
+                        <li><a href="/MReport.aspx" target="_blank">媒体报道</a></li>
+                        <li><a href="/Job.aspx" target="_blank">招贤纳士</a></li>
+                        <li><a href="/Services/HotQList.aspx" target="_blank">帮助中心</a></li>
+                        <li><a href="/ContactUs.aspx" target="_blank">联系我们</a></li>
+                    </ul>
+                </div>
+	            <div class="footer-center fn-clear">
+	                <div class="footer-contact">
+	                    <i class="sp1-hotline-footer mr20">
+                         <span style="font-size:20px">0538-2103456</span>  
+                         <span>[9:00-21:00]</span> 
+                        </i>
+
+	                    <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-weibo ml10"></i></a>
+	                    <div class="weixin-wrap">
+	                        <i id="footerQrcode" class="icon-sp1 sp1-weixin ml10"></i>
+	                       
+	                    </div>
+	                    <a href="javascript:void(0)" rel="nofollow"><i class="icon-sp1 sp1-email ml10"></i></a>
+	                </div>
+	              
+	            </div>
+	        </div>
+	        <div class="footer-bottom">
+	            <div class="ui-container fn-clear">
+
+	                <div class="auth-link fn-clear">
+	                    <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-norton-normal"></i></a>
+
+	                    <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-kexin-normal"></i></a>
+
+                        <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-icp-normal"></i></a>
+	                    <a target="_blank" rel="nofollow" class="icon-nl" href="javascript:void(0)"><i class="icon-sp1 sp1-cfca-normal"></i></a>
+	                    
+	                </div>
+	                <div class="copyright">
+	                    <p class="p1"><span class="copyright-left">©Copyright(c)2014 iqianjin.com.All Rights Reserved</span><a target="_blank" href="javascript:void(0)" rel="nofollow">京ICP备14017729</a></p>
+	                    <p class="p2"><span class="copyright-left">京公网安备11010102001399号</span><a href="/icp/icp.jsp" target="_blank">京ICP证150121号</a></p>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+
+
+
+		<!--QQ客服-->
+<div class="online-service hidden-form" id="online-service-hide" style="display: block;">
+		    <a class="online-service-title cc">
+		        <div class="online-service-qq icons"></div>
+		        <h5 style="">在线客服</h5>
+		    </a>
+		</div>
+		<div class="online-service-show show-form hide" id="online-service-show">
+		  	<h5 class="h40 ti15">客服中心</h5>
+		    <ul class="ti15">
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=449422301&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:449422301:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	张晓东</a>
+		        </li>
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=315949248&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:315949248:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	瑶琳</a>
+		        </li>
+		    	<li class="h40 ml10 mr10 border-gray">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=416814848&amp;site=qq&amp;menu=yes"><img style="vertical-align:middle;" border="0" src="http://wpa.qq.com/pa?p=2:416814848:52" alt="点击这里给我发消息" title="点击这里给我发消息">
+		        	周超</a>
+		        </li>
+		    </ul>
+		    <ul class="qun-list">
+		    	<li class="ml10 mr10 mt10 tc">
+		        	服务热线
+		        </li>
+		    	<li class="h30 ml10 mr10 green tc f16">
+		        	4008-321-033
+		        </li>
+		    	<li class="ml10 mr10 mt10 tc">
+		        	官方交流群
+		        </li>
+		    	<li class="h30 ml10 mr10 green tc f16">
+		        	201385713
+		        </li>
+		    </ul>
+		</div>
+    </div>
+
+
+    <div id="popup"></div>
+
+    <div id="popupcontent">
+
+        <div class="popcon">
+            <div class="top" style="text-align:center">
+                身份证号码错误
+                
+            </div>
+        </div>
+
+       
+        
+    </div>
+
+   <script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+   <script type="text/javascript" src="../public/scripts/popup.js"></script>
+   <script src="../public/scripts/global.js"></script>  
+   <script type="text/javascript">
+   $(".sub").bind("click",function(){
+        if($("input[name='bID']").val().length!=18){
+              $.popup({
+                    title:"",
+                    content: function(){
+                      return $("#popupcontent").html();
+                    }, //内容
+                    close: true, //是否关闭
+                    closeCallback:null,
+                    popupStyle: "jihuo",
+                    popupPosition:"fixed",
+                    Dwidth:400,
+                    btnList: [
+                        {
+                            "class": "",
+                            "text": "确认",
+                            "callback": function(){
+                                $.close(".popup")
+                            }
+                        }
+                    ]
+                   
+               })
+
+        }else{
+            window.location.href="real_success.html"
+        }
+    
+
+   });
+
+   $(".jhwc").live("click",function(){
+        $.close(".popup")
+   })
+
+
+     
+   </script>
+   
+   
+    
+</body>
+</html>

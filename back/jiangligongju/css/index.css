@@ -1,0 +1,7 @@
+.contains_box {
+  padding: 10px;
+}
+.contains_box .num {
+  color: #2e709c;
+  font-weight: bold;
+}
