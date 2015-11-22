@@ -1,0 +1,44 @@
+/******************注册样式********************/
+body {
+  background-color: #ffffff;
+  height: 100%;
+}
+body .warp {
+  height: 100%;
+  background-image: -moz-linear-gradient(top, #d1e0f3, #f4f0e7);
+  /* Firefox */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d1e0f3), color-stop(1, #f4f0e7));
+  /* Saf4+, Chrome */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1e0f3', endColorstr='#f4f0e7', GradientType='0');
+  /* IE*/
+}
+body .warp .body-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+body .warp .body-content a {
+  font-size: 24px;
+  display: block;
+  width: 180px;
+  height: 60px;
+  border: 2px solid #3dbdff;
+  line-height: 60px;
+  text-align: center;
+}
+body .warp .body-content a i {
+  padding-right: 5px;
+}
+body .warp .body-content a:first-child {
+  margin-bottom: 50px;
+}

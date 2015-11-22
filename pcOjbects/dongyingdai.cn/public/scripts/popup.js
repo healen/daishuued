@@ -93,7 +93,7 @@
                 (obj.btnList[i]['callback'])&&(obj.btnList[i]['callback'])();
             });
         }
-        $(".popup a.close").live("click", function() {
+        $(".popup a.close").on("click", function() {
             $.close(".popup");
             (obj.closeCallback)&&(obj.closeCallback)();
         });

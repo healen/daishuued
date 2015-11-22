@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>身份证上传</title>
+    <meta name="description" content="新华好车" />
+    <meta name="keywords" content="新华好车" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/pice_list.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/lib/swiper.min.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+             <div class="slidebox">
+                    <div class="loadingbox">
+                        <div class="banklist">
+                            <div class="statusbox">
+                                 <div class="sanjiao"></div>
+                                 <span class="status dff">
+                                    身份证
+                                </span>
+                            </div>
+
+                            <div class="selectpice" style="text-align:center; width:100%">
+                                <div class="listbox" class="showHeaderPiceList">
+                                    <div class='list'>
+                                        <div class='picebox'><img src='../static/img/temp/headphoto/1.png'/></div>
+                                        <div class="renderbox">
+                                              <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"><img src='../static/img/temp/headphoto/1.png' style="display:block;width:100%"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>身份证-正面</span>
+                                        
+                                    </div>
+                                     <div class='list'>
+                                        <div class='picebox'><img src='../static/img/temp/headphoto/2.png'/></div>
+                                        <div class="renderbox">
+                                              <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"><img src='../static/img/temp/headphoto/2.png' style="display:block;width:100%"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>身份证-反面</span>
+                                    </div>
+                                    <div class='list'>
+                                        <div class='picebox'><img src='../static/img/temp/headphoto/2.png'/></div>
+                                        <div class="renderbox">
+                                              <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"><img src='../static/img/temp/headphoto/2.png' style="display:block;width:100%"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>身份证-反面</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>    
+            </div>
+           
+          
+		</section>
+	</section>
+    <div id="popup"></div>
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../static/js/loading.js"></script>
+    <script type="text/javascript" src="../static/js/popup.js"></script>
+    <script>
+    $(".list").each(function(){
+        $(this).find(".picebox").css({
+            "height":$(this).css("width"),
+            "overflow":"hidden"
+        })
+    })
+
+
+
+    $(".picebox").on("click",function(){
+            var closeb=$(this).parents(".list").find(".close");
+            var p=$(this).parents(".list")
+            p.find(".renderbox").addClass("show");
+        });
+    $(".renderbox").on("click",function(){
+            $(this).removeClass("show");
+    });
+    </script>
+
+    <!--页面-->
+
+    <!--页面JS-->
+   
+	
+	
+
+
+
+	
+
+</body>
+</html>

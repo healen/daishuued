@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>贷鼠网-我要借款</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+     <link rel="stylesheet" type="text/css" href="../static/css/lib/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/img_listpice.css">
+   
+
+   
+</head>
+<body>
+    
+
+  
+
+    <section class="warp">
+        <section class="body-content">
+             <div class="alertlist" style="display:none">
+                <div class="uptop">
+                    <label class="buttons" onclick="javascript:window.location.href='up_pice.html'">
+                        <div class="add">
+                            <div class="inbox">
+                                无
+                            </div>
+                        </div>
+                        <div class="disc">已上传照片</div>
+                    </label>
+                </div>
+                <div class="uptop">
+                     <div class="shuoming">
+                        您还没有上传过照片，赶快上传照片吧！
+                    </div>
+                </div>
+
+                <div class="btnb">
+                    <input type="button" value="继续上传" class="okbtn" id="selectHeaderPicebtn"   onclick="javascript:window.location.href='up_pice.html'">
+                    
+                </div>
+
+            </div>
+
+            <div class="selectpice">
+                <div class="listbox" id="showHeaderPiceList">
+                    <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/1.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/2.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/3.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/4.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/5.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/6.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/7.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/8.png'/></div>
+                    </div>
+                     <div class='list'>
+                        <div class='picebox'><img src='../static/img/temp/headphoto/9.png'/></div>
+                    </div>
+                </div>
+                <input type="button" value="继续上传" class="okbtn" id="selectHeaderPicebtn"   onclick="javascript:window.location.href='up_pice.html'">
+            </div>
+
+
+            <div class="renderbox">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/1.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/2.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/3.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/4.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/5.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/6.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/7.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/8.png' style="display:block;width:100%"/></div>
+                        <div class="swiper-slide"><img src='../static/img/temp/headphoto/9.png' style="display:block;width:100%"/></div>
+                       
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <script type="text/javascript" src="../static/js/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/swiper.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            fileList = $("#showHeaderPiceList");
+            fileList.find(".picebox").css({
+                "height":fileList.find(".list").width()+"px",
+                "overflow":"hidder"
+            });
+       
+
+            fileList.find(".list").on("click",function(){
+                $(".renderbox").addClass("show");
+                var num=$(this).index();
+                var slider = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    initialSlide :num,
+                    onSlideChangeEnd: function(swiper){
+                      //Swiper初始化了
+                      $(".swiper-pagination span").eq(swiper.activeIndex).addClass("swiper-pagination-bullet-active").siblings().removeClass("swiper-pagination-bullet-active")
+                    }
+                });
+            })
+
+            $(".renderbox").on("click",function(){
+                $(this).removeClass("show");
+            })
+
+
+
+            /*判断当前页面图片列表是否为空函数*/
+
+            function listNull(){
+                if($("#showHeaderPiceList .list").length==0){
+                    $(".selectpice").hide();
+                    $(".alertlist").show();
+                }else{
+                    $(".selectpice").show();
+                    $(".alertlist").hide();
+                }
+
+            }
+
+            listNull()
+           
+
+        })
+        
+
+    
+
+
+
+
+    </script>
+<!-- <input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this)"> -->
+
+
+    <!--页面JS-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

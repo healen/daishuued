@@ -1,0 +1,180 @@
+/******************注册样式********************/
+.body-content {
+  padding: 0px;
+}
+body {
+  background: #3b3b3e;
+}
+body > .warp {
+  padding-bottom: 0rem;
+  height: 100%;
+}
+.upfiles {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.0;
+}
+.uptop {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  box-align: start;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  background: #77767d;
+  color: #ffffff;
+  position: relative;
+}
+.uptop .buttons {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #adadb1;
+  display: block;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+.uptop .buttons .add {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  height: 5.8rem;
+}
+.uptop .buttons .add .inbox {
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 6rem;
+  line-height: 4.5rem;
+}
+.uptop .buttons .disc {
+  height: 2.2rem;
+  background: #707074;
+  color: #ffffff;
+}
+.uptop .shuoming {
+  padding: 1rem;
+  padding-top: 0rem;
+}
+.selectpice {
+  padding-bottom: 2rem;
+}
+.selectpice .listbox {
+  min-height: 200px;
+  *zoom: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 8;
+}
+.selectpice .listbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.selectpice .listbox .list {
+  width: 25%;
+  min-height: 50px;
+  margin-left: 5.3%;
+  position: relative;
+  float: left;
+  margin-top: 1rem;
+}
+.selectpice .listbox .list .picebox {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 1rem;
+}
+.selectpice .listbox .list .close {
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f54949;
+  position: absolute;
+  right: -0.8rem;
+  top: -0.8rem;
+  display: block;
+  line-height: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+}
+.selectpice .listbox .list .close span {
+  display: block;
+  background: #fff;
+  height: 0.2rem;
+  width: 1rem;
+}
+.selectpice .listbox .list img {
+  width: 150%;
+}
+.okbtn {
+  display: block;
+  margin: 0px auto;
+  line-height: 3rem;
+  padding: 0px 2rem;
+  border: 1px solid #3dbdff;
+  color: #3dbdff;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 0px #214561;
+}
+.alertlist {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  background: #77767d;
+  color: #ffffff;
+  padding-top: 3rem;
+  position: relative;
+}
+.alertlist .infuimgbtn {
+  display: block;
+  color: #3cbdff;
+  line-height: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+}
+.alertlist .infuimgbtn i {
+  line-height: 3rem;
+  color: #fff;
+  float: left;
+  margin-top: 1px;
+  margin-right: 0.5rem;
+}

@@ -935,6 +935,11 @@ a.ui-button-orange:hover {
   position: relative;
   height: 52px;
 }
+.boxlist.title.bankuaititle {
+  border-top: 2px solid #23a0f3;
+  border-bottom: 1px solid #dedede;
+  height: 32px;
+}
 .boxlist.title .ui-box-more {
   padding: 11px 18px;
   margin-top: 2px;
@@ -950,8 +955,16 @@ a.ui-button-orange:hover {
 }
 .boxlist > h2.psa {
   position: absolute;
-  background: #23a0f3;
   color: #ffffff;
+  background: url(../images/index_title.png) no-repeat;
+  padding: 0px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  top: -15px;
+  letter-spacing: -2px;
 }
 .boxlist .top_tz1 {
   margin-bottom: 20px;
@@ -1263,7 +1276,7 @@ a.ui-button-orange:hover {
 }
 .zhaiquanzhuanran {
   padding-top: 20px;
-  border-top: 2px solid #23a0f3;
+  border-top: 1px solid #dedede;
 }
 .zhaiquanzhuanran:first-child {
   padding-top: 0px;
@@ -1301,4 +1314,9 @@ a.ui-button-orange:hover {
   height: 45px;
   line-height: 45px;
   margin-bottom: 0px!important;
+}
+.positionrate {
+  position: absolute;
+  right: 114px;
+  top: 31px;
 }

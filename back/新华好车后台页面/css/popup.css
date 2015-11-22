@@ -364,17 +364,11 @@ input.retBut:hover {
   text-align: center;
   padding-bottom: 15px;
 }
-.popup .dialog .dialog-content .popupbtnbox .popupbtn {
-  display: inline-block;
-  
-   background: #428bca;
-  color: #fff;
-  width: 154px;
-  line-height: 36px;
-  margin-right: 10px;
-  border-radius: 3px;
-  cursor: pointer;
+
+.popup .dialog .dialog-content .popupbtnbox .btn {
+  width: 30%;
 }
+
 .popup .dialog .dialog-content .popupbtnbox .popupbtn.comfbox {
   background: #428bca;
   background: #ffb752;

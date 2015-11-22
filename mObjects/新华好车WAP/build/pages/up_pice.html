@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>贷鼠网-我要借款</title>
+    <meta name="description" content="贷鼠网" />
+    <meta name="keywords" content="互联网金融、借贷、借款" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/up_pice.css">
+
+   
+</head>
+<body>
+    <section class="warp">
+        <section class="body-content">
+
+
+            
+
+            <div class="alertlist">
+                <a href="img_listpice.html" class="infuimgbtn">
+                    <i class="icoFt icon-tupianliebiao"></i>  已上传图片
+                </a>
+
+
+                <div class="uptop">
+                    <label for="fileElem" class="buttons">
+                        <div class="add">
+                            <div class="inbox">
+                                +
+                            </div>
+                        </div>
+                        <div class="disc">从相册上传</div>
+                    </label>
+                    <input  type="file" class="upfiles" id="fileElem" multiple="multiple" accept="image/*"  onchange="handleFiles(this)">
+                </div>
+                <div class="uptop">
+                     <div class="shuoming">
+                        上传照片说明：<br />
+                        建议上传图片总数不超过9张，图片上传后不能修改，请谨慎上传！
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+
+
+            <div class="selectpice">
+                <div class="listbox" id="showHeaderPiceList"> </div>
+                <input type="button" value="确定" class="okbtn" id="selectHeaderPicebtn" style="display:none"  onclick="javascript:window.location.href='alert.html'">
+            </div>
+
+
+        </section>
+    </section>
+    <script type="text/javascript" src="../static/js/lib/jquery-1.8.2.min.js"></script>
+    
+    <script>
+        fileList = $("#showHeaderPiceList");
+        function showBtn(){
+             if(fileList.find(".list").length>0){
+                $("#selectHeaderPicebtn").show();
+            }
+        }
+        function close(){
+            fileList.find(".close").live("click",function(){
+                var p=$(this).parents(".list");
+                p.remove();
+            })
+        }
+
+        function handleFiles(obj) {
+            var files = obj.files,
+            img = [];
+                if(fileList.find(".list").length>9){
+                    alert("只能上传9张图片");
+                }else{
+                    if(files.length+fileList.find(".list").length>9){
+                        alert('最多一次选取9张照片');
+                    }else{
+                        for(var i=0;i<files.length;i++){
+                            var reader = new FileReader();
+                            reader.readAsDataURL(files[i]);
+                            reader.onload = function(e){
+                                var imgHTML=  "<div class='list'><span class='close'><span></span></span><div class='picebox'><img src='"+ e.target.result+"'/></div></div>"
+                                fileList.prepend(imgHTML);
+                                fileList.find(".picebox").css({
+                                    "height":fileList.find(".list").width()+"px",
+                                    "overflow":"hidder"
+                                })
+                                showBtn();
+                                close();
+                            }
+                             
+                         }
+           
+                    }
+
+                }
+        }
+
+        $(document).ready(function(){
+            showBtn();
+            close();
+        })
+        
+    </script>
+
+
+
+
+    <!--页面JS-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

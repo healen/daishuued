@@ -1,0 +1,39 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../input"; 
+
+/******************注册样式********************/
+body{
+	background-color: @querBgColor;
+	height: 100%;
+	
+	.warp{
+		height: 100%;
+		background-image: -moz-linear-gradient(top, #d1e0f3, #f4f0e7); /* Firefox */
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d1e0f3), color-stop(1, #f4f0e7)); /* Saf4+, Chrome */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1e0f3', endColorstr='#f4f0e7', GradientType='0'); /* IE*/
+
+		.body-content{
+			.-display ._box();
+			.-display ._box-align(center,center);
+			.-display ._orient(vertical);
+			a{
+				font-size: 24px;
+				display: block;
+				width: 180px;
+				height: 60px;
+				border:2px solid @linkColor;
+				line-height: 60px;
+				text-align: center;
+				i{
+					padding-right: 5px;
+				}
+				&:first-child{
+					margin-bottom: 50px;
+				}
+			}
+
+		}
+	}
+}

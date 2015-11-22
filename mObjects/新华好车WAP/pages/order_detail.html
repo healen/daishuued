@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>新华好车-订单列表</title>
+    <meta name="description" content="新华好车" />
+    <meta name="keywords" content="新华好车" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="360-fullscreen" content="true" /> 
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/order_detail.css">
+</head>
+<body>
+	<section class="warp">
+		<section class="body-content">
+            <div class="slidebox">
+                 <div class="banklists">
+                    <div class="picebox">
+                        <div class="lis">
+                            <img src="../static/img/temp/Car.png" alt="" width="90%">
+                        </div>
+                        <a href="javascript:void(0)" class="uppice">待审核</a>
+                    </div>
+                    <div class="borp">
+                        
+                            <h2>借款人信息：</h2>
+                            <p>借款人：张三&nbsp;&nbsp;&nbsp;&nbsp;18701632164元</p>
+                            <p>身份证：1301031988010807523</p>
+                     
+                        
+                    </div>
+
+
+                    <div class="borp">
+                        
+                            <h2>基本信息：</h2>
+                            <p>贷款时间：3个月</p>
+                            <p>车抵类型：双抵</p>
+                            <p>期望贷款金额：30W</p>
+
+                            <div class="btnbox1">
+                                <a href="pice_list.html">查看借款图片 <i class="icoFt icon-right"></i></a>
+                            </div>
+                     
+                        
+                    </div>
+
+
+
+                    <div class="borp">
+                        
+                            <h2>车辆信息：</h2>
+                            <p>购置价格：23W</p>
+                            <p>宾利SUV2015款1.8T自动豪华型</p>
+                            <p>车辆识别号：XXXXXXXXXXX</p>
+                            <p>表显里程：4535</p>
+                            <p>市场建议价格：暂无</p>
+
+                            <div class="btnbox1">
+                                <a href="pice_list.html">查看借款图片 <i class="icoFt icon-right"></i></a>
+                            </div>
+                     
+                        
+                    </div>
+               
+
+
+                </div> 
+
+                <div class="titlebx">已有贷款方案</div>
+                <div class="banklist">
+                    <label class="lis on">
+                        <div class="content">
+                            <h2>方案1</h2>
+                            <p>借款金额：140,000.00元</p>
+                            <p>年利率：19%</p>
+                        </div>
+                        <input type="radio" name="zf" class="radio" checked="checked">
+                        <i class="select icoFt icon-checkmark"></i>
+                    </label>
+
+                    <label class="lis on">
+                        <div class="content">
+                            <h2>方案2</h2>
+                            <p>借款金额：14,000.00元</p>
+                            <p>年利率：22%</p>
+                        </div>
+                        <input type="radio" name="zf" class="radio" checked="checked">
+                        <i class="select icoFt icon-checkmark"></i>
+                    </label>
+             
+                </div>
+
+
+
+
+                <div class="alertbox">
+                    <div class="title">温馨提示：</div>
+                    <p>上传借款合同才可完成用户确认流程</p>
+                   
+                    <!-- <p>如有疑问，请联系我们：<a href="tel:01053677696">010-53677696</a></p> -->
+                </div>
+
+
+
+
+                <div class="btnbox">
+                    <input type="button" value="提交" id="btnTender">
+                </div>
+            </div>
+		</section>
+	</section>
+
+	<script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+
+    <script>
+        $(".loadingmore span").on("click",function(){
+            var data='<div class="banklist">fsdfsafdsf</div>'
+            $(".loadingbox:visible").append(data)
+        })
+    </script>
+
+    <!--页面-->
+    <script type="text/javascript" src="../static/js/page.js"></script>
+    <!--页面JS-->
+
+
+
+	
+
+</body>
+</html>
