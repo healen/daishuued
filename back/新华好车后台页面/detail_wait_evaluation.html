@@ -20,8 +20,9 @@
 	<![endif]-->
 	<link rel="stylesheet" href="css/farme.css">
 	<link rel="stylesheet" href="css/popup.css" />
+
+	<link rel="stylesheet" href="css/colorbox.css" />
 	<script src="js/jquery.js"></script>
-	
 </head>
 <body class="skin-4">
 <!-- header -->
@@ -195,10 +196,6 @@
 		
 	</div>
 	<div class="main-content" >
-
-
-
-		
 		<!--head bar begin-->
 		<div id="breadcrumbs" class="breadcrumbs">
 			<ul class="breadcrumb">
@@ -211,27 +208,170 @@
 			</ul>
 		</div>
 		<!--head bar end-->
-
-
-
-
-
 		<!--主体框架-->	
 		<div class="contains_box">
+			<h1 style="text-align:center">待估价</h1>
+			<div class="table_list">
+				<div class="position-relative">
+					<h2 id="pageH1" class="h2title">
+						<span id="aliasTitle">借款人信息</span>					
+					</h2>
+				</div>
+				<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
+					   <tbody>
 
-			<input type="button" class="btn btn-defalut" value="消息提示框" id="alert">
+					   		
+						    <tr>
+							     <td width="25%" style="text-align:right; line-height:30px">借款人</td>
+							     <td width="25%" style="line-height:30px">healen</td>
+							     <td width="25%"  style="text-align:right; line-height:30px">电话：</td>
+							     <td width="25%" style="line-height:30px">15600074926</td>			  
+						    </tr>         
+						    <tr>
+							     <td width="25%" style="text-align:right; line-height:30px">身份证：</td>
+							     <td width="25%" style="line-height:30px">15600074926000000</td>
+							     <td width="25%" style="text-align:right; line-height:30px">地址：</td>
+							     <td width="25%" style="line-height:30px">北京市</td>			  
+						    </tr>
+						    <tr>
+							     <td colspan="4" width="50%" style="line-height:30px">
+							     	<input type="button" class="btn btn-success btn-lg" id="look91" value="查看91征信">
+							     </td>  
+						    </tr>
+						</tbody>
+				</table>
+				
+			</div>
 
-			<input type="button" class="btn btn-defalut" value="表单弹出框" id="formAlert">
 
-			<input type="button" class="btn btn-defalut" value="表单弹出框" id="textareaAlert">
 
-			<input type="button" class="btn btn-defalut" value="列表弹框" id="listAlert">
+			<div class="table_list">
+				<div class="position-relative">
+					<h2 id="pageH1" class="h2title">
+						<span id="aliasTitle">贷款信息</span>					
+					</h2>
+				</div>
+				<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
+					   <tbody>
 
-			<input type="button" class="btn btn-defalut" value="确认框" id="confirmbox">
+
+						    <tr>
+							     <td width="25%" style="text-align:right; line-height:30px">贷款时间：</td>
+							     <td width="25%" style="line-height:30px">3个月</td>
+							     <td width="25%"  style="text-align:right; line-height:30px">期望贷款金额：</td>
+							     <td width="25%" style="line-height:30px">2555555</td>			  
+						    </tr>         
+						    <tr>
+							     <td width="25%" style="text-align:right; line-height:30px">车辆抵押类型：</td>
+							     <td width="25%" style="line-height:30px">双抵押</td>
+							     <td width="25%" style="text-align:right; line-height:30px">车辆识别号：</td>
+							     <td width="25%" style="line-height:30px">ABCDEFG</td>			  
+						    </tr>
+						    <tr>
+							     <td colspan="4" width="50%" style="line-height:30px">
+							     	<input type="button" class="btn btn-success btn-lg" value="借款相关图片" onclick="window.location.href='img_list_borrow.html'">
+							     </td>  
+						    </tr>
+						</tbody>
+				</table>
+				
+			</div>
+
+
+			<div class="table_list">
+			<div class="position-relative">
+				<h2 id="pageH1" class="h2title">
+					<span id="aliasTitle">车辆信息</span>					
+				</h2>
+			</div>
+			<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
+					   <tbody>
+
+						  
+						    <tr>
+							     <td class="td_cid" colspan="4" width="50%" style="text-align:center; line-height:30px">
+							     	暂无
+							     </td>
+							     
+							     		  
+						    </tr>
+		   
+						    
+					   </tbody>
+				</table>
+				
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="listcheckbox">
+				<div class="position-relative">
+					<h2 id="pageH1" class="h2title">
+						<span id="aliasTitle">订单状态</span>					
+					</h2>
+				</div>
+				<table style="margin-bottom:10px;" class="table table-list table_formlist table-striped table-bordered">
+					   <thead>
+						    <tr>
+							     <th class="center">订单状态</th>
+							     <th class="center">操作状态</th>
+							     <th class="center">操作人</th>
+							     <th class="center">职位</th>
+
+							      <th class="center">所属公司</th>
+							      <th class="center">时间</th>
+							      <th class="center">拒绝理由</th>
+						    </tr>
+					   </thead>
+					   <tbody class="radiobox">
+						    <tr class="">
+							     <td class="center">待估价</td>
+							     <td class="center">提交借款</td>
+							     <td class="center">healen</td>
+							     <td class="center">销售</td>
+							     <td class="center">普惠添翼</td>
+							     <td class="center">2015-5-22</td>
+							     <td class="center">无</td>
+						    </tr>
+						 
+					   </tbody>
+				</table>
+				
+				
+			</div>
+		
+
+
 			
+
+
+
+
+
+
+			
+
+				
+
+
+			
+
+
+
+
+
 		</div>
 	</div>
-										
+											
+	<div style="clear:both"></div>
 </div>
 
 
@@ -244,201 +384,46 @@
 </div> -->
 			
 
-
-<div id="popup"></div>
-<div id="formpopup" style="display:none">
-	<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
-		   <tbody>
-			    <tr>
-				     <td  width="20%" style="text-align:right; line-height:30px">输入原密码</td>
-				     <td><input type="password" placeholder="原密码" style="margin-bottom:0px; width:100%"></td>			  
-			    </tr>
-			    <tr>
-				     <td width="20%" style="text-align:right; line-height:30px">输入新密码</td>
-				     <td><input type="password" placeholder="新密码" style="margin-bottom:0px; width:100%"></td>			  
-			    </tr>
-			    <tr>
-				     <td width="20%" style="text-align:right; line-height:30px">确认新密码</td>
-				     <td><input type="password" placeholder="确认新密码" style="margin-bottom:0px; width:100%"></td>			  
-			    </tr>
-		   </tbody>
-	</table>
-	<div style="text-align:center">
-		<input type="button" value="取消" name="Cancel" class="btn" style="width:30%; margin:0px auto; display:inline-block">
-		<input type="button" value="确认" name="Confirm" class="btn btn-primary" style="width:30%; margin:0px auto; display:inline-block">
-	</div>
-	<script type="text/javascript">
-		$("#popup").on("click","input[name='Cancel']",function(){
-			$.close(".popup")
-		})
-	</script>
-</div>
-
-
-
-
-<div id="textareapopup" style="display:none">
-	<table style="margin-bottom:10px; width:" class="table table-list table_formlist table-striped table-bordered">
-		   <tbody>
-			    <tr>
-				     <td  width="20%" style="text-align:right; line-height:30px">拒绝理由</td>
-				     <td>
-				     	<textarea name="" style="height:80px;margin-bottom:0px; width:98%;padding:1%;"></textarea>
-				     </td>			  
-			    </tr>
-			   
-		   </tbody>
-	</table>
-	<div style="text-align:center">
-		<input type="button" value="取消" name="Cancel" class="btn" style="width:30%; margin:0px auto; display:inline-block">
-		<input type="button" value="确认" name="Confirm" class="btn btn-primary" style="width:30%; margin:0px auto; display:inline-block">
-	</div>
-	<script type="text/javascript">
-		$("#popup").on("click","input[name='Cancel']",function(){
-			$.close(".popup")
-		})
-	</script>
-</div>	
-
-
-
-<div id="listpopup" style="display:none">
-	<table style="margin-bottom:10px;" class="table table-list table_formlist table-striped table-bordered">
-				   <thead>
-					    <tr>
-					    	
-						     <th class="center">姓名</th>
-						     <th class="center">电话</th>
-						     <th class="center">身份证</th>
-						     <th class="center">申请借款金额</th>
-						     <th class="center">车辆型号</th>
-						    
-						    
-				
-					    </tr>
-				   </thead>
-				   <tbody>
-					    <tr>
-						     <td class="center">张晓东</td>
-						     <td class="center">13488871848</td>
-						     <td class="center">156000749260000</td>
-						     <td class="center">50000.00</td>
-						     <td class="center">BMW</td>
-						     
-						    
-						   	  
-					    </tr>
-					    <tr class="active">
-					    	 <td class="center">张晓东</td>
-						     <td class="center">13488871848</td>
-						     <td class="center">156000749260000</td>
-						     <td class="center">50000.00</td>
-						     <td class="center">BMW</td>
-						    
-						    
-					    </tr>
- 						<tr>
-						     <td class="center">张晓东</td>
-						     <td class="center">13488871848</td>
-						     <td class="center">156000749260000</td>
-						     <td class="center">50000.00</td>
-						     <td class="center">BMW</td>
-						     
-						   	  
-					    </tr>		
-				   </tbody>
-			</table>
-			<div style="text-align:center">
-				<ul class="pagination">
-					<li class="disabled">
-						<a href="#">
-							<i class="icon-double-angle-left"></i>
-						</a>
-					</li>
-
-					<li class="active">
-						<a href="#">1</a>
-					</li>
-
-					<li>
-						<a href="#">2</a>
-					</li>
-
-					<li>
-						<a href="#">3</a>
-					</li>
-
-					<li>
-						<a href="#">4</a>
-					</li>
-
-					<li>
-						<a href="#">5</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="icon-double-angle-right"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			
-	<div style="text-align:center">
-		<input type="button" value="取消" name="Cancel" class="btn" style="width:30%; margin:0px auto; display:inline-block">
-		<input type="button" value="确认" name="Confirm" class="btn btn-primary" style="width:30%; margin:0px auto; display:inline-block">
-	</div>
-	<script type="text/javascript">
-		$("#popup").on("click","input[name='Cancel']",function(){
-			$.close(".popup")
-		})
-	</script>
-</div>					
-
-
+<div id="popup"></div>						
 
 
 <script src="js/ace.js"></script>
+<script type="text/javascript" src="js/date/WdatePicker.js"></script>
 <script src="js/popup.js"></script>
-
-<script src="js/popupextent.js"></script>
-
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/popupextent.js" ></script>
 
 <!-- 菜单高亮展开 -->
 <script type="text/javascript">
-	
-		
+	$(function(){
 
 
-		$("#alert").click(function(){
-			popupAlert('消息提示标题','您的点击事件操作完成')
+		/*会员下拉*/
+		$(".slideer_box").bind("click",function(){
+			var $showbox=$(this).next(".user-menu");
+			$showbox.toggle();
 		})
 
 
 
-		$("#formAlert").click(function(){
-			popupDetailBox('请填写相关资料',$('#formpopup').html())
+
+
+		/*查看91征信*/
+
+		$("#look91").on("click",function(){
+			popupAlert("查看91征信","您的91征信通过");
+		})
+
+		$("#lookAudit").on("click",function(){
+			popupAlert("查看评估报告","查看评估报告通过");
 		})
 
 
-		$("#textareaAlert").click(function(){
-			popupDetailBox('拒绝理由',$('#textareapopup').html())
-		})
 
-		$("#listAlert").click(function(){
-			popupDetailBox('列表弹框',$('#listpopup').html(),1000)
-		})
+	})
 
 
-		$("#confirmbox").click(function(){
-			comfrimAlert("标题","内容",function(){
-				alert(2)
-			})
-		})
 
-
-		
 </script>  
 
 

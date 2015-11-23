@@ -112,6 +112,8 @@ input[type="text"], input[type=password], select {
 	border: none;
 	text-align: center;
 	position: relative;
+	width: 160px;
+	height: 200px;
 
 	label{
 		height: 160px;
@@ -123,6 +125,7 @@ input[type="text"], input[type=password], select {
 		background: #ff0000;
 		background: url("../img/uppicebg.png");
 		border: 1px solid #efefef;
+
 		z-index: 2;
 
 		input{
@@ -131,14 +134,19 @@ input[type="text"], input[type=password], select {
 	        opacity: 0;
 		}
 	}
-	.imgpice{
+	a{
 		width: 160px;
 		height: 160px;
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		border: 1px solid #efefef;
 		z-index: 1;
+		img{
+			width: 160px;
+			height: 160px;
+			display: block;
+			border: 1px solid #efefef;
+		}
 	}
 	p{
 		padding-top: 5px;
@@ -149,4 +157,27 @@ input[type=checkbox], input[type=radio]{
 	opacity: 1;
 	position: static;
 }
+
+.btns{
+	font-size: 14px;
+	color: #ffffff;
+	background: #2283c5;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0px 15px;
+	border-radius: 2px;
+	&:hover{
+		color: #ffffff;
+		text-decoration: none;
+		background: darken(#2283c5, 10%)
+	}
+	&:focus{
+		color: #fff;
+	}
+	.edit{
+		border:none!important;
+	}
+}
+
+
 

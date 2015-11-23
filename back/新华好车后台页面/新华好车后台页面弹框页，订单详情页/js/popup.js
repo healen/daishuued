@@ -8,6 +8,7 @@
         /*默认参数*/
         var docuemntW=$(document).width();
         var documentH=$(document).height();
+
         var dialogW,dialogH;
         var Default = {
                 title: "标题", //标题
@@ -30,11 +31,13 @@
                 ]
         };
         var obj = $.extend(Default, opts);
+
          /*是否关闭*/
         obj.close ? closeHTML = "<a class='close'></a>" : closeHTML = "";
+
         if (obj.btnList.length > 0) {
             for (var i = 0; i < obj.btnList.length; i++) {
-                btnsHTML += "<span class='popupbtn btn " + obj.btnList[i]['class'] + "'>" + obj.btnList[i]['text'] + "</span>";
+                btnsHTML += "<span class='popupbtn btn btn-primary " + obj.btnList[i]['class'] + "'>" + obj.btnList[i]['text'] + "</span>";
             }
             btnShowHTML = "<div class='popupbtnbox'>" + btnsHTML + "</div>";
 

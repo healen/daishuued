@@ -88,8 +88,6 @@ select {
   border: none;
   text-align: center;
   position: relative;
-  width: 160px;
-  height: 200px;
 }
 .ace-thumbnails > li label {
   height: 160px;
@@ -108,19 +106,14 @@ select {
   -ms-filter: progid:DXImageTransform._Microsoft._Alpha(Opacity=0);
   opacity: 0;
 }
-.ace-thumbnails > li a {
+.ace-thumbnails > li .imgpice {
   width: 160px;
   height: 160px;
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 1;
-}
-.ace-thumbnails > li a img {
-  width: 160px;
-  height: 160px;
-  display: block;
   border: 1px solid #efefef;
+  z-index: 1;
 }
 .ace-thumbnails > li p {
   padding-top: 5px;
@@ -129,24 +122,4 @@ input[type=checkbox],
 input[type=radio] {
   opacity: 1;
   position: static;
-}
-.btns {
-  font-size: 14px;
-  color: #ffffff;
-  background: #2283c5;
-  display: inline-block;
-  line-height: 30px;
-  padding: 0px 15px;
-  border-radius: 2px;
-}
-.btns:hover {
-  color: #ffffff;
-  text-decoration: none;
-  background: #1a669a;
-}
-.btns:focus {
-  color: #fff;
-}
-.btns .edit {
-  border: none!important;
 }

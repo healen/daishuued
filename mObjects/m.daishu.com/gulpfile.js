@@ -85,7 +85,6 @@ gulp.task('copy',function(){
     // 复制目录
     exists( './pages', './build/pages/', copy );
     exists( './static', './build/static/', copy );
-  
 })
 
 

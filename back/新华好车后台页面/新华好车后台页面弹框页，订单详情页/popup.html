@@ -226,8 +226,6 @@
 			<input type="button" class="btn btn-defalut" value="表单弹出框" id="textareaAlert">
 
 			<input type="button" class="btn btn-defalut" value="列表弹框" id="listAlert">
-
-			<input type="button" class="btn btn-defalut" value="确认框" id="confirmbox">
 			
 		</div>
 	</div>
@@ -402,13 +400,41 @@
 <script src="js/ace.js"></script>
 <script src="js/popup.js"></script>
 
-<script src="js/popupextent.js"></script>
-
 
 <!-- 菜单高亮展开 -->
 <script type="text/javascript">
 	
-		
+		function popupAlert(title,content){
+			$.popup({
+		            title:title,
+		            content: "<div style='text-align:center'>"+content+"</div>",
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: 320,
+		            popupPosition:"fixed",
+		            btnList:[
+		                    {
+		                        "class": "",
+		                        "text": "确认",
+		                        "callback":function(){
+		                        	$.close(".popup")
+		                        } 
+		                    }
+		            ]
+		           
+		     });
+		}
+
+		function popupDetailBox(title,content,width){
+			$.popup({
+		            title:title,
+		            content: content,
+		            close: true, //是否关闭
+		            closeCallback:null,
+		            Dwidth: width || 600,
+		            popupPosition:"fixed"
+		     });
+		}
 
 
 		$("#alert").click(function(){
@@ -428,13 +454,6 @@
 
 		$("#listAlert").click(function(){
 			popupDetailBox('列表弹框',$('#listpopup').html(),1000)
-		})
-
-
-		$("#confirmbox").click(function(){
-			comfrimAlert("标题","内容",function(){
-				alert(2)
-			})
 		})
 
 
